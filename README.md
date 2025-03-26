@@ -7,3 +7,8 @@ fastapi dev app/main.py
 ```
 fastapi run app/main.py 
 ```
+
+## To fill requirments txt
+```
+pip freeze > requirements.txt
+```
