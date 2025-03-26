@@ -11,7 +11,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - DATABASE_URL=postgresql://user:password@db/fitbody_db
+      - DATABASE_URL=postgresql://user:password@db/fitbody4life
     depends_on:
       - db
 
@@ -20,7 +20,7 @@ services:
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: fitbody_db
+      POSTGRES_DB: fitbody4life
     volumes:
       - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
 
