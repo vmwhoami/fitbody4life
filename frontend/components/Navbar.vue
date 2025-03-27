@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="fixed top-0 flex w-full items-center py-2 dark:shadow-black/10 lg:flex-wrap lg:py-4"
+    class="fixed top-0 flex w-full items-center justify-center items-center py-2 dark:shadow-black/10 lg:flex-wrap lg:py-4"
   >
     <router-link
       to="/"
