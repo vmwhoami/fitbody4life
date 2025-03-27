@@ -6,8 +6,7 @@
       to="/"
       class="block py-2 px-3 text-white rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
       aria-current="page"
-      ><icon-olea-fit-logo myFill="#b4b4b4"
-    /></router-link>
+    ></router-link>
 
     <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
       <ul
@@ -52,6 +51,4 @@
 </template>
 
 <script setup>
-import IconOleaFitLogo from "@/assets/icons/IconOleaFitLogo.vue";
-import IconBurger from "@/assets/icons/IconBurger.vue";
 </script>
