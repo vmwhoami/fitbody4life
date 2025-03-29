@@ -81,8 +81,7 @@
                 name="remember_me"
                 type="checkbox"
                 v-model="rememberMe"
-                class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
-              />
+                class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"/>
               <label for="remember_me" class="ml-2 block text-sm text-gray-600">
                 Remember me
               </label>
@@ -91,8 +90,7 @@
             <div class="text-sm">
               <NuxtLink
                 to="/forgot-password"
-                class="font-medium text-indigo-600 hover:text-indigo-500"
-              >
+                class="font-medium text-indigo-600 hover:text-indigo-500">
                 Forgot your password?
               </NuxtLink>
             </div>
@@ -104,8 +102,7 @@
               type="submit"
               class="inline-flex items-center justify-center w-full rounded-md border border-transparent
                      bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700
-                     focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-            >
+                     focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
               Sign in
             </button>
           </div>
@@ -137,8 +134,3 @@
     console.log('Remember Me:', rememberMe.value);
   }
   </script>
-  
-  <style scoped>
-  /* If you need custom styles beyond Tailwind, you can add them here. */
-  </style>
-  
