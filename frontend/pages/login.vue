@@ -122,26 +122,20 @@
     </div>
   </template>
   
-  <script>
-  export default {
-    name: 'LoginPage',
-    data() {
-      return {
-        email: '',
-        password: '',
-        rememberMe: false,
-      };
-    },
-    methods: {
-      handleLogin() {
-        // Handle your login logic here.
-        // For example, call an API, set user state, etc.
-        console.log('Email:', this.email);
-        console.log('Password:', this.password);
-        console.log('Remember Me:', this.rememberMe);
-      },
-    },
-  };
+  <script setup>
+  import { ref } from 'vue';
+
+  const email = ref('');
+  const password = ref('');
+  const rememberMe = ref(false);
+
+  function handleLogin() {
+    // Handle your login logic here.
+    // For example, call an API, set user state, etc.
+    console.log('Email:', email.value);
+    console.log('Password:', password.value);
+    console.log('Remember Me:', rememberMe.value);
+  }
   </script>
   
   <style scoped>
