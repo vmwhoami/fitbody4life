@@ -19,7 +19,9 @@
   </section>
 </template>
 
-<script>
+<script setup>
+import TestimonialCard from "./TestimonialCard.vue"; // Import the card component
+
 const testimonials = [
   {
     name: "Jesika Sky",
@@ -38,11 +40,7 @@ const testimonials = [
   },
 ];
 
-export default {
-  data() {
-    return { testimonials };
-  },
-};
+ 
 </script>
  
 
