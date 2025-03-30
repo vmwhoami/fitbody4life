@@ -7,7 +7,7 @@
     <GroupClass />
     <TrainerPostSection />
     <PersonalShop />
-    <ClientSay />
+    <Testimonials />
     <PersonalApp />
     <Footer />
   </div>
@@ -20,7 +20,7 @@ import AboutSection from "@/components/mainPage/AboutSection.vue";
 import GroupClass from "@/components/mainPage/AboutSection.vue";
 import TrainerPostSection from "@/components/mainPage/TrainerPostSection.vue";
 import PersonalShop from "@/components/mainPage/PersonalShop.vue";
-import ClientSay from "@/components/mainPage/ClientSay.vue";
+import Testimonials from "@/components/mainPage/Testimonials.vue";
 import PersonalApp from "@/components/mainPage/PersonalApp.vue";
 import Footer from "@/components/Footer.vue";
 const { data } = await useFetch("/api/tickers/?limit=10");

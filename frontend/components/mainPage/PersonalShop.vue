@@ -5,7 +5,7 @@
       <!-- Text content -->
       <div class="md:w-1/2 md:pr-8 mb-8 md:mb-0">
         <h2 class="text-2xl md:text-3xl font-bold mb-4">
-          Emmafit. <br class="hidden md:block" />
+          fitbody4life. <br class="hidden md:block" />
           PersonalShop & Program Diet
         </h2>
         <p class="text-gray-600 mb-6">

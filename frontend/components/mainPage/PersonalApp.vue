@@ -6,7 +6,7 @@
           <h2 class="text-2xl md:text-3xl font-bold mb-2">Trainer Personal App</h2>
           <p class="text-gray-500 mb-6">
             “If it doesn’t challenge you, it won’t change you” is my Slogan and I will
-            help you be the best you can be I’m Emma Jones.
+            help you be the best you can be I’m Olya Jones.
           </p>
           <div class="flex items-center space-x-4 mb-4">
             <span class="text-gray-600 font-semibold">Social Network</span>
