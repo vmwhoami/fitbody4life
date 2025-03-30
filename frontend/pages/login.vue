@@ -111,7 +111,7 @@
         <!-- Extra links / signup prompt -->
         <p class="mt-8 text-center text-sm text-gray-600">
           Don’t have an account?
-          <NuxtLink to="/register" class="text-indigo-600 hover:text-indigo-500 font-medium">
+          <NuxtLink to="/signup" class="text-indigo-600 hover:text-indigo-500 font-medium">
             Sign up
           </NuxtLink>
         </p>
