@@ -1,8 +1,8 @@
 <template>
   <div>
     <Navbar />
-    <TemplateNavbar/>
     <IntroMain />
+    <TemplateNavbar/>
     <TrainingPrograms />
     <AboutSection />
     <GroupClass />
