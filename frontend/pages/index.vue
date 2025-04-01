@@ -1,6 +1,7 @@
 <template>
   <div>
     <Navbar />
+    <TemplateNavbar/>
     <IntroMain />
     <TrainingPrograms />
     <AboutSection />
@@ -10,6 +11,7 @@
     <Testimonials />
     <PersonalApp />
     <Footer />
+  
   </div>
 </template>
 <script setup>
@@ -22,5 +24,5 @@ import PersonalShop from "@/components/mainPage/PersonalShop.vue";
 import Testimonials from "@/components/mainPage/Testimonials.vue";
 import PersonalApp from "@/components/mainPage/PersonalApp.vue";
 import Footer from "@/components/Footer.vue";
-const { data } = await useFetch("/api/tickers/?limit=10");
+ import TemplateNavbar from "~/components/TemplateNavbar.vue";
 </script>
