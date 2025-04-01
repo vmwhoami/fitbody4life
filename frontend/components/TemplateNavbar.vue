@@ -4,7 +4,7 @@
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <button @click="isMobileMenuOpen = !isMobileMenuOpen"
-            class="p-2 text-gray-400 hover:bg-gray-700 hover:text-white">
+              class="p-2 text-gray-400 hover:bg-gray-700 hover:text-white">
             <span v-if="!isMobileMenuOpen">☰</span>
             <span v-else>✕</span>
           </button>
@@ -34,10 +34,9 @@
           <!-- Profile dropdown -->
           <div class="relative ml-3">
             <button @click="isProfileOpen = !isProfileOpen" class="flex text-sm">
-              <img
-                class="size-8 rounded-full"
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                alt=""
+              <img class="size-8 rounded-full"
+              
+                :src="myImage"
               />
             </button>
             <div
@@ -62,10 +61,7 @@
     <!-- Mobile menu -->
     <div v-if="isMobileMenuOpen" class="sm:hidden">
       <div class="space-y-1 px-2 pt-2 pb-3">
-        <a
-          v-for="item in navigation"
-          :key="item.name"
-          :href="item.href"
+        <a v-for="item in navigation" :key="item.name" :href="item.href" 
           :class="[
             item.current
               ? 'bg-gray-900 text-white'
@@ -83,6 +79,8 @@
 <script setup>
 import { ref } from "vue";
 import IconOleaFitLogo from "@/assets/icons/IconOleaFitLogo.vue";
+import myImage from '~/assets/images/interviewsPhotosmall.jpg';
+ 
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
   { name: "Team", href: "#", current: false },
