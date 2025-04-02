@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/image": "^1.10.0",
     "@nuxtjs/tailwindcss": "^6.13.2",
     "@tailwindcss/vite": "^4.0.17",
     "axios": "^1.7.8",
