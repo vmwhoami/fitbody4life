@@ -12,9 +12,6 @@
       </div>
     </div>
   </template>
-  
-  <script setup>
-  // No extra script is needed for this basic error page.
-  // You can add additional logic if you want to dynamically handle error codes.
-  </script>
-  
+  <script setup  >
+ 
+</script>
