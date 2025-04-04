@@ -33,12 +33,10 @@
             <svg
               class="w-12 h-12 text-orange-500"
               fill="currentColor"
-              viewBox="0 0 20 20"
-            >
+              viewBox="0 0 20 20">
               <path d="M10 2a6 6 0 00-6 6v1a4 4 0 001.528 3.172 2 2 0 01.54 1.76l-.436
                        3.058A1 1 0 006.618 18h6.764a1 1 0 00.986-.83l.436-3.058a2 2 0 
-                       01.54-1.76A4 4 0 0016 9V8a6 6 0 00-6-6z"
-              />
+                       01.54-1.76A4 4 0 0016 9V8a6 6 0 00-6-6z"/>
             </svg>
           </div>
           <h3 class="text-xl font-semibold mb-2">Group Class</h3>
@@ -50,11 +48,9 @@
         <!-- Card 3 -->
         <div class="bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
           <div class="mb-4">
-            <svg
-              class="w-12 h-12 text-orange-500"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
+            <svg class="w-12 h-12 text-orange-500"
+                 fill="currentColor"
+                 viewBox="0 0 20 20">
               <path d="M4 3a2 2 0 00-2 2v3a4 4 0 004 4h2a2 2 0 110 4H5a1 1 0 100 
                        2h3a4 4 0 000-8H8a2 2 0 01-2-2V5a2 2 0 114 0v2a1 1 0 102 
                        0V5a4 4 0 00-4-4H4z"/>
