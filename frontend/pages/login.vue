@@ -1,4 +1,6 @@
 <template>
+  <div>
+    <TemplateNavbar />
     <div class="min-h-screen grid grid-cols-1 md:grid-cols-2 bg-white">
       <!-- Left side: Image / Illustration (hidden on smaller screens) -->
       <div class="hidden md:block relative">
@@ -117,11 +119,12 @@
         </p>
       </div>
     </div>
+  </div>
   </template>
   
   <script setup>
   import { ref } from 'vue';
-
+  import TemplateNavbar from '@/components/TemplateNavbar.vue';
   const email = ref('');
   const password = ref('');
   const rememberMe = ref(false);

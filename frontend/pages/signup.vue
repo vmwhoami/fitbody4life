@@ -1,5 +1,9 @@
 <template>
+  <div>
+    <TemplateNavbar/>
+
   <div class="min-h-screen grid grid-cols-1 md:grid-cols-2 bg-white">
+
     <!-- Left side: Image / Illustration (hidden on smaller screens) -->
     <div class="hidden md:block relative">
       <img
@@ -144,9 +148,11 @@
       </p>
     </div>
   </div>
+</div> 
 </template>
 
 <script>
+  import TemplateNavbar from '@/components/TemplateNavbar.vue';
 export default {
   name: 'RegisterPage',
   data() {

@@ -1,4 +1,7 @@
 <template>
+  <div>
+    <TemplateNavbar/>
+  
   <div class="min-h-screen flex flex-col items-center justify-center bg-white px-4 py-12">
     <!-- Logo / Header (optional) -->
     <div class="mb-8">
@@ -22,9 +25,11 @@
       Log in again
     </NuxtLink>
   </div>
+</div>
 </template>
 
 <script>
+  import TemplateNavbar from '@/components/TemplateNavbar.vue';
 export default {
   name: "LogoutPage",
 };
