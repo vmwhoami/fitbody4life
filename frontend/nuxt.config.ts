@@ -7,8 +7,9 @@ export default defineNuxtConfig({
   modules: ['motion-v/nuxt', '@nuxtjs/i18n'],
   i18n: {
     locales: [
-      { code: 'en', language: 'en-US' },
-      { code: 'ro', language: 'ro-RO' }
+      { code: 'en', iso: 'en-US', file: 'en.js', name: 'English' },
+      { code: 'ro', iso: 'ro-RO', file: 'ro.js', name: 'Romanian' },
+      { code: 'ru', iso: 'ru-RU', file: 'ru.js', name: 'Russian' }
     ],
     defaultLocale: 'en',
   },
