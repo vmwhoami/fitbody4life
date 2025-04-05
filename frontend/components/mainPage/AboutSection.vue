@@ -3,10 +3,10 @@
     <div class="flex flex-col md:flex-row items-center">
       <!-- Placeholder Image -->
       <div class="md:w-1/2 flex justify-center 
-                  mb-8 md:mb-0">
+                  mb-8 md:mb-0 ">
         <div class="w-72 h-72 bg-gray-200 flex 
                     items-center justify-center 
-                    rounded shadow-md">
+                    rounded shadow-md shadow hover:shadow-lg transition-shadow">
           <span class="text-gray-400">[Image Placeholder]</span>
         </div>
       </div>

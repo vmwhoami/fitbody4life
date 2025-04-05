@@ -13,5 +13,6 @@ fastapi run app/main.py
 pip freeze > requirements.txt
 ```
 
-to do fix layout make it look like in the design 
-figure a way to fix 404 and redirect it to a controlled page by us
+Think of ways to change language and background through variables
+what i am thinking global translated somes sort of swith maybe save in the db the peverence?
+
