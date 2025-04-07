@@ -12,7 +12,9 @@ export default defineNuxtConfig({
       { code: 'ru', iso: 'ru-RU', file: 'ru.js', name: 'Russian' }
     ],
     defaultLocale: 'en',
-  },
+    lazy: true,
+    langDir: 'locales/',
+    },
   vite: {
     plugins: [tailwindcss()],
   },

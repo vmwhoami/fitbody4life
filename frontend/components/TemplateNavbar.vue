@@ -9,6 +9,7 @@
             <span v-else>✕</span>
           </button>
         </div>
+        <LanguageSwitcher/>
         <div class="flex flex-1 items-center
                     justify-center sm:items-stretch sm:justify-start">
           <div class="flex shrink-0 items-center">
@@ -77,7 +78,8 @@
 import { ref } from "vue";
 import IconOleaFitLogo from "@/assets/icons/IconOleaFitLogo.vue";
 import myImage from '@/assets/images/interviewsPhotosmall.jpg';
- 
+import LanguageSwitcher from './LanguageSwitcher.vue';
+
 const navigation = [
   { path: '/', href: "/",name: 'Home' },
   { path: '/login', href: "/login",name: 'Login' },
