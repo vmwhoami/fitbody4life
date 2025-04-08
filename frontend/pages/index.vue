@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <!-- <Navbar /> -->
-    <TemplateNavbar/>
+  <section>
+    <TemplateNavbar />
     <IntroMain />
     <TrainingPrograms />
     <AboutSection />
@@ -11,15 +10,14 @@
     <Testimonials />
     <PersonalApp />
     <Footer />
-  
-  </div>
+  </section>
 </template>
 <script setup>
-// import Navbar from "@/components/Navbar.vue";
 import TemplateNavbar from "@/components/TemplateNavbar.vue";
 import IntroMain from "@/components/mainPage/IntroMain";
 import TrainingPrograms from "@/components/mainPage/TrainingPrograms";
 import AboutSection from "@/components/mainPage/AboutSection.vue";
+import GroupClass from "@/components/mainPage/GroupClass.vue";
 import TrainerPostSection from "@/components/mainPage/TrainerPostSection.vue";
 import PersonalShop from "@/components/mainPage/PersonalShop.vue";
 import Testimonials from "@/components/mainPage/Testimonials.vue";
