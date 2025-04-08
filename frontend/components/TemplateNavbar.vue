@@ -9,7 +9,6 @@
             <span v-else>✕</span>
           </button>
         </div>
-        <LanguageSwitcher/>
         <div class="flex flex-1 items-center
                     justify-center sm:items-stretch sm:justify-start">
           <div class="flex shrink-0 items-center">
@@ -53,10 +52,11 @@
               >
             </div>
           </div>
+          <LanguageSwitcher/>
         </div>
       </div>
     </div>
-
+  
     <!-- Mobile menu -->
     <div v-if="isMobileMenuOpen" class="sm:hidden">
       <div class="space-y-1 px-2 pt-2 pb-3">
