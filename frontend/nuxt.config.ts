@@ -11,6 +11,9 @@ export default defineNuxtConfig({
       { code: 'ro', iso: 'ro-RO', file: 'ro.js', name: 'Romanian' },
       { code: 'ru', iso: 'ru-RU', file: 'ru.js', name: 'Russian' }
     ],
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
     defaultLocale: 'en',
     lazy: true,
     langDir: 'locales/',
