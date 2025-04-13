@@ -1,46 +1,44 @@
 <template>
   <nav class="border-b">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16"
-    >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6
+                lg:px-8 flex justify-between 
+                items-center h-16">
     
       <!-- Language Switcher Dropdown -->
       <div class="relative">
-        <button
-          @click="toggleDropdown"
-          type="button"
-          class="inline-flex items-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none"
-        >
+        <button @click="toggleDropdown"
+                type="button"
+                class="inline-flex items-center 
+                       rounded-md border border-gray-300 
+                       shadow-sm px-4 py-2 bg-white text-sm 
+                       font-medium text-gray-700 
+                       hover:bg-gray-50 focus:outline-none">
           {{ currentLanguage.toUpperCase() }}
-          <svg
-            class="ml-2 h-5 w-5"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 20 20"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M7 7l3-3m0 0l3 3m-3-3v12"
-            />
+          <svg class="ml-2 h-5 w-5"
+               xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewBox="0 0 20 20"
+                troke="currentColor">
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M7 7l3-3m0 0l3 3m-3-3v12" />
           </svg>
         </button>
 
         <!-- Dropdown Menu -->
         <transition name="fade">
-          <div
-            v-if="dropdownOpen"
-            class="origin-top-right absolute right-0 mt-2 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10"
-          >
+          <div v-if="dropdownOpen"
+               class="origin-top-right absolute right-0 mt-2 w-36
+                      rounded-md shadow-lg bg-white ring-1 
+                      ring-black ring-opacity-5 focus:outline-none z-10">
             <div class="py-1">
-              <button
-                v-for="localeOption in availableLocales"
-                :key="localeOption.code"
-                @click="switchLanguage(localeOption.code)"
-                type="button"
-                class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >
+              <button v-for="localeOption in availableLocales"
+                      :key="localeOption.code"
+                      @click="switchLanguage(localeOption.code)"
+                      type="button"
+                      class="block w-full text-left px-4 py-2 text-sm 
+                             text-gray-700 hover:bg-gray-100">
                 {{ localeOption.name }}
               </button>
             </div>
