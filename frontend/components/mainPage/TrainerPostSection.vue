@@ -1,37 +1,35 @@
 <template>
-  <section class="container mx-auto px-6 py-12">
+  <section class="container mx-auto px-6 py-12 overflow-hidden relative">
     <div class="flex flex-col md:flex-row items-center md:items-start">
       <!-- Carousel Container -->
       <div class="relative md:w-2/3 mb-6 md:mb-0">
         <div class="overflow-hidden relative" style="height: 100px;">
-          <div
-            class="flex transition-transform duration-500"
-            :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }"
-          >
-            <div
-              v-for="(img, index) in images"
+          <div class="flex transition-transform duration-500"
+            :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }">
+            <div v-for="(img, index) in images"
               :key="index"
-              class="flex-shrink-0 w-40 h-24 bg-gray-300 flex items-center justify-center rounded-md mx-2"
-            >
+              class="flex-shrink-0 w-40 h-24 bg-gray-300 
+                     flex items-center justify-center rounded-md mx-2">
               <span class="text-gray-500 text-sm">{{ img }}</span>
             </div>
           </div>
         </div>
 
         <!-- Navigation Arrows -->
-        <button
-          @click="prevSlide"
-          class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md focus:outline-none"
-        >
-          <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M15 19l-7-7 7-7" />
+        <button @click="prevSlide" 
+          class="absolute left-0 top-1/2 transform -translate-y-1/2
+                 bg-white p-2 rounded-full shadow-md focus:outline-none">
+          <svg class="w-5 h-5 text-gray-700" fill="none" 
+               stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" 
+                  stroke-linejoin="round" stroke-width="2"
+                  d="M15 19l-7-7 7-7" />
           </svg>
         </button>
         <button
           @click="nextSlide"
-          class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md focus:outline-none"
-        >
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 
+                 bg-white p-2 rounded-full shadow-md focus:outline-none">
           <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M9 5l7 7-7 7" />
