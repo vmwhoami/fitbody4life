@@ -33,13 +33,13 @@
         </div>
         <div class="absolute inset-y-0 right-0 flex 
                     items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-          <button type="button" class="p-1 text-gray-400 hover:text-white">🔔</button>
+          <!-- <button type="button" class="p-1 text-gray-400 hover:text-white">🔔</button> -->
 
           <!-- Profile dropdown -->
           <div class="relative ml-3">
             <button @click="isProfileOpen = !isProfileOpen" class="flex text-sm">
-              <img class="size-8 rounded-full"
-                :src="myImage"/>
+              <!-- <img class="size-8 rounded-full"
+                   :src="myImage"/> -->
             </button>
             <div v-if="isProfileOpen"
               class="absolute right-0 z-10 mt-2 w-48 rounded-md bg-white shadow-lg">
