@@ -17,7 +17,7 @@
 
         <!-- Navigation Arrows -->
         <button @click="prevSlide" 
-          class="absolute left-0 top-1/2 transform -translate-y-1/2
+          class="absolute left-0 top-1/2 sm:top-1/2 top-[40%]
                  bg-white p-2 rounded-full shadow-md focus:outline-none">
           <svg class="w-5 h-5 text-gray-700" fill="none" 
                stroke="currentColor" viewBox="0 0 24 24">
