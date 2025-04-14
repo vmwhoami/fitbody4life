@@ -3,7 +3,7 @@
     <div class="flex flex-col md:flex-row items-center md:items-start">
       <!-- Carousel Container -->
       <div class="relative md:w-2/3 mb-6 md:mb-0">
-        <div class="overflow-hidden relative" style="height: 100px;">
+        <div class="overflow-hidden relative min-h-[7rem]">
           <div class="flex transition-transform duration-500"
             :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }">
             <div v-for="(img, index) in images"
