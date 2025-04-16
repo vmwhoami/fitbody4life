@@ -3,8 +3,15 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
+  plugins: [
+     '@/plugins/theme.client.js'
+  ],
   css: ['@/assets/css/main.css'],
-  modules: ['motion-v/nuxt', '@nuxtjs/i18n'],
+  modules: [
+    'motion-v/nuxt',
+    '@nuxtjs/i18n',
+    '@pinia/nuxt'  // <-- Add Pinia here
+  ],
   i18n: {
     locales: [
       { code: 'en', iso: 'en-US', file: 'en.js', name: 'English' },

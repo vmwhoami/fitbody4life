@@ -53,6 +53,9 @@
             </div>
           </div>
           <LanguageSwitcher/>
+          <button @click="themeStore.toggleTheme">
+             Switch to {{ themeStore.currentTheme === 'light' ? 'dark' : 'light' }} mode
+          </button>
         </div>
       </div>
     </div>
@@ -70,6 +73,7 @@
           {{ item.name }}
         </a>
       </div>
+      
     </div>
   </nav>
 </template>
@@ -77,9 +81,11 @@
 <script setup>
 import { ref } from "vue";
 import IconOleaFitLogo from "@/assets/icons/IconOleaFitLogo.vue";
-import myImage from '@/assets/images/interviewsPhotosmall.jpg';
+// import myImage from '@/assets/images/interviewsPhotosmall.jpg';
 import LanguageSwitcher from './LanguageSwitcher.vue';
+import { useThemeStore } from '~/store/theme'
 
+const themeStore = useThemeStore()
 const navigation = [
   { path: '/', href: "/",name: 'Home' },
   { path: '/login', href: "/login",name: 'Login' },
