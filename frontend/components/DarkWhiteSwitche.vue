@@ -6,28 +6,6 @@
   >
     <span
       class="rounded-full p-1.5 *:size-7 data-checked:bg-white data-checked:ring data-checked:inset-ring data-checked:ring-gray-950/10 data-checked:inset-ring-white/10 sm:p-0 dark:data-checked:bg-gray-700 dark:data-checked:text-white dark:data-checked:ring-transparent"
-      aria-label="System theme"
-      id="headlessui-radio-«R6m5elb»"
-      role="radio"
-      aria-checked="false"
-      tabindex="-1"
-      data-headlessui-state=""
-      ><svg viewBox="0 0 28 28" fill="none">
-        <path
-          d="M7.5 8.5C7.5 7.94772 7.94772 7.5 8.5 7.5H19.5C20.0523 7.5 20.5 7.94772 20.5 8.5V16.5C20.5 17.0523 20.0523 17.5 19.5 17.5H8.5C7.94772 17.5 7.5 17.0523 7.5 16.5V8.5Z"
-          stroke="currentColor"
-        ></path>
-        <path
-          d="M7.5 8.5C7.5 7.94772 7.94772 7.5 8.5 7.5H19.5C20.0523 7.5 20.5 7.94772 20.5 8.5V14.5C20.5 15.0523 20.0523 15.5 19.5 15.5H8.5C7.94772 15.5 7.5 15.0523 7.5 14.5V8.5Z"
-          stroke="currentColor"
-        ></path>
-        <path
-          d="M16.5 20.5V17.5H11.5V20.5M16.5 20.5H11.5M16.5 20.5H17.5M11.5 20.5H10.5"
-          stroke="currentColor"
-          stroke-linecap="round"
-        ></path></svg></span
-    ><span
-      class="rounded-full p-1.5 *:size-7 data-checked:bg-white data-checked:ring data-checked:inset-ring data-checked:ring-gray-950/10 data-checked:inset-ring-white/10 sm:p-0 dark:data-checked:bg-gray-700 dark:data-checked:text-white dark:data-checked:ring-transparent"
       aria-label="Light theme"
       id="headlessui-radio-«Ram5elb»"
       role="radio"
