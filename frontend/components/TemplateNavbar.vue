@@ -1,5 +1,10 @@
 <template>
-  <nav class="bg-gray-800 fixed top-0 inset-x-0 z-50">
+  <nav
+    class="
+      fixed top-0 inset-x-0 z-50
+      bg-white text-gray-800    
+      dark:bg-gray-800 dark:text-gray-100   
+      transition-colors duration-300">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -83,7 +88,7 @@ import { ref } from "vue";
 import IconOleaFitLogo from "@/assets/icons/IconOleaFitLogo.vue";
 // import myImage from '@/assets/images/interviewsPhotosmall.jpg';
 import LanguageSwitcher from './LanguageSwitcher.vue';
-import { useThemeStore } from '~/store/theme'
+import { useThemeStore } from '@/store/theme'
 
 const themeStore = useThemeStore()
 const navigation = [
