@@ -42,26 +42,26 @@
 </template>
 
 <script setup>
-import IconBase from "./IconBase.vue";
-const props = defineProps({
-  width: {
-    type: [Number, String],
-    default: 115,
-  },
-  height: {
-    type: [Number, String],
-    default: 40,
-  },
-  iconColor: {
-    type: String,
-    default: "##e3e3e3",
-  },
-  myFill: {
-    type: [Number, String],
-    default: "#e3e3e3",
-  },
-  viewBox: {
-    default: "0 0 115 40",
-  },
-});
+  import IconBase from './IconBase.vue'
+  const props = defineProps({
+    width: {
+      type: [Number, String],
+      default: 115,
+    },
+    height: {
+      type: [Number, String],
+      default: 40,
+    },
+    iconColor: {
+      type: String,
+      default: '##e3e3e3',
+    },
+    myFill: {
+      type: [Number, String],
+      default: '#e3e3e3',
+    },
+    viewBox: {
+      default: '0 0 115 40',
+    },
+  })
 </script>

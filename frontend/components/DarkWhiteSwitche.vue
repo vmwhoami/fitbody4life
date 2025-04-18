@@ -66,7 +66,12 @@
           stroke="currentColor"
           stroke-linecap="round"
           stroke-linejoin="round"
-        ></path></svg
-    ></span>
+        ></path>
+      </svg>
+    </span>
   </div>
 </template>
+
+<script setup>
+
+</script>

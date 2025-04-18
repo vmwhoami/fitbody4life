@@ -1,5 +1,5 @@
 <template>
-  <nav class="border-b">
+  <nav >
     <div class="max-w-7xl mx-auto flex 
                 justify-between items-center">
     

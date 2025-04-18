@@ -16,39 +16,38 @@
 </template>
 
 <script setup>
-const props = defineProps({
-  id: {
-    type: String,
-    default: null,
-  },
-  iconName: {
-    type: String,
-    default: "box",
-  },
-  width: {
-    type: [Number, String],
-    default: 25,
-  },
-  height: {
-    type: [Number, String],
-    default: 25,
-  },
-  iconColor: {
-    type: String,
-    default: "currentColor",
-  },
-  viewBox: {
-    type: String,
-    default: "0 0 20 20",
-  },
-  cssClass: {
-    type: String,
-    default: null,
-  },
-  transformInstructions: {
-    type: String,
-    default: "scale(1)",
-  },
-});
+  const props = defineProps({
+    id: {
+      type: String,
+      default: null,
+    },
+    iconName: {
+      type: String,
+      default: 'box',
+    },
+    width: {
+      type: [Number, String],
+      default: 25,
+    },
+    height: {
+      type: [Number, String],
+      default: 25,
+    },
+    iconColor: {
+      type: String,
+      default: 'currentColor',
+    },
+    viewBox: {
+      type: String,
+      default: '0 0 20 20',
+    },
+    cssClass: {
+      type: String,
+      default: null,
+    },
+    transformInstructions: {
+      type: String,
+      default: 'scale(1)',
+    },
+  })
 </script>
-
