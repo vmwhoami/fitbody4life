@@ -58,9 +58,9 @@
             </div>
           </div>
           <LanguageSwitcher/>
-          <DarkWhiteSwitche />
-          <button @click="themeStore.toggleTheme">
-             Switch to {{ themeStore.currentTheme === 'light' ? 'dark' : 'light' }} mode
+
+          <button class="px-2" @click="themeStore.toggleTheme">
+            <DarkWhiteSwitche  />
           </button>
         </div>
       </div>
@@ -90,6 +90,7 @@ import IconOleaFitLogo from "@/assets/icons/IconOleaFitLogo.vue";
 import LanguageSwitcher from './LanguageSwitcher.vue';
 import DarkWhiteSwitche from  './DarkWhiteSwitche.vue';
 import { useThemeStore } from '@/store/theme'
+ 
 
 const themeStore = useThemeStore()
 const navigation = [

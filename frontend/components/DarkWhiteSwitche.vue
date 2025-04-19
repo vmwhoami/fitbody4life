@@ -1,6 +1,6 @@
 <template>
   <div
-    class="z-10 inline-grid grid-cols-3 gap-0.5 rounded-full bg-gray-950/5 p-0.75 text-gray-950 dark:bg-white/10 dark:text-white"
+    class="z-10 inline-grid grid-cols-2 gap-0.5 rounded-full bg-gray-950/5 p-0.75 text-gray-950 dark:bg-white/10 dark:text-white"
     id="headlessui-radiogroup-«R65elb»"
     role="radiogroup"
   >
@@ -38,8 +38,9 @@
           d="M8.69663 8.69711L10.1108 10.1113"
           stroke="currentColor"
           stroke-linecap="round"
-        ></path></svg></span
-    ><span
+        ></path></svg>
+        </span>
+        <span
       class="rounded-full p-1.5 *:size-7 data-checked:bg-white data-checked:ring data-checked:inset-ring data-checked:ring-gray-950/10 data-checked:inset-ring-white/10 sm:p-0 dark:data-checked:bg-gray-700 dark:data-checked:text-white dark:data-checked:ring-transparent"
       aria-label="Dark theme"
       id="headlessui-radio-«Rem5elb»"
@@ -47,7 +48,8 @@
       aria-checked="false"
       tabindex="-1"
       data-headlessui-state=""
-      ><svg viewBox="0 0 28 28" fill="none">
+      >
+      <svg viewBox="0 0 28 28" fill="none">
         <path
           d="M10.5 9.99914C10.5 14.1413 13.8579 17.4991 18 17.4991C19.0332 17.4991 20.0176 17.2902 20.9132 16.9123C19.7761 19.6075 17.109 21.4991 14 21.4991C9.85786 21.4991 6.5 18.1413 6.5 13.9991C6.5 10.8902 8.39167 8.22304 11.0868 7.08594C10.7089 7.98159 10.5 8.96597 10.5 9.99914Z"
           stroke="currentColor"
