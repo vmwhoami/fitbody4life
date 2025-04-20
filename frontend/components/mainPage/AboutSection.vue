@@ -7,7 +7,7 @@
         <div class="w-72 h-72 bg-gray-200 flex 
                     items-center justify-center 
                     rounded shadow-md shadow hover:shadow-lg transition-shadow">
-          <span class="text-gray-400">[Image Placeholder]</span>
+          <span class="text-gray-400"><img src="@/assets/images/oleaFit.jpeg" alt="olea"></span>
         </div>
       </div>
       <!-- About Text -->
