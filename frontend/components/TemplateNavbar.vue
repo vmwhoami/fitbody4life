@@ -30,7 +30,7 @@
                 :class="[item.current ? 'bg-gray-900 text-white':
                                         'text-gray-300 hover:bg-gray-700 hover:text-white',
                                         'rounded-md px-3 py-2 text-sm font-medium',]">
-                {{ item.name }}
+                 {{ $t(item.name) }}
               </a>
             </div>
           </div>
@@ -48,7 +48,7 @@
             <div v-if="isProfileOpen"
               class="absolute right-0 z-10 mt-2 w-48 rounded-md bg-white shadow-lg">
               <a href="#" class="block px-4 py-2 text-sm text-gray-700 
-                                 hover:bg-gray-100" >Your Profile</a>
+                                 hover:bg-gray-100" >Your Profile </a>
               <a href="#" class="block px-4 py-2 text-sm 
                                 text-gray-700 hover:bg-gray-100">Settings</a>
               <a href="#" class="block px-4 py-2 text-sm text-gray-700 
@@ -75,7 +75,7 @@
               : 'text-gray-300 hover:bg-gray-700 hover:text-white',
             'block rounded-md px-3 py-2 text-base font-medium',
           ]">
-          {{ item.name }}
+          {{ $t(item.name) }}
         </a>
       </div>
     </div>
@@ -90,18 +90,13 @@ import LanguageSwitcher from './LanguageSwitcher.vue';
 import DarkWhiteSwitche from  './DarkWhiteSwitche.vue';
 import { useThemeStore } from '@/store/theme'
  
-
+ 
 const themeStore = useThemeStore()
 const navigation = [
-  { path: '/', href: "/",name: 'Home' },
-  { path: '/login', href: "/login",name: 'Login' },
-  { path: '/signup',href: "/signup", name: 'SignUp' }
-  // { name: "Dashboard", href: "#", current: true },
-  // { name: "Team", href: "#", current: false },
-  // { name: "Projects", href: "#", current: false },
-  // { name: "Calendar", href: "#", current: false },
-];
-
+  { path: '/', href: "/", name: 'nav.home' },
+  { path: '/login', href: "/login", name: 'nav.login' },
+  { path: '/signup', href: "/signup", name: 'nav.signup' }
+]; 
 const isMobileMenuOpen = ref(false);
 const isProfileOpen = ref(false);
 </script>
