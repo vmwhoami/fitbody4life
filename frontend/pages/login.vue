@@ -6,7 +6,7 @@
       <div class="hidden md:block relative">
         <img
           class="absolute inset-0 w-full h-full object-cover"
-          src="https://www.paypalobjects.com/marketing/web24/de/home/homepagebanner-s2a-t1.png?quality=75&width=1500&format=webp"
+          src="@/assets/images/oleaup.jpeg"
           alt="Login Illustration"
         />
       </div>

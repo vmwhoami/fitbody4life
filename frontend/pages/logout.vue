@@ -29,7 +29,7 @@
 </template>
 
 <script>
-  import TemplateNavbar from '@/components/TemplateNavbar.vue';
+ 
 export default {
   name: "LogoutPage",
 };

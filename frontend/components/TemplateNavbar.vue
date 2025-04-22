@@ -47,13 +47,15 @@
             </button>
             <div v-if="isProfileOpen"
               class="absolute right-0 z-10 mt-2 w-48 rounded-md bg-white shadow-lg">
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700 
-                                 hover:bg-gray-100" >Your Profile </a>
-              <a href="#" class="block px-4 py-2 text-sm 
-                                text-gray-700 hover:bg-gray-100">Settings</a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700 
-                                hover:bg-gray-100">Sign out</a
-              >
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                {{ $t('nav.profile') }}
+              </a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                {{ $t('nav.settings') }}
+              </a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                {{ $t('nav.signout') }}
+              </a>
             </div>
           </div>
           <LanguageSwitcher/>
