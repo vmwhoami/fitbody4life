@@ -6,5 +6,10 @@ export default {
     profile: "Your Profile",
     settings: "Settings",
     signout: "Sign Out"
+  },
+  login: {
+    welcome: "Welcome Back",
+    pleasesignin: "Please sign in to continue to your account.",
+    email: "Email address",
   }
 }

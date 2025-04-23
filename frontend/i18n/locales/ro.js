@@ -6,5 +6,8 @@ export default {
     profile: "Profilul tău",
     settings: "Setări",
     signout: "Deconectare"
+  },
+  login: {
+    
   }
 }

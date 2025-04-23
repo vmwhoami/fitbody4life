@@ -7,20 +7,11 @@
         <img
           class="absolute inset-0 w-full h-full object-cover"
           src="@/assets/images/oleaup.jpeg"
-          alt="Login Illustration"
-        />
+          alt="Login Illustration" />
       </div>
   
       <!-- Right side: Form -->
       <div class="flex flex-col justify-center px-6 py-12 sm:px-12 lg:px-16">
-        <!-- Logo / Brand area (optional) -->
-        <div class="mb-8">
-          <img
-            class="h-10 w-auto"
-            src="https://via.placeholder.com/150x40?text=Logo"
-            alt="Brand Logo"
-          />
-        </div>
   
         <!-- Welcome Back -->
         <h2 class="text-3xl font-bold text-gray-800 mb-2">
@@ -33,10 +24,8 @@
         <form class="space-y-6" @submit.prevent="handleLogin">
           <!-- Email Field -->
           <div>
-            <label
-              for="email"
-              class="block text-sm font-medium text-gray-700 mb-1"
-            >
+            <label for="email"
+                   class="block text-sm font-medium text-gray-700 mb-1">
               Email address
             </label>
             <input
@@ -49,16 +38,14 @@
               class="block w-full rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400
                      focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500
                      text-gray-700"
-              placeholder="you@example.com"
-            />
+              placeholder="you@example.com"/>
           </div>
   
           <!-- Password Field -->
           <div>
             <label
               for="password"
-              class="block text-sm font-medium text-gray-700 mb-1"
-            >
+              class="block text-sm font-medium text-gray-700 mb-1">
               Password
             </label>
             <input

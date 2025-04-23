@@ -6,5 +6,8 @@ export default {
     profile: "Ваш профиль",
     settings: "Настройки",
     signout: "Выход"
+  },
+  login: {
+    
   }
 }
