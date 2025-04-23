@@ -8,8 +8,16 @@ export default {
     signout: "Sign Out"
   },
   login: {
-    welcome: "Welcome Back",
-    pleasesignin: "Please sign in to continue to your account.",
-    email: "Email address",
+    title: "Welcome Back",
+    subtitle: "Please sign in to continue to your account.",
+    emailLabel: "Email address",
+    emailPlaceholder: "you{'@'}example.com",
+    passwordLabel: "Password",
+    passwordPlaceholder: "••••••••",
+    rememberMe: "Remember me",
+    forgotPassword: "Forgot your password?",
+    signIn: "Sign in",
+    noAccount: "Don’t have an account?",
+    signUp: "Sign up"
   }
 }
