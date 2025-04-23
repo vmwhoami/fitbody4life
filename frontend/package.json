@@ -11,28 +11,28 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.10.0",
-    "@nuxtjs/i18n": "^9.4.0",
+    "@nuxtjs/i18n": "^9.5.3",
     "@nuxtjs/tailwindcss": "^6.13.2",
     "@pinia/nuxt": "^0.11.0",
-    "@tailwindcss/vite": "^4.0.17",
-    "axios": "^1.7.8",
+    "@tailwindcss/vite": "^4.1.4",
+    "axios": "^1.8.4",
     "bun-plugin-tailwind": "latest",
     "motion-v": "0.13.1",
-    "nuxt": "^3.16.1",
+    "nuxt": "^3.16.2",
     "pinia": "3.0.1",
-    "tailwindcss": "^4.0.17",
+    "tailwindcss": "^4.1.4",
     "vite-svg-loader": "^5.1.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.10.4",
-    "@vitejs/plugin-vue": "^5.2.1",
+    "@rushstack/eslint-patch": "^1.11.0",
+    "@vitejs/plugin-vue": "^5.2.3",
     "@vue/eslint-config-prettier": "^10.2.0",
-    "eslint": "^9.25.0",
+    "eslint": "^9.25.1",
     "eslint-plugin-prettier": "^5.2.6",
     "eslint-plugin-vue": "^10.0.0",
     "prettier": "^3.5.3",
-    "vite": "^6.2.2"
+    "vite": "^6.3.2"
   }
 }

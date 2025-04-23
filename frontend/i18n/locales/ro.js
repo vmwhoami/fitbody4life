@@ -19,5 +19,24 @@ export default {
     signIn: "Autentificare",
     noAccount: "Nu ai un cont?",
     signUp: "Înregistrează-te"
+  },
+  register: {
+    title: "Creează un cont",
+    subtitle: "Înregistrează-te pentru a începe.",
+    nameLabel: "Nume complet",
+    namePlaceholder: "Numele tău complet",
+    emailLabel: "Adresă de email",
+    emailPlaceholder: "tu{'@'}exemplu.com",
+    passwordLabel: "Parolă",
+    passwordPlaceholder: "••••••••",
+    confirmPasswordLabel: "Confirmă parola",
+    confirmPasswordPlaceholder: "••••••••",
+    termsPrefix: "Sunt de acord cu",
+    termsLink: "Termenii și Condițiile",
+    submit: "Înregistrează-te",
+    alreadyHave: "Ai deja un cont?",
+    loginLink: "Autentificare",
+    passwordMismatch: "Parolele nu se potrivesc!",
+    success: "Înregistrare reușită! Poți acum să te autentifici."
   }
 }
