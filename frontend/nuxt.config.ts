@@ -8,10 +8,22 @@ export default defineNuxtConfig({
   ],
   css: ['@/assets/css/main.css'],
   modules: [
-    'motion-v/nuxt',
+    '@vueuse/motion/nuxt',
     '@nuxtjs/i18n',
     '@pinia/nuxt'  // <-- Add Pinia here
   ],
+  runtimeConfig: {
+    public: {
+      motion: {
+        directives: {
+          'pop-bottom': {
+            initial: { scale: 0, opacity: 0, y: 100 },
+            visible: { scale: 1, opacity: 1, y: 0 },
+          },
+        },
+      },
+    },
+  },
   i18n: {
     locales: [
       { code: 'en', iso: 'en-US', file: 'en.js', name: 'English' },
@@ -30,3 +42,8 @@ export default defineNuxtConfig({
   },
  
 })
+
+ 
+ 
+  
+ 

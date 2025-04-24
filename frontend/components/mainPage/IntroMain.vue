@@ -24,7 +24,8 @@
       <!-- Placeholder Image Column -->
  
       <div class="md:w-1/2 flex justify-center mb-8 md:mb-0">
-        <div class="w-72 h-72 bg-gray-200 flex items-center 
+        <div  v-motion="{ initial: { opacity: 0, y: 100 }, enter: { opacity: 1, y: 0 } }"
+               class="w-72 h-72 bg-gray-200 flex items-center 
                     justify-center rounded shadow-md"        >
           <span class="text-gray-400"><img src="@/assets/images/oleaup.jpeg" alt="olea"></span>
         </div>
