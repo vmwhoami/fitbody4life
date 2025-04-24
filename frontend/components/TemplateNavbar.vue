@@ -47,15 +47,15 @@
             </button>
             <div v-if="isProfileOpen"
               class="absolute right-0 z-10 mt-2 w-48 rounded-md bg-white shadow-lg">
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+              <NuxtLink class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                 {{ $t('nav.profile') }}
-              </a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+              </NuxtLink>
+              <NuxtLink class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                 {{ $t('nav.settings') }}
-              </a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+              </NuxtLink>
+              <NuxtLink  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                 {{ $t('nav.signout') }}
-              </a>
+              </NuxtLink>
             </div>
           </div>
           <LanguageSwitcher/>
@@ -70,7 +70,7 @@
     <!-- Mobile menu -->
     <div v-if="isMobileMenuOpen" class="sm:hidden">
       <div class="space-y-1 px-2 pt-2 pb-3">
-        <a v-for="item in navigation" :key="item.name" :href="item.href" 
+        <NuxtLink v-for="item in navigation" :key="item.name" :to="item.href" 
           :class="[
             item.current
               ? 'bg-gray-900 text-white'
@@ -78,7 +78,7 @@
             'block rounded-md px-3 py-2 text-base font-medium',
           ]">
           {{ $t(item.name) }}
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </nav>
