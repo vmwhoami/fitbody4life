@@ -12,8 +12,10 @@ fastapi run app/main.py
 ```
 pip freeze > requirements.txt
 ```
-
+Todos 
+more layers less movement
 Main picture paralax effect like on the other website https://github.com/wagerfield/parallax?tab=readme-ov-file
+
 Think of ways to change language and background through variables
 what i am thinking global translated somes sort of swith maybe save in the db the peverence?
 

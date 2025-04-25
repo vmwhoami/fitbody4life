@@ -1,6 +1,7 @@
 <template>
   <section class="container mt-30 mx-auto px-6 py-12">
-    <div class="flex flex-col-reverse md:flex-row items-center">
+    
+    <div data-depth="0.2"  class="flex flex-col-reverse md:flex-row items-center">
       <!-- Text Column -->
       <div class="md:w-1/2 mt-8 md:mt-0">
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Hey! I’M OLYA</h1>
@@ -12,19 +13,19 @@
           been a Fitness Trainer since 2020, Fitness, Health mother and wife.
         </p>
         <div class="flex space-x-4">
-          <!-- <button class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+          <button class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
             Get it on Google Play
           </button>
           <button class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
             Get it on App Store
-          </button> -->
+          </button>
         </div>
       </div>
 
       <!-- Placeholder Image Column -->
- 
-      <div class="md:w-1/2 flex justify-center mb-8 md:mb-0">
-        <div  v-motion="{ initial: { opacity: 0, y: 100 }, enter: { opacity: 1, y: 0 } }"
+     
+      <div  id="scene" ref="sceneRef" data-relative-input="true" class="md:w-1/2 flex justify-center mb-8 md:mb-0">
+        <div data-depth="0.6" data-pointer-events="true"  v-motion="{ initial: { opacity: 0, y: 100 }, enter: { opacity: 1, y: 0 } }"
                class="w-72 h-72 bg-gray-200 flex items-center 
                     justify-center rounded shadow-md"        >
           <span class="text-gray-400"><img src="@/assets/images/oleaup.jpeg" alt="olea"></span>
@@ -35,5 +36,14 @@
 </template>
 
 <script setup>
-//  import { useMotionValue } from "motion-v"
+import { ref, onMounted } from 'vue'
+import Parallax from 'parallax-js'
+
+const sceneRef = ref(null)
+
+onMounted(() => {
+  // now document and window exist
+  const instance = new Parallax(sceneRef.value, { relativeInput: true })
+  instance.friction(0.1, 0.1)
+})
 </script>
