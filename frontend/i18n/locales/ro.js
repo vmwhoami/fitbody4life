@@ -38,5 +38,13 @@ export default {
     loginLink: "Autentificare",
     passwordMismatch: "Parolele nu se potrivesc!",
     success: "Înregistrare reușită! Poți acum să te autentifici."
+  },
+  hero: {
+    heading: "Salut! EU SUNT OLYA",
+    quote: "„Dacă nu te provoacă, nu te va schimba.”",
+    description: "Este sloganul meu și te voi ajuta să devii cea mai bună versiune a ta. Sunt Olya Melnic — antrenor de fitness din 2020, mamă și soție pasionată de sănătate.",
+    buttonGoogle: "Descarcă din Google Play",
+    buttonAppStore: "Descarcă din App Store",
+    altText: "Portretul Olya Melnic"
   }
 }
