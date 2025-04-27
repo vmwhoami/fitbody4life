@@ -19,19 +19,15 @@
       <div id="scene"
         ref="sceneRef"
         data-relative-input="true"
-        class="md:w-1/2 flex justify-center mb-8 md:mb-0"
-      >
-        <div
-          data-depth="0.6"
-          data-pointer-events="true"
-          v-motion="{ initial: { opacity: 0, y: 100 }, enter: { opacity: 1, y: 0 } }"
-          class="w-72 h-72 bg-gray-200 flex items-center justify-center rounded shadow-md"
-        >
-          <img
-            src="@/assets/images/oleaup.jpeg"
-            :alt="t('hero.altText')"
-            class="object-contain"
-          />
+        class="md:w-1/2 flex justify-center mb-8 md:mb-0">
+        <div data-depth="0.9"
+             data-pointer-events="true"
+             v-motion="{ initial: { opacity: 0, y: 100 }, enter: { opacity: 1, y: 0 } }"
+             class="w-72 h-72 bg-gray-200 flex items-center
+                   justify-center rounded shadow-md">
+          <img src="@/assets/images/oleaup.jpeg"
+               :alt="t('hero.altText')"
+               class="object-contain" />
         </div>
       </div>
     </div>
@@ -44,7 +40,7 @@ import { useI18n } from 'vue-i18n'
 import Parallax from 'parallax-js'
 
 const { t } = useI18n()
-const sceneRef = ref(null)
+const sceneRef = ref(1)
 
 onMounted(() => {
   const instance = new Parallax(sceneRef.value, { relativeInput: true })

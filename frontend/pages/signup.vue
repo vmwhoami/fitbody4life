@@ -1,23 +1,21 @@
 <template>
   <div>
     <TemplateNavbar/>
-
     <div class="min-h-screen grid grid-cols-1 md:grid-cols-2 bg-white">
       <!-- Illustration -->
       <div class="hidden md:block relative">
         <img  class="absolute inset-0 w-full h-full object-cover"
           src="@/assets/images/oleaup.jpeg"
-          alt="Registration Illustration"
-        />
+          alt="Registration Illustration" />
       </div>
 
       <!-- Form -->
       <div class="flex flex-col justify-center px-6 py-12 sm:px-12 lg:px-16">
         <!-- Title & Subtitle -->
-        <h2 class="text-3xl font-bold text-gray-800 mb-2">
+        <h2 class="text-3xl font-bold text-gray-800 mb-0">
           {{ $t('register.title') }}
         </h2>
-        <p class="text-gray-500 mb-8">
+        <p class="text-gray-500 mb-2">
           {{ $t('register.subtitle') }}
         </p>
 
@@ -44,10 +42,8 @@
 
           <!-- Email -->
           <div>
-            <label
-              for="email"
-              class="block text-sm font-medium text-gray-700 mb-1"
-            >
+            <label for="email"
+              class="block text-sm font-medium text-gray-700 mb-1">
               {{ $t('register.emailLabel') }}
             </label>
             <input
@@ -60,16 +56,14 @@
               class="block w-full rounded-md border border-gray-300 px-3 py-1 placeholder-gray-400
                      focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500
                      text-gray-700"
-              :placeholder="$t('register.emailPlaceholder')"
-            />
+              :placeholder="$t('register.emailPlaceholder')" />
           </div>
 
           <!-- Password -->
           <div>
             <label
               for="password"
-              class="block text-sm font-medium text-gray-700 mb-1"
-            >
+              class="block text-sm font-medium text-gray-700 mb-1">
               {{ $t('register.passwordLabel') }}
             </label>
             <input
@@ -82,8 +76,7 @@
               class="block w-full rounded-md border border-gray-300 px-3 py-1 placeholder-gray-400
                      focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500
                      text-gray-700"
-              :placeholder="$t('register.passwordPlaceholder')"
-            />
+              :placeholder="$t('register.passwordPlaceholder')" />
           </div>
 
           <!-- Confirm Password -->
@@ -113,8 +106,7 @@
               type="checkbox"
               v-model="acceptTerms"
               required
-              class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
-            />
+              class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"/>
             <label for="terms" class="ml-2 block text-sm text-gray-600">
               {{ $t('register.termsPrefix') }}
               <a href="#" class="text-indigo-600 hover:text-indigo-500 font-medium">
