@@ -12,19 +12,11 @@
         <p class="mb-6">
           {{ t('hero.description') }}
         </p>
-        <div class="flex space-x-4">
-          <button class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
-            {{ t('hero.buttonGoogle') }}
-          </button>
-          <button class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
-            {{ t('hero.buttonAppStore') }}
-          </button>
-        </div>
+       
       </div>
 
       <!-- Image Column -->
-      <div
-        id="scene"
+      <div id="scene"
         ref="sceneRef"
         data-relative-input="true"
         class="md:w-1/2 flex justify-center mb-8 md:mb-0"

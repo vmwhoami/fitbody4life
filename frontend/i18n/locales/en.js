@@ -42,7 +42,7 @@ export default {
   hero: {
     heading: "Hey! I’M OLYA",
     quote: "“If it doesn’t challenge you, it won’t change you.”",
-    description: "It’s my slogan and I will help you be the best you can be. I’m Olya Melnic — a Fitness Trainer since 2020, and a health-obsessed mother and wife.",
+    description: "— a dance-inspired fitness trainer, mom to a 7-year-old, and proud wife. As a busy mother and wife, I know firsthand how hard it is to carve out “me time”—which is exactly why I tailor every session to fit your life and goals.",
     buttonGoogle: "Get it on Google Play",
     buttonAppStore: "Get it on App Store",
     altText: "Olya Melnic portrait"

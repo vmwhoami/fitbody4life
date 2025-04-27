@@ -42,7 +42,7 @@ export default {
   hero: {
     heading: "Salut! EU SUNT OLYA",
     quote: "„Dacă nu te provoacă, nu te va schimba.”",
-    description: "Este sloganul meu și te voi ajuta să devii cea mai bună versiune a ta. Sunt Olya Melnic — antrenor de fitness din 2020, mamă și soție pasionată de sănătate.",
+    description: "- instructor de fitness specializat în antrenamente inspirate de dans, mamă a unui copil de 7 ani și soție mândră. Ca mamă și soție ocupată, știu din proprie experiență cât de greu e să îți găsești timp pentru tine — exact de aceea îmi personalizez fiecare sesiune astfel încât să se potrivească stilului tău de viață și obiectivelor tale.",
     buttonGoogle: "Descarcă din Google Play",
     buttonAppStore: "Descarcă din App Store",
     altText: "Portretul Olya Melnic"
