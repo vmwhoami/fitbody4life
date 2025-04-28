@@ -12,7 +12,8 @@ fastapi run app/main.py
 ```
 pip freeze > requirements.txt
 ```
-Todos 
+Todos:
+add picture in the about me section from shanghai bighton night club and parentingea
 more layers less movement
 Main picture paralax effect like on the other website https://github.com/wagerfield/parallax?tab=readme-ov-file
 
