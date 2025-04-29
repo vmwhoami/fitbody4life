@@ -54,11 +54,11 @@ import { ref } from 'vue';
 // Create a reactive list of images.
 // Replace these string placeholders with actual image data or paths as needed.
 const images = ref([
-  '[Image 1]',
-  '[Image 2]',
-  '[Image 3]',
-  '[Image 4]',
-  '[Image 5]',
+  '@/assets/images/oleaFit.jpeg',
+  '@/assets/images/oleaFit.jpeg',
+  '@/assets/images/oleaFit.jpeg',
+  '@/assets/images/oleaFit.jpeg',
+  '@/assets/images/oleaFit.jpeg',
 ]);
 
 // Define reactive carousel state.

@@ -2,11 +2,51 @@
   <section class="container mx-auto px-6 py-12">
     <div class="flex flex-col md:flex-row items-center">
       <!-- Profile Image -->
-      <div class="md:w-1/2 flex justify-center mb-8 md:mb-0">
+      <!-- <div class="md:w-1/2 flex justify-center mb-8 md:mb-0">
         <div class="w-100 h-150 bg-gray-200 rounded shadow-md hover:shadow-lg transition-shadow overflow-hidden">
           <img src="@/assets/images/oleaFit.jpeg" alt="Olya Melnic" class="object-cover w-full h-full" />
         </div>
+      </div> -->
+      
+
+
+
+      <div class="relative md:w-2/3 mb-6 md:mb-0">
+        <div class="overflow-hidden relative min-h-[7rem]">
+          <div class="flex transition-transform duration-500"
+            :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }">
+            <div v-for="(img, index) in images"
+              :key="index"
+              class="flex-shrink-0 w-40 h-24 bg-gray-300 
+                     flex items-center justify-center rounded-md mx-2">
+              <span class="text-gray-500 text-sm">{{ img }}</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button @click="prevSlide" 
+          class="absolute left-0 top-1/2 sm:top-1/2 top-[40%]
+                 bg-white p-2 rounded-full shadow-md focus:outline-none">
+          <svg class="w-5 h-5 text-gray-700" fill="none" 
+               stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" 
+                  stroke-linejoin="round" stroke-width="2"
+                  d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button
+          @click="nextSlide"
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 
+                 bg-white p-2 rounded-full shadow-md focus:outline-none">
+          <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
       </div>
+
+
 
       <!-- About Content -->
       <div class="md:w-1/2 md:ml-8">
@@ -43,5 +83,27 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
+// Create a reactive list of images.
+// Replace these string placeholders with actual image data or paths as needed.
+const images = ref([
+  '@/assets/images/oleaFit.jpeg',
+  '@/assets/images/oleaFit.jpeg',
+  '@/assets/images/oleaFit.jpeg',
+  '@/assets/images/oleaFit.jpeg',
+  '@/assets/images/oleaFit.jpeg',
+]);
+
+const currentIndex = ref(0);
+const slideWidth = 176;
+function nextSlide() {
+  // If not on the last slide, slide to the next; else, loop back to first.
+  if (currentIndex.value < images.value.length - 1) {
+    currentIndex.value++;
+  } else {
+    currentIndex.value = 0;
+  }
+}
 // No dynamic imports needed for now.
 </script>
