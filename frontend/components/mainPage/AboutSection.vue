@@ -19,7 +19,7 @@
               :key="index"
               class="flex-shrink-0 w-40 h-24 bg-gray-300 
                      flex items-center justify-center rounded-md mx-2">
-              <span class="text-gray-500 text-sm">{{ img }}</span>
+              <span class="text-gray-500 text-sm"><img :src="img" alt="" class="w-full h-full object-cover" /></span>
             </div>
           </div>
         </div>
@@ -84,16 +84,11 @@
 
 <script setup>
 import { ref } from 'vue';
-
+import oleaFit1 from '~/assets/images/oleaFit.jpeg'
+ 
 // Create a reactive list of images.
 // Replace these string placeholders with actual image data or paths as needed.
-const images = ref([
-  '@/assets/images/oleaFit.jpeg',
-  '@/assets/images/oleaFit.jpeg',
-  '@/assets/images/oleaFit.jpeg',
-  '@/assets/images/oleaFit.jpeg',
-  '@/assets/images/oleaFit.jpeg',
-]);
+const images = ref([oleaFit1 ]);
 
 const currentIndex = ref(0);
 const slideWidth = 176;
