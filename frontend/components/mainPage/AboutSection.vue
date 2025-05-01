@@ -10,8 +10,17 @@
       
 
 
+      <div class="md:w-2/3">
+      <Carousel :items="images" :slideWidth="176" :height="96">
+        <template #default="{ item }">
+          <div class="w-40 h-1/2 mx-2 overflow-hidden rounded-md">
+            <img :src="item" class="w-full h-full object-cover" />
+          </div>
+        </template>
+      </Carousel>
+    </div>
 
-      <div class="relative md:w-2/3 mb-6 md:mb-0">
+      <!-- <div class="relative md:w-2/3 mb-6 md:mb-0">
         <div class="overflow-hidden relative min-h-[7rem]">
           <div class="flex transition-transform duration-500"
             :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }">
@@ -22,10 +31,10 @@
               <img :src="img" :alt="'olea_'+ index" class="w-full h-full object-cover" /> 
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Navigation Arrows -->
-        <button @click="prevSlide" 
+        <!-- <button @click="prevSlide" 
           class="absolute left-0 top-1/2 sm:top-1/2 top-[40%]
                  bg-white p-2 rounded-full shadow-md focus:outline-none">
           <svg class="w-5 h-5 text-gray-700" fill="none" 
@@ -44,7 +53,7 @@
               d="M9 5l7 7-7 7" />
           </svg>
         </button>
-      </div>
+      </div> -->
 
 
 
@@ -93,7 +102,7 @@ import right_side_layout from '~/assets/images/right_side_layout.jpg'
 // Create a reactive list of images.
 // Replace these string placeholders with actual image data or paths as needed.
 const images = ref([oleaFit,olea_fit_template, oleaup, right_side_layout]);
-
+import Carousel from '../Carousel.vue';
 const currentIndex = ref(0);
 const slideWidth = 176;
 function nextSlide() {
