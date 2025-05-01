@@ -17,9 +17,9 @@
             :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }">
             <div v-for="(img, index) in images"
               :key="index"
-              class="flex-shrink-0 w-40 h-24 bg-gray-300 
+              class="flex-shrink-0 w-auto h-auto bg-gray-300 
                      flex items-center justify-center rounded-md mx-2">
-              <span class="text-gray-500 text-sm"><img :src="img" alt="" class="w-full h-full object-cover" /></span>
+              <img :src="img" :alt="'olea_'+ index" class="w-full h-full object-cover" /> 
             </div>
           </div>
         </div>
@@ -84,11 +84,15 @@
 
 <script setup>
 import { ref } from 'vue';
-import oleaFit1 from '~/assets/images/oleaFit.jpeg'
  
+ 
+import olea_fit_template from '~/assets/images/olea_fit_template.jpg'
+import oleaFit from '~/assets/images/oleaFit.jpeg'
+import oleaup from '~/assets/images/oleaup.jpeg'
+import right_side_layout from '~/assets/images/right_side_layout.jpg'
 // Create a reactive list of images.
 // Replace these string placeholders with actual image data or paths as needed.
-const images = ref([oleaFit1 ]);
+const images = ref([oleaFit,olea_fit_template, oleaup, right_side_layout]);
 
 const currentIndex = ref(0);
 const slideWidth = 176;
