@@ -9,11 +9,19 @@
           :key="idx"></slot>
       </div>
   
-      <button @click="prev" class="absolute left-0 top-1/2 p-2">
-        ‹
+      <button @click="prev" class="absolute left-0 top-1/2 p-2 bg-white p-2 rounded-full shadow-md">
+        <svg class="w-5 h-5 text-gray-700" fill="none" 
+               stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" 
+                  stroke-linejoin="round" stroke-width="2"
+                  d="M15 19l-7-7 7-7" />
+          </svg>
       </button>
-      <button @click="next" class="absolute right-0 top-1/2 p-2">
-        ›
+      <button @click="next" class="absolute right-0 top-1/2 p-2 bg-white p-2 rounded-full shadow-md">
+        <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5l7 7-7 7" />
+          </svg>
       </button>
     </div>
   </template>
