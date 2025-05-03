@@ -1,48 +1,54 @@
 <template>
-    <div class="relative overflow-hidden" :style="{ minHeight: `${h}px` }">
+  <div class="relative overflow-hidden" :style="{ minHeight: `${h}px` }">
+    <div
+      class="flex transition-transform duration-300"
+      :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }"
+    >
       <div
-        class="flex transition-transform duration-500"
-        :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }">
-        <slot v-for="(item, idx) in items"
-          :item="item"
-          :index="idx"
-          :key="idx"></slot>
+        v-for="(item, idx) in items"
+        :key="idx"
+        class="flex-shrink-0 flex items-center justify-center"
+        :style="{ width: `${slideWidth}px`, height: `${h}px` }"
+      >
+        <!-- Now you have a container to render each slide -->
+        <slot :item="item" :index="idx" />
       </div>
-  
-      <button @click="prev" class="absolute left-0 top-1/2 p-2 bg-white p-2 rounded-full shadow-md">
-        <svg class="w-5 h-5 text-gray-700" fill="none" 
-               stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" 
-                  stroke-linejoin="round" stroke-width="2"
-                  d="M15 19l-7-7 7-7" />
-          </svg>
-      </button>
-      <button @click="next" class="absolute right-0 top-1/2 p-2 bg-white p-2 rounded-full shadow-md">
-        <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M9 5l7 7-7 7" />
-          </svg>
-      </button>
     </div>
-  </template>
-  
-  <script setup>
-  import { ref, toRefs } from 'vue'
-  
-  const props = defineProps({
-    items: { type: Array, required: true },
-    slideWidth: { type: Number, default: 176 },
-    height: { type: Number, default: 96 }, // 24 * 4
-  })
-  const { items, slideWidth, height: h } = toRefs(props)
-  const currentIndex = ref(0)
-  
-  function next() {
-    currentIndex.value = (currentIndex.value + 1) % items.value.length
-  }
-  function prev() {
-    currentIndex.value =
-      (currentIndex.value - 1 + items.value.length) % items.value.length
-  }
-  </script>
-  
+
+    <button
+      @click="prev"
+      class="absolute left-2 top-1/2 p-2 bg-white rounded-full shadow-md"
+    >
+      <!-- left arrow -->
+      <IconRightArrow class="w-5 h-5 text-gray-700" />
+    </button>
+    <button
+      @click="next"
+      class="absolute right-2 top-1/2 p-2 bg-white rounded-full shadow-md"
+    >
+      <IconLeftArrow class="w-5 h-5 text-gray-700" />
+    </button>
+  </div>
+</template>
+
+<script setup>
+import { ref, toRefs } from "vue";
+import IconLeftArrow from "~/assets/icons/IconLeftArrow.vue";
+import IconRightArrow from "~/assets/icons/IconRightArrow.vue";
+
+const props = defineProps({
+  items: { type: Array, required: true },
+  slideWidth: { type: Number, default: 400 },
+  height: { type: Number, default: 600 },
+});
+
+const { items, slideWidth, height: h } = toRefs(props);
+const currentIndex = ref(0);
+
+function next() {
+  currentIndex.value = (currentIndex.value + 1) % items.value.length;
+}
+function prev() {
+  currentIndex.value = (currentIndex.value - 1 + items.value.length) % items.value.length;
+}
+</script>

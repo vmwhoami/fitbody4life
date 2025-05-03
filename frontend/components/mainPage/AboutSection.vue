@@ -5,7 +5,7 @@
 
 
      
-      <Carousel :items="images" :slideWidth="500" :height="500">
+      <Carousel :items="images" :slideWidth="500" :h="500">
         <template #default="{ item }">
           <div class="w-full h-full mx-2 overflow-hidden rounded-md">
             <img :src="item" class="w-full h-full object-cover" />
