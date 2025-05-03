@@ -2,14 +2,12 @@
   <div class="relative overflow-hidden" :style="{ minHeight: `${h}px` }">
     <div
       class="flex transition-transform duration-300"
-      :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }"
-    >
+      :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }" >
       <div
         v-for="(item, idx) in items"
         :key="idx"
         class="flex-shrink-0 flex items-center justify-center"
-        :style="{ width: `${slideWidth}px`, height: `${h}px` }"
-      >
+        :style="{ width: `${slideWidth}px`, height: `${h}px` }" >
         <!-- Now you have a container to render each slide -->
         <slot :item="item" :index="idx" />
       </div>
@@ -17,16 +15,15 @@
 
     <button
       @click="prev"
-      class="absolute left-2 top-1/2 p-2 bg-white rounded-full shadow-md"
-    >
+      class="absolute left-2 top-1/2 p-2 bg-white rounded-full shadow-md">
       <!-- left arrow -->
-      <IconRightArrow class="w-5 h-5 text-gray-700" />
+      <IconRightArrow  />
     </button>
     <button
       @click="next"
-      class="absolute right-2 top-1/2 p-2 bg-white rounded-full shadow-md"
-    >
-      <IconLeftArrow class="w-5 h-5 text-gray-700" />
+      class="absolute right-2 top-1/2 p-2
+             bg-white rounded-full shadow-md">
+      <IconLeftArrow  />
     </button>
   </div>
 </template>

@@ -1,11 +1,8 @@
 <template>
   <section class="container mx-auto px-6 py-6">
     <div class="flex flex-col md:flex-row items-center">
-      <!-- Profile Image -->
-
-
-     
-      <Carousel :items="images" :slideWidth="500" :h="500">
+      <!-- Profile Image -->  
+      <Carousel :items="images" :slideWidth="400" :h="600">
         <template #default="{ item }">
           <div class="w-full h-full mx-2 overflow-hidden rounded-md">
             <img :src="item" class="w-full h-full object-cover" />
@@ -14,7 +11,7 @@
       </Carousel>
  
      <!-- About Content -->
-      <div class="md:w-1/2 md:ml-8">
+      <div class="w-1/2 md:w-1/2 md:ml-8 ">
         <h2 class="text-2xl md:text-3xl font-bold mb-4">{{ $t('about.title') }}</h2>
 
         <!-- Introduction -->

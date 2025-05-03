@@ -6,12 +6,7 @@
     :iconColor="iconColor"
     :fill="myFill"
   >
-    <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
-      d="M15 19l-7-7 7-7"
-    />
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
   </IconBase>
 </template>
 
@@ -20,22 +15,23 @@ import IconBase from "./IconBase.vue";
 const props = defineProps({
   width: {
     type: [Number, String],
-    default: 115,
+    default: 20,
   },
   height: {
     type: [Number, String],
-    default: 40,
+    default: 20,
   },
   iconColor: {
     type: String,
-    default: "##e3e3e3",
+    default: "#000",
   },
   myFill: {
     type: [Number, String],
-    default: "#e3e3e3",
+    default: "#000",
   },
   viewBox: {
     default: "0 0 24 24",
   },
 });
 </script>
+
