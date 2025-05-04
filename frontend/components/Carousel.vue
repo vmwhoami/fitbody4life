@@ -1,30 +1,32 @@
 <template>
   <div class="relative overflow-hidden" :style="{ minHeight: `${h}px` }">
-    <div
-      class="flex transition-transform duration-300"
-      :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }" >
-      <div
-        v-for="(item, idx) in items"
-        :key="idx"
-        class="flex-shrink-0 flex items-center justify-center"
-        :style="{ width: `${slideWidth}px`, height: `${h}px` }" >
-        <!-- Now you have a container to render each slide -->
-        <slot :item="item" :index="idx" />
-      </div>
-    </div>
+    <!-- 1) New flex wrapper for arrows + track -->
+    <div class="flex items-center">
+      <!-- Prev button on the left -->
+      <button @click="prev" class="p-2 bg-white rounded-full shadow-md">
+        <IconRightArrow />
+      </button>
 
-    <button
-      @click="prev"
-      class="absolute left-2 top-1/2 p-2 bg-white rounded-full shadow-md">
-      <!-- left arrow -->
-      <IconRightArrow  />
-    </button>
-    <button
-      @click="next"
-      class="absolute right-2 top-1/2 p-2
-             bg-white rounded-full shadow-md">
-      <IconLeftArrow  />
-    </button>
+      <!-- Your sliding track -->
+      <div
+        class="flex transition-transform duration-300 flex-1"
+        :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }"
+      >
+        <div
+          v-for="(item, idx) in items"
+          :key="idx"
+          class="flex-shrink-0 flex items-center justify-center"
+          :style="{ width: `${slideWidth}px`, height: `${h}px` }"
+        >
+          <slot :item="item" :index="idx" />
+        </div>
+      </div>
+
+      <!-- Next button on the right -->
+      <button @click="next" class="p-2 bg-white rounded-full shadow-md">
+        <IconLeftArrow />
+      </button>
+    </div>
   </div>
 </template>
 

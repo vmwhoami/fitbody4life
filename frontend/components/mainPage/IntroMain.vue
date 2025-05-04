@@ -1,6 +1,6 @@
 <template>
   <section class="container mt-30 mx-auto px-6 py-12">
-    <div data-depth="0.2" class="flex flex-col-reverse md:flex-row items-center">
+    <div data-depth="0.1" class="flex flex-col-reverse md:flex-row items-center">
       <!-- Text Column -->
       <div class="md:w-1/2 mt-8 md:mt-0">
         <h1 class="text-4xl md:text-5xl font-bold mb-4">
@@ -23,7 +23,7 @@
         <div data-depth="0.9"
              data-pointer-events="true"
              v-motion="{ initial: { opacity: 0, y: 100 }, enter: { opacity: 1, y: 0 } }"
-             class="w-72 h-72 bg-gray-200 flex items-center
+             class="w-100 h-72 bg-gray-200 flex items-center
                    justify-center rounded shadow-md">
           <img src="@/assets/images/oleaup.jpeg"
                :alt="t('hero.altText')"
@@ -44,6 +44,7 @@ const sceneRef = ref(1)
 
 onMounted(() => {
   const instance = new Parallax(sceneRef.value, { relativeInput: true })
-  instance.friction(0.1, 0.1)
+  instance.friction(0.5, 0.5)
+  instance.scalar(10, 10)
 })
 </script>
