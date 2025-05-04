@@ -1,116 +1,88 @@
 <template>
-  <!-- Slider -->
-  <div
-    data-hs-carousel='{
-  "loadingClasses": "opacity-0",
-  "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer",
-  "slidesQty": {
-    "xs": 1,
-    "lg": 3
-  }
-}'
-    class="relative"
-  >
-    <div class="hs-carousel w-full overflow-hidden bg-white rounded-lg">
-      <div class="relative min-h-72 -mx-1">
-        <!-- transition-transform duration-700 -->
-        <div
-          class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap opacity-0 transition-transform duration-700"
+  <div class="flex h-full w-full items-center justify-center">
+    <div class="w-[1200px] max-w-full">
+      <ul
+        ref="wrapperRef"
+        class="group flex flex-col gap-3 md:h-[640px] md:flex-row md:gap-[1.5%]"
+      >
+        <li
+          v-for="(person, index) in galleryItems"
+          :key="person.name"
+          :aria-current="activeItem === index"
+          :class="itemClasses(index)"
+          @click="setActiveItem(index)"
         >
-          <div class="hs-carousel-slide px-1">
-            <div class="flex justify-center h-full bg-gray-100 p-6">
-              <span class="self-center text-sm text-gray-800 transition duration-700"
-                >First slide</span
-              >
+          <div class="relative h-full w-full overflow-hidden rounded-2xl bg-[#c9c6c7]">
+            <img
+              class="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+              :src="person.img"
+              :alt="person.name"
+              width="590"
+              height="640"
+            />
+            <div :class="overlayClasses(index)"></div>
+            <div :class="infoClasses(index)">
+              <p class="text-sm uppercase text-primary md:text-lg">{{ person.title }}</p>
+              <p class="text-lg font-bold md:text-4xl">{{ person.name }}</p>
             </div>
           </div>
-          <div class="hs-carousel-slide px-1">
-            <div class="flex justify-center h-full bg-gray-200 p-6">
-              <span class="self-center text-sm text-gray-800 transition duration-700"
-                >Second slide</span
-              >
-            </div>
-          </div>
-          <div class="hs-carousel-slide px-1">
-            <div class="flex justify-center h-full bg-gray-300 p-6">
-              <span class="self-center text-sm text-gray-800 transition duration-700"
-                >Third slide</span
-              >
-            </div>
-          </div>
-          <div class="hs-carousel-slide px-1">
-            <div class="flex justify-center h-full bg-gray-100 p-6">
-              <span class="self-center text-sm text-gray-800 transition duration-700"
-                >Fourth slide</span
-              >
-            </div>
-          </div>
-          <div class="hs-carousel-slide px-1">
-            <div class="flex justify-center h-full bg-gray-200 p-6">
-              <span class="self-center text-sm text-gray-800 transition duration-700"
-                >Fifth slide</span
-              >
-            </div>
-          </div>
-          <div class="hs-carousel-slide px-1">
-            <div class="flex justify-center h-full bg-gray-300 p-6">
-              <span class="self-center text-sm text-gray-800 transition duration-700"
-                >Sixth slide</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
-
-    <button
-      type="button"
-      class="hs-carousel-prev hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-11.5 h-full text-gray-800 hover:bg-gray-800/10 focus:outline-hidden focus:bg-gray-800/10 rounded-s-lg"
-    >
-      <span class="text-2xl" aria-hidden="true">
-        <svg
-          class="shrink-0 size-5"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="m15 18-6-6 6-6"></path>
-        </svg>
-      </span>
-      <span class="sr-only">Previous</span>
-    </button>
-    <button
-      type="button"
-      class="hs-carousel-next hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-11.5 h-full text-gray-800 hover:bg-gray-800/10 focus:outline-hidden focus:bg-gray-800/10 rounded-e-lg"
-    >
-      <span class="sr-only">Next</span>
-      <span class="text-2xl" aria-hidden="true">
-        <svg
-          class="shrink-0 size-5"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="m9 18 6-6-6-6"></path>
-        </svg>
-      </span>
-    </button>
-
-    <div
-      class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 flex gap-x-2"
-    ></div>
   </div>
-  <!-- End Slider -->
 </template>
+
+<script setup>
+import { ref, watch, onBeforeUnmount } from 'vue'
+import { galleryItems } from '~/api/images';
+
+const activeItem = ref(5)
+const wrapperRef = ref(null)
+let timeoutId = null
+
+function setActiveItem(index) {
+  activeItem.value = index
+}
+
+watch(activeItem, () => {
+  const el = wrapperRef.value
+  if (!el) return
+  if (timeoutId) clearTimeout(timeoutId)
+
+  el.style.setProperty('--transition', '600ms cubic-bezier(0.22, 0.61, 0.36, 1)')
+
+  timeoutId = window.setTimeout(() => {
+    el.style.removeProperty('--transition')
+  }, 900)
+})
+
+onBeforeUnmount(() => {
+  if (timeoutId) clearTimeout(timeoutId)
+})
+
+function itemClasses(index) {
+  return [
+    'relative cursor-pointer md:w-[8%] md:first:w-[1%] md:last:w-[1%] md:[&[aria-current="true"]]:w-[48%]',
+    'md:[transition:width_var(--transition,200ms_ease-in)]',
+    'md:before-block before:absolute before:bottom-0 before:left-[-10px] before:right-[-10px] before:top-0 before:hidden before:bg-white',
+    'md:[&:not(:hover),&:not(:first),&:not(:last)]:group-hover:w-[7%] md:hover:w-[12%]',
+    'first:pointer-events-none last:pointer-events-none md:[&_img]:first:opacity-0 md:[&_img]:last:opacity-0'
+  ]
+}
+
+function overlayClasses(index) {
+  return [
+    'inset-0 opacity-25 duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture  after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture md:absolute md:transition-opacity',
+    activeItem.value === index ? 'md:opacity-25' : 'md:opacity-0'
+  ]
+}
+
+function infoClasses(index) {
+  return [
+    'left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:p-0',
+    activeItem.value === index ? 'md:translate-x-0 md:opacity-100' : 'md:translate-x-4 md:opacity-0'
+  ]
+}
+</script>
+
+ 
