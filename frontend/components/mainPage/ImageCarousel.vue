@@ -34,8 +34,9 @@
 
 <script setup>
 import { ref, watch, onBeforeUnmount } from 'vue'
-import { galleryItems } from '~/api/images';
-
+// -------------------FIX THIS YOU NEED A LOT OF IMAGES
+import { galleryItems } from '~/api/galleryItems';
+// -----------FIX THIS
 const activeItem = ref(5)
 const wrapperRef = ref(null)
 let timeoutId = null

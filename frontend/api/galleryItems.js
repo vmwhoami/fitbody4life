@@ -1,14 +1,18 @@
+ 
+// import olea2 from '~/assets/images/oleaweb/olea2.jpeg'
+ 
 export const galleryItems = [
-    {
-      img: "/assets/images/oleaweb/life (14).jpeg",
-      title: "Strength Training",
-      caption: "Build lean muscle with personalized weight workouts",
-    },
-    {
-      img: "/assets/images/oleaweb/life (294).jpeg",
-      title: "HIIT Blast",
-      caption: "High-Intensity Interval Training to torch calories fast",
-    },
+  {
+    img: '/images/oleaweb/olea1.jpeg',
+    title: 'Strength Training',
+    caption: 'Build lean muscle with personalized weight workouts',
+  },
+ 
+    // {
+    //   img: "/assets/images/oleaweb/life (294).jpeg",
+    //   title: "HIIT Blast",
+    //   caption: "High-Intensity Interval Training to torch calories fast",
+    // },
     // {
     //   img: "/path/to/your-image3.jpg",
     //   title: "Yoga Flow",
