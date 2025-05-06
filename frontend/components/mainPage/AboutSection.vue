@@ -1,17 +1,20 @@
+<!-- About.vue -->
 <template>
-  <section class="container flex flex-col md:flex-row mx-auto px-6 py-6">
-  
+  <section class="container mx-auto px-6 py-6">
+    <div class="flex flex-col md:flex-row gap-8">
       <!-- CAROUSEL -->  
-      <Carousel calss="w-1/2 md:w-1/2 " :items="images" :slideWidth="500" :h="600">
-        <template #default="{ item }">
-          <div class="w-full h-full mx-2 overflow-hidden rounded-md">
-            <img :src="item" class="w-full h-full object-cover" />
-          </div>
-        </template>
-      </Carousel>
- 
-     <!-- About Content -->
-      <div class="w-1/2 md:w-1/2 md:ml-8 ">
+      <div class="w-full md:w-1/2">
+        <Carousel :items="images" :height="600">
+          <template #default="{ item }">
+            <div class="w-full h-full mx-2 overflow-hidden rounded-md">
+              <img :src="item" class="w-full h-full object-cover" alt="Trainer image" />
+            </div>
+          </template>
+        </Carousel>
+      </div>
+   
+      <!-- About Content -->
+      <div class="w-full md:w-1/2">
         <h2 class="text-2xl md:text-3xl font-bold mb-4">{{ $t('about.title') }}</h2>
 
         <!-- Introduction -->
@@ -40,20 +43,19 @@
           {{ $t('about.bookButton') }}
         </a>
       </div>
-   
+    </div>
   </section>
 </template>
 
 <script setup>
 import { ref } from 'vue';
+import Carousel from '../components/Carousel.vue';
  
-import olea_fit_template from '~/assets/images/olea_fit_template.jpg'
-import oleaFit from '~/assets/images/oleaFit.jpeg'
-import oleaup from '~/assets/images/oleaup.jpeg'
-import right_side_layout from '~/assets/images/right_side_layout.jpg'
-// Create a reactive list of images.
-// Replace these string placeholders with actual image data or paths as needed.
-const images = ref([oleaFit,olea_fit_template, oleaup, right_side_layout]);
-import Carousel from '../Carousel.vue';
+import oleaFit from '~/assets/images/oleaFit.jpeg';
+import olea_fit_template from '~/assets/images/olea_fit_template.jpg';
+import oleaup from '~/assets/images/oleaup.jpeg';
+import right_side_layout from '~/assets/images/right_side_layout.jpg';
 
+// Create a reactive list of images
+const images = ref([oleaFit, olea_fit_template, oleaup, right_side_layout]);
 </script>
