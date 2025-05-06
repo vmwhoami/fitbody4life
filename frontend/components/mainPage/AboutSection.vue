@@ -1,8 +1,8 @@
 <template>
-  <section class="container mx-auto px-6 py-6">
-    <div class="flex flex-col md:flex-row items-center">
-      <!-- Profile Image -->  
-      <Carousel :items="images" :slideWidth="400" :h="600">
+  <section class="container flex flex-col md:flex-row mx-auto px-6 py-6">
+  
+      <!-- CAROUSEL -->  
+      <Carousel calss="w-1/2 md:w-1/2 " :items="images" :slideWidth="500" :h="600">
         <template #default="{ item }">
           <div class="w-full h-full mx-2 overflow-hidden rounded-md">
             <img :src="item" class="w-full h-full object-cover" />
@@ -40,13 +40,12 @@
           {{ $t('about.bookButton') }}
         </a>
       </div>
-    </div>
+   
   </section>
 </template>
 
 <script setup>
 import { ref } from 'vue';
- 
  
 import olea_fit_template from '~/assets/images/olea_fit_template.jpg'
 import oleaFit from '~/assets/images/oleaFit.jpeg'
