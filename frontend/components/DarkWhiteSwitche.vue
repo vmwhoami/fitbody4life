@@ -19,7 +19,7 @@
       tabindex="0"
       data-headlessui-state="checked"
       data-checked="">
-        <IconSon />
+        <IconSun />
     </span>
     <span class="rounded-full p-1.5 *:size-7 data-checked:bg-white
                  data-checked:ring data-checked:inset-ring 
@@ -39,6 +39,6 @@
 </template>
 
 <script setup>
-  import IconSon from '~/assets/icons/IconSon.vue'
+  import IconSun from '~/assets/icons/IconSun.vue'
   import IconMoon from '~/assets/icons/IconMoon.vue'
 </script>

@@ -51,15 +51,10 @@
 <script setup>
 import { ref } from 'vue';
 
+import Carousel from '../Carousel.vue';
 // Create a reactive list of images.
 // Replace these string placeholders with actual image data or paths as needed.
-const images = ref([
-  '@/assets/images/oleaFit.jpeg',
-  '@/assets/images/oleaFit.jpeg',
-  '@/assets/images/oleaFit.jpeg',
-  '@/assets/images/oleaFit.jpeg',
-  '@/assets/images/oleaFit.jpeg',
-]);
+const images = ref([]);
 
 // Define reactive carousel state.
 const currentIndex = ref(0);
@@ -87,6 +82,3 @@ function prevSlide() {
 }
 </script>
 
-<style scoped>
-/* You can add custom styles here if needed */
-</style>
