@@ -41,7 +41,22 @@
 
 <script setup>
 import { ref, onMounted, watch, onBeforeUnmount } from 'vue';
-import { persons } from '../../api/persons';
+import image1 from '~/assets/images/slider_images/olea1.jpeg'; 
+import image2 from '~/assets/images/slider_images/olea2.jpeg'; 
+import image3 from '~/assets/images/slider_images/olea3.jpeg'; 
+import image4 from '~/assets/images/slider_images/olea4.jpeg'; 
+import image5 from '~/assets/images/slider_images/olea5.jpeg'; 
+// Add more imports as needed
+
+// Local persons data with imported images - no empty spacers
+const persons = [
+  { name: 'John Doe', title: 'Developer', img: image1 },
+  { name: 'Jane Smith', title: 'Designer', img: image2 },
+  { name: 'Alex Johnson', title: 'Manager', img: image3 },
+  { name: 'Sarah Williams', title: 'Architect', img: image4 },
+  { name: 'Michael Brown', title: 'Consultant', img: image5 },
+  // Add more people as needed
+];
 
 // State
 const wrapperRef = ref(null);

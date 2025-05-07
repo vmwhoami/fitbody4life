@@ -10,16 +10,12 @@
 
       <!-- Images container with overflow control -->
       <div class="flex-1 overflow-hidden">
-        <div 
-          class="flex transition-transform duration-300"
-          :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }" 
-        >
-          <div 
-            v-for="(item, idx) in items"
-            :key="idx"
-            class="flex-shrink-0 flex items-center justify-center"
-            :style="{ width: `${slideWidth}px`, height: `${height}px` }"
-          >
+        <div class="flex transition-transform duration-300"
+             :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }">
+          <div v-for="(item, idx) in items"
+               :key="idx"
+               class="flex-shrink-0 flex items-center justify-center"
+               :style="{ width: `${slideWidth}px`, height: `${height}px` }">
             <slot :item="item" :index="idx" />
           </div>
         </div>
@@ -33,13 +29,11 @@
     
     <!-- Indicators -->
     <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
-      <button 
-        v-for="(_, idx) in items" 
-        :key="idx"
-        @click="currentIndex = idx"
-        class="w-3 h-3 rounded-full"
-        :class="idx === currentIndex ? 'bg-blue-500' : 'bg-gray-300'"
-      />
+      <button v-for="(_, idx) in items"
+              :key="idx"
+              @click="currentIndex = idx"
+              class="w-3 h-3 rounded-full"
+              :class="idx === currentIndex ? 'bg-blue-500' : 'bg-gray-300'"/>
     </div>
   </div>
 </template>
