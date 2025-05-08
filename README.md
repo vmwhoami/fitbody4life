@@ -13,6 +13,10 @@ fastapi run app/main.py
 pip freeze > requirements.txt
 ```
 Todos:
+
+
+
+ !!!!! LOOK at ina website 
 rebuild simplify it,TOO Complicated  the stripe carousel https://www.youtube.com/watch?v=4JQ-kgq5Ryw
 add modal to open biger pictures 
 add picture in the about me section from shanghai bighton night club and parentingea
