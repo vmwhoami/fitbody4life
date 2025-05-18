@@ -13,7 +13,7 @@
         "@vueuse/motion": "^3.0.3",
         "axios": "^1.8.4",
         "bun-plugin-tailwind": "latest",
-        "motion-v": "0.13.1",
+        "motion-v": "1.0.2",
         "nuxt": "^3.16.2",
         "parallax-js": "^3.1.0",
         "pinia": "3.0.1",
@@ -1171,7 +1171,7 @@
 
     "motion-utils": ["motion-utils@12.6.3", "", {}, "sha512-R/b3Ia2VxtTNZ4LTEO5pKYau1OUNHOuUfxuP0WFCTDYdHkeTBR9UtxR1cc8mDmKr8PEhmmfnTKGz3rSMjNRoRg=="],
 
-    "motion-v": ["motion-v@0.13.1", "", { "dependencies": { "@vueuse/core": "^10.0.0", "framer-motion": "12.5.0", "hey-listen": "^1.0.8", "motion-dom": "^12.5.0" }, "peerDependencies": { "vue": ">=3.0.0" } }, "sha512-Hs1p0he2Ee6mhLMkTpB08cvjWT/24b+spJ28O+KzHqFgx34BDyFUIhDJvi6i7QF3BjS2ukgbHQdE3Uy5nVngUA=="],
+    "motion-v": ["motion-v@1.0.2", "", { "dependencies": { "@vueuse/core": "^10.0.0", "framer-motion": "12.5.0", "hey-listen": "^1.0.8", "motion-dom": "^12.5.0" }, "peerDependencies": { "vue": ">=3.0.0" } }, "sha512-Qn/X9Mx/5g02rjvpGtn5fht2OWTAnZoed4vLXgjM0lJgkSEtoGuadwEVypbCVH3WW1AHsns2k2okKAjpDrKu6A=="],
 
     "mrmime": ["mrmime@2.0.1", "", {}, "sha512-Y3wQdFg2Va6etvQ5I82yUhGdsKrcYox6p7FfL1LbK2J4V01F9TGlepTIhnK24t7koZibmg82KGglhA1XK5IsLQ=="],
 
