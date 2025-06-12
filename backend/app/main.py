@@ -1,46 +1,33 @@
-from fastapi import FastAPI, Depends, HTTPException, status
-from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy.future import select
-from app import models, schemas, db, auth
+import sentry_sdk
+from fastapi import FastAPI
+from fastapi.routing import APIRoute
+from starlette.middleware.cors import CORSMiddleware
 
-from fastapi.middleware.cors import CORSMiddleware
+from app.api.main import api_router
+from app.core.config import settings
 
-app = FastAPI()
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # allow Nuxt in dev
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+def custom_generate_unique_id(route: APIRoute) -> str:
+    return f"{route.tags[0]}-{route.name}"
+
+
+if settings.SENTRY_DSN and settings.ENVIRONMENT != "local":
+    sentry_sdk.init(dsn=str(settings.SENTRY_DSN), enable_tracing=True)
+
+app = FastAPI(
+    title=settings.PROJECT_NAME,
+    openapi_url=f"{settings.API_V1_STR}/openapi.json",
+    generate_unique_id_function=custom_generate_unique_id,
 )
 
-@app.on_event("startup")
-async def startup():
-    async with db.engine.begin() as conn:
-        await conn.run_sync(models.Base.metadata.create_all)
-
-@app.post("/register", response_model=schemas.UserOut)
-async def register(user: schemas.UserCreate, session: AsyncSession = Depends(db.get_db)):
-    result = await session.execute(select(models.User).where(models.User.email == user.email))
-    if result.scalar():
-        raise HTTPException(status_code=400, detail="Email already registered")
-
-    db_user = models.User(
-        email=user.email,
-        hashed_password=auth.hash_password(user.password)
+# Set all CORS enabled origins
+if settings.all_cors_origins:
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=settings.all_cors_origins,
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
     )
-    session.add(db_user)
-    await session.commit()
-    await session.refresh(db_user)
-    return db_user
 
-@app.post("/login", response_model=schemas.Token)
-async def login(user: schemas.UserCreate, session: AsyncSession = Depends(db.get_db)):
-    result = await session.execute(select(models.User).where(models.User.email == user.email))
-    db_user = result.scalar()
-    if not db_user or not auth.verify_password(user.password, db_user.hashed_password):
-        raise HTTPException(status_code=401, detail="Invalid credentials")
-
-    token = auth.create_access_token({"sub": db_user.email})
-    return {"access_token": token}
+app.include_router(api_router, prefix=settings.API_V1_STR)
