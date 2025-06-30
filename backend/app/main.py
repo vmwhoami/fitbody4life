@@ -16,6 +16,6 @@ otherwise the tests will fail if not connected
 """
 # Auto-create tables only in development
 # if os.getenv("ENVIRONMENT", "production") == "development":
-Base.metadata.create_all(bind=engine)
+# Base.metadata.create_all(bind=engine)
 
 register_routes(app)
