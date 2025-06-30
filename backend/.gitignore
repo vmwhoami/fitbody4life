@@ -1,8 +1,27 @@
-__pycache__
-app.egg-info
+# .gitignore
+# Environment files
+.env
+.env.*
+!.env.example  # Keep example files
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Byte-compiled files
 *.pyc
-.mypy_cache
-.coverage
-htmlcov
-.cache
-.venv
+
+# Specific directories
+src/__pycache__/
+src/auth/__pycache__
+src/todos/__pycache__
+# General development artifacts
+*.log
+.idea/
+.vscode/
+.pytest_cache
