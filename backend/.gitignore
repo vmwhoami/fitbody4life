@@ -1,0 +1,27 @@
+# .gitignore
+# Environment files
+.env
+.env.*
+!.env.example  # Keep example files
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Byte-compiled files
+*.pyc
+
+# Specific directories
+app/__pycache__/
+app/auth/__pycache__
+app/todos/__pycache__
+# General development artifacts
+*.log
+.idea/
+.vscode/
+.pytest_cache
