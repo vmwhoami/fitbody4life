@@ -3,9 +3,9 @@ from uuid import uuid4, UUID
 from sqlalchemy.orm import Session
 from fastapi import HTTPException
 from . import model
-from src.auth.model import TokenData
-from src.entities.todo import Todo
-from src.exceptions import TodoCreationError, TodoNotFoundError
+from app.auth.model import TokenData
+from app.entities.todo import Todo
+from app.exceptions import TodoCreationError, TodoNotFoundError
 import logging
 
 def create_todo(current_user: TokenData, db: Session, todo: model.TodoCreate) -> Todo:

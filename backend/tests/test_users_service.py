@@ -1,10 +1,10 @@
 import pytest
 from uuid import uuid4
-from src.users import service as users_service
-from src.users.model import PasswordChange
-from src.exceptions import UserNotFoundError, InvalidPasswordError, PasswordMismatchError
-from src.auth import service as auth_service
-from src.entities.user import User
+from app.users import service as users_service
+from app.users.model import PasswordChange
+from app.exceptions import UserNotFoundError, InvalidPasswordError, PasswordMismatchError
+from app.auth import service as auth_service
+from app.entities.user import User
 
 def test_get_user_by_id(db_session, test_user):
     db_session.add(test_user)

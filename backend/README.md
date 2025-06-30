@@ -10,7 +10,7 @@
 ## Run the app comand
 
 ```
-uvicorn src.main:app --reload
+uvicorn app.main:app --reload
 ```
 
 # Connect to PostgreSQL

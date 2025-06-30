@@ -17,9 +17,9 @@ __pycache__/
 *.pyc
 
 # Specific directories
-src/__pycache__/
-src/auth/__pycache__
-src/todos/__pycache__
+app/__pycache__/
+app/auth/__pycache__
+app/todos/__pycache__
 # General development artifacts
 *.log
 .idea/
