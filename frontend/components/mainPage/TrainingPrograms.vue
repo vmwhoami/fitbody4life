@@ -13,11 +13,7 @@
         <!-- Card 1 -->
         <div class="bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
           <div class="mb-4">
-            <!-- Icon (replace with any icon you prefer) -->
-            <svg class="w-40 h-40 text-orange-500" fill="currentColor"
-                        viewBox="0 0 200 200">
             <IconBackLift />
-            </svg>
           </div>
           <h3 class="text-xl font-semibold mb-2">Private Session</h3>
           <p class="text-gray-600">
