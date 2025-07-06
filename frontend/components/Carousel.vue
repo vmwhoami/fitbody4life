@@ -68,9 +68,7 @@ const calculateSlideWidth = async () => {
 const setupResizeObserver = () => {
   if (typeof window === 'undefined') return;
   
-  const resizeObserver = new ResizeObserver(() => {
-    calculateSlideWidth();
-  });
+  const resizeObserver = new ResizeObserver(() => {calculateSlideWidth()});
   
   if (carouselContainer.value) {
     resizeObserver.observe(carouselContainer.value);
@@ -101,7 +99,5 @@ onMounted(() => {
 });
 
 // Recalculate when items change
-watch(() => items.value, () => {
-  calculateSlideWidth();
-});
+watch(() => items.value, () => { calculateSlideWidth()});
 </script>

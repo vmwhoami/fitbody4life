@@ -20,7 +20,7 @@
 </template>
 
 <script setup>
-  // IconPrivateLesson
+  // IconPrivateSession
   import IconBase from './IconBase.vue'
   const props = defineProps({
     width: {
