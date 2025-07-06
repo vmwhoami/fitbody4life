@@ -1,7 +1,7 @@
 <template>
   <section class="bg-gray-50 py-12">
     <div class="container mx-auto px-6">
-      <h2 class="text-2xl md:text-3xl font-bold mb-4">Training Programs we offer for you.</h2>
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Training Programs I can offer for you.</h2>
       <p class="text-gray-600 mb-8">
         Starting a fitness routine can be intimidating, but it helps to have an idea of what to
         expect before joining any class.
@@ -13,7 +13,7 @@
           class="flex justify-center items-center bg-white p-6 rounded shadow hover:shadow-lg transition-shadow"
         >
           <div class="mb-4">
-            <IconPrivateLesson />
+            <IconPrivateSession />
           </div>
           <h3 class="text-xl font-semibold mb-2">Private Session</h3>
           <p class="text-gray-600">
@@ -50,7 +50,7 @@
 <script setup>
   //TrainingPrograms
 
-  import IconPrivateLesson from '~/assets/icons/IconPrivateLesson.vue'
+  import IconPrivateSession from '~/assets/icons/IconPrivateSession.vue'
   import IconProgramDiet from '~/assets/icons/IconProgramDiet.vue'
   import IconDumbelPose from '~/assets/icons/IconDumbelPose.vue'
 </script>
