@@ -19,16 +19,20 @@
       <div id="scene"
         ref="sceneRef"
         data-relative-input="true"
-        class="md:w-1/2 flex justify-center mb-8 md:mb-0">
-        <div data-depth="0.9"
+        class="md:w-4/8 flex justify-center mb-8 md:mb-0 w-2/4">
+
+        <div data-depth="0.7"
              data-pointer-events="true"
              v-motion="{ initial: { opacity: 0, y: 100 }, enter: { opacity: 1, y: 0 } }"
-             class="w-100 h-72 bg-gray-200 flex items-center
-                   justify-center rounded shadow-md">
-          <img src="@/assets/images/oleaup.jpeg"
+             class="w-80 h-80 flex items-center justify-center">
+               
+                   
+          <img src="@/assets/images/oleafitess1920.png"
                :alt="t('hero.altText')"
-               class="object-contain" />
+               class="h-100 object-contain" />
         </div>
+
+
       </div>
     </div>
   </section>
@@ -45,6 +49,6 @@ const sceneRef = ref(1)
 onMounted(() => {
   const instance = new Parallax(sceneRef.value, { relativeInput: true })
   instance.friction(0.5, 0.5)
-  instance.scalar(10, 10)
+  instance.scalar(1, 1)
 })
 </script>
