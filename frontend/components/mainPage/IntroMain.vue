@@ -15,31 +15,25 @@
       </div>
 
       <!-- Image Column -->
-      <!-- Image Column -->
-      <div
-        id="scene"
-        ref="sceneRef"
-        data-relative-input="true"
-        class="md:w-4/8 flex justify-center mb-8 md:mb-0 w-2/4 relative"
-      >
-        <!-- Background Overlay -->
-        <div class="absolute inset-0 z-0">
-          <!-- Background Circles -->
-          <div
-            class="absolute top-20 left-1/2 w-[400px] h-[400px] -translate-x-1/2 rounded-full bg-gray-200 opacity-50"
-          ></div>
-          <div
-            class="absolute top-1/3 left-1/3 w-10 h-10 rounded-full bg-gray-300 opacity-60"
-          ></div>
-          <div
-            class="absolute top-[60%] right-1/4 w-6 h-6 rounded-full bg-gray-300 opacity-60"
-          ></div>
-          <div
-            class="absolute bottom-10 right-5 w-3 h-3 rounded-full bg-gray-400 opacity-40"
-          ></div>
+      <div id="scene"
+          ref="sceneRef"
+          data-relative-input="true"
+          class="md:w-4/8 flex justify-center mb-8 md:mb-0 w-2/4 relative">
 
-          <!-- Vertical Red Bars (Group Time) -->
-          <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-1">
+        <!-- Parallax Layer 1: Distant circles -->
+        <div data-depth="0.2" class="absolute inset-0 pointer-events-none z-0">
+          <div class="absolute top-10 left-1/4 w-6 h-6 bg-gray-200 rounded-full opacity-40"></div>
+          <div class="absolute top-[70%] right-1/3 w-4 h-4 bg-gray-300 rounded-full opacity-50"></div>
+        </div>
+
+        <!-- Parallax Layer 2: Main large circle -->
+        <div data-depth="0.4" class="absolute inset-0 pointer-events-none z-0">
+          <div class="absolute top-20 left-1/2 w-[400px] h-[400px] -translate-x-1/2 rounded-full bg-gray-200 opacity-50"></div>
+        </div>
+
+        <!-- Parallax Layer 3: Red bars -->
+        <div data-depth="0.6" class="absolute left-1/2 inset-100 pointer-events-none z-0">
+          <div class="absolute bottom-8  left-1/2 -translate-x-1/2 flex gap-1">
             <div class="w-1.5 h-12 bg-red-500 rounded-sm"></div>
             <div class="w-1.5 h-10 bg-red-500 rounded-sm"></div>
             <div class="w-1.5 h-14 bg-red-500 rounded-sm"></div>
@@ -48,20 +42,18 @@
           </div>
         </div>
 
-        <!-- Foreground Content -->
-        <div
-          data-depth="0.7"
-          data-pointer-events="true"
-          v-motion="{ initial: { opacity: 0, y: 100 }, enter: { opacity: 1, y: 0 } }"
-          class="w-80 h-80 flex items-center justify-center relative z-10"
-        >
-          <img
-            src="@/assets/images/oleafitess1920.png"
-            :alt="t('hero.altText')"
-            class="h-100 object-contain"
-          />
+        <!-- Foreground Image -->
+        <div data-depth="0.8"
+            data-pointer-events="true"
+            v-motion="{ initial: { opacity: 0, y: 100 }, enter: { opacity: 1, y: 0 } }"
+            class="w-80 h-80 flex items-center justify-center relative z-10">
+
+          <img src="@/assets/images/oleafitess1920.png"
+              :alt="t('hero.altText')"
+              class="h-100 object-contain" />
         </div>
       </div>
+
     </div>
   </section>
 </template>
