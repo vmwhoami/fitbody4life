@@ -44,7 +44,7 @@ export default {
     quote: '“If it doesn’t challenge you, it won’t change you.”',
     description:
       '— a dance-inspired fitness trainer, mom to a 7-year-old, and proud wife. As a busy mother and wife, I know firsthand how hard it is to carve out “me time”—which is exactly why I tailor every session to fit your life and goals.',
-    buttonGoogle: 'Get it on Google Play',
+    buttonBookFreeSession: 'Book a free session',
     buttonAppStore: 'Get it on App Store',
     altText: 'Olya Melnic portrait',
   },

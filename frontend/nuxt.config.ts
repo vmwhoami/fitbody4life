@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   modules: [
     '@vueuse/motion/nuxt',
     '@nuxtjs/i18n',
+    'nuxt-calendly',
     '@pinia/nuxt'  // <-- Add Pinia here
   ],
   runtimeConfig: {

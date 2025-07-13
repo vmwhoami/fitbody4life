@@ -34,6 +34,7 @@
     "eslint": "^9.25.1",
     "eslint-plugin-prettier": "^5.2.6",
     "eslint-plugin-vue": "^10.0.0",
+    "nuxt-calendly": "^0.1.21",
     "prettier": "^3.5.3",
     "vite": "7.0.0"
   }
