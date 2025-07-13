@@ -2,8 +2,9 @@
   <section>
     <TemplateNavbar />
     <IntroMain />
-    <TrainingPrograms />
+    <Certificates />
     <AboutSection />
+    <TrainingPrograms />
     <ImageCarousel />
     <GroupClass />
     <TrainerPostSection />
@@ -16,8 +17,9 @@
 <script setup>
 import TemplateNavbar from "@/components/TemplateNavbar.vue";
 import IntroMain from "@/components/mainPage/IntroMain";
-import TrainingPrograms from "@/components/mainPage/TrainingPrograms";
+import Certificates from "@/components/mainPage/Certificates";
 import AboutSection from "@/components/mainPage/AboutSection.vue";
+import TrainingPrograms from "@/components/mainPage/TrainingPrograms";
 import ImageCarousel from "@/components/mainPage/ImageCarousel.vue";
 import GroupClass from "@/components/mainPage/GroupClass.vue";
 import TrainerPostSection from "@/components/mainPage/TrainerPostSection.vue";
