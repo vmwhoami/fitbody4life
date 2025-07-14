@@ -39,7 +39,7 @@
         <!-- Call to Action -->
         <h3 class="text-xl font-semibold mb-2">{{ $t('about.connectTitle') }}</h3>
         <p class="text-gray-600 mb-4">{{ $t('about.connectDesc') }}</p>
-        <a href="#" class="inline-block bg-blue-500 text-white font-semibold px-6 py-3 rounded shadow hover:bg-blue-600 transition">
+        <a href="https://calendly.com/olenikamv" class="bg-[#DAB16B] hover:bg-opacity-90 text-white font-semibold text-lg py-4 px-8 shadow-lg transitiontext-white font-semibold px-6 py-3 rounded shadow hover:bg-blue-600 transition">
           {{ $t('about.bookButton') }}
         </a>
       </div>
