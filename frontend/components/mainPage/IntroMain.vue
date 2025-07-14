@@ -13,25 +13,43 @@
           {{ t("hero.description") }}
         </p>
 
-        <!-- https://calendly.com/olenikamv -->
-       
-        <a href="https://calendly.com/olenikamv" target="_blank" class="bg-[#DAB16B] hover:bg-opacity-90 text-white font-semibold text-lg py-4 px-8 rounded-lg shadow-lg transition">
-          {{ t("hero.buttonBookFreeSession") }}
-        </a>
+         <!-- Limited slots – claim yours now! -->
+
+
+        <section id="booking-calendar" class="py-20 dark:bg-gray-800">
+          <div class="container mx-auto flex flex-col px-4">
+            <!-- Headline -->
+            <h2 class="text-[#DAB16B] text-center text-3xl mb-2">{{ t("hero.readyForChage") }}</h2>
+            <p class="text-[#e3e3e3] text-center mb-12">{{ t("hero.selectTimezone") }}</p>
+            
+            <!-- Calendar Embed -->
+             
+            <NuxtLink href="https://calendly.com/olenikamv"
+                      target="_blank"  
+                      class="bg-[#DAB16B] hover:bg-opacity-90 
+                             text-white  text-center font-semibold text-lg 
+                             py-4 px-8 shadow-lg transition">
+              {{ t("hero.buttonBookFreeSession") }}
+            </NuxtLink>
+           
+          </div>
+        </section>
+
+
+      
       </div>
 
       <!-- Parallax Image Column -->
-      <div
-        id="scene"
-        ref="sceneRef"
-        data-relative-input="true"
-        class="relative w-full md:w-1/2 lg:w-2/5 h-[300px] sm:h-[400px] md:h-[500px] mx-auto"
-      >
+      <div id="scene"
+           ref="sceneRef"
+           data-relative-input="true"
+           class="relative w-full md:w-1/2 
+                  lg:w-2/5 h-[300px] sm:h-[400px]
+                  md:h-[500px] mx-auto">
         <!-- Layer 1: small floating dots -->
         <div data-depth="0.2" class="absolute inset-0 pointer-events-none z-0">
-          <div
-            class="absolute top-10 left-1/4 w-6 h-6 bg-gray-200 rounded-full opacity-40"
-          ></div>
+          <div class="absolute top-10 left-1/4 w-6 h-6 bg-gray-200 rounded-full opacity-40">
+          </div>
           <div
             class="absolute top-[70%] right-1/3 w-4 h-4 bg-gray-300 rounded-full opacity-50"
           ></div>
@@ -79,7 +97,8 @@
 import { ref, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 import Parallax from "parallax-js";
-import { CalendlyPopupButton } from "#components";
+import { NuxtLink } from "#components";
+import { CalendlyInlineWidget } from "#components";
 
 const { t } = useI18n();
 const sceneRef = ref(1);

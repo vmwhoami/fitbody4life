@@ -45,7 +45,8 @@ export default {
     description:
       '- instructor de fitness specializat în antrenamente inspirate de dans, mamă a unui copil de 7 ani și soție mândră. Ca mamă și soție ocupată, știu din proprie experiență cât de greu e să îți găsești timp pentru tine — exact de aceea îmi personalizez fiecare sesiune astfel încât să se potrivească stilului tău de viață și obiectivelor tale.',
     buttonBookFreeSession: 'Rezervă o sesiune gratuită',
-    buttonAppStore: 'Descarcă din App Store',
+    readyForChage: 'Pregătit pentru schimbare?',
+    selectTimezone: 'Selectează fusul orar preferat',
     altText: 'Portretul Olya Melnic',
   },
   about: {

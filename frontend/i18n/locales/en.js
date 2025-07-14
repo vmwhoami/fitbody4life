@@ -45,7 +45,8 @@ export default {
     description:
       '— a dance-inspired fitness trainer, mom to a 7-year-old, and proud wife. As a busy mother and wife, I know firsthand how hard it is to carve out “me time”—which is exactly why I tailor every session to fit your life and goals.',
     buttonBookFreeSession: 'Book a free session',
-    buttonAppStore: 'Get it on App Store',
+    readyForChage: 'Ready for Change?',
+    selectTimezone: 'Select your preferred time zone',
     altText: 'Olya Melnic portrait',
   },
   about: {
