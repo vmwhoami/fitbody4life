@@ -50,12 +50,36 @@
 <script setup>
 import { ref } from 'vue';
 import Carousel from '../components/Carousel.vue';
- 
-import oleaFit from '~/assets/images/oleaFit.jpeg';
-import olea_fit_template from '~/assets/images/olea_fit_template.jpg';
-import oleaup from '~/assets/images/oleaup.jpeg';
-import right_side_layout from '~/assets/images/right_side_layout.jpg';
 
-// Create a reactive list of images
-const images = ref([oleaFit, olea_fit_template, oleaup, right_side_layout]);
+// Import all images explicitly
+import audionehand from '@/assets/images/slider_images/audionehand.jpg';
+import bigstageDance from '@/assets/images/slider_images/bigstageDance.jpg';
+import budwiserChinatour from '@/assets/images/slider_images/budwiserChinatour.JPG';
+import carshownoarms from '@/assets/images/slider_images/carshownoarms.jpg';
+import olea1 from '@/assets/images/slider_images/olea1.jpeg';
+import olea2 from '@/assets/images/slider_images/olea2.jpg';
+import OLEA3 from '@/assets/images/slider_images/OLEA3.jpg';
+import olea4 from '@/assets/images/slider_images/olea4.jpg';
+import olea5 from '@/assets/images/slider_images/olea5.jpeg';
+import oleafashion from '@/assets/images/slider_images/oleafashion.jpg';
+import oleaFashion from '@/assets/images/slider_images/oleaFashion.jpg';
+import OleaLopata from '@/assets/images/slider_images/OleaLopata.jpg';
+import tvshowdindu from '@/assets/images/slider_images/tvshowdindu.jpg';
+
+// Create reactive image list in desired order
+const images = ref([
+  audionehand,
+  bigstageDance,
+  budwiserChinatour,
+  carshownoarms,
+  olea1,
+  olea2,
+  OLEA3,
+  olea4,
+  olea5,
+  oleafashion,
+  oleaFashion,
+  OleaLopata,
+  tvshowdindu
+]);
 </script>

@@ -3,15 +3,13 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  plugins: [
-     '@/plugins/theme.client.js'
-  ],
+  plugins: ['@/plugins/theme.client.js'],
   css: ['@/assets/css/main.css'],
   modules: [
     '@vueuse/motion/nuxt',
     '@nuxtjs/i18n',
     'nuxt-calendly',
-    '@pinia/nuxt'  // <-- Add Pinia here
+    '@pinia/nuxt', // <-- Add Pinia here
   ],
   runtimeConfig: {
     public: {
@@ -29,7 +27,7 @@ export default defineNuxtConfig({
     locales: [
       { code: 'en', iso: 'en-US', file: 'en.js', name: 'English' },
       { code: 'ro', iso: 'ro-RO', file: 'ro.js', name: 'Romanian' },
-      { code: 'ru', iso: 'ru-RU', file: 'ru.js', name: 'Russian' }
+      { code: 'ru', iso: 'ru-RU', file: 'ru.js', name: 'Russian' },
     ],
     bundle: {
       optimizeTranslationDirective: false,
@@ -37,14 +35,8 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
     lazy: true,
     langDir: 'locales/',
-    },
+  },
   vite: {
     plugins: [tailwindcss()],
   },
- 
 })
-
- 
- 
-  
- 
