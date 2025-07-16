@@ -49,7 +49,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import Carousel from '../components/Carousel.vue';
+import Carousel from '@/components/Carousel.vue';
 
 // Import all images explicitly
 import audionehand from '@/assets/images/slider_images/audionehand.jpg';
