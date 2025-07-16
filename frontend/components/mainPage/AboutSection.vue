@@ -65,7 +65,7 @@ import oleafashion from '@/assets/images/slider_images/oleafashion.jpg';
 import oleaFashion from '@/assets/images/slider_images/oleaFashion.jpg';
 import OleaLopata from '@/assets/images/slider_images/OleaLopata.jpg';
 import tvshowdindu from '@/assets/images/slider_images/tvshowdindu.jpg';
-
+import girlsSchooter from '@/assets/images/slider_images/girlsSchooter.jpg';
 // Create reactive image list in desired order
 const images = ref([
   audionehand,
@@ -80,6 +80,7 @@ const images = ref([
   oleafashion,
   oleaFashion,
   OleaLopata,
-  tvshowdindu
+  tvshowdindu,
+  girlsSchooter
 ]);
 </script>
