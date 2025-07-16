@@ -1,7 +1,7 @@
 <template>
   <div class="flex h-full w-full items-center justify-center">
     <div class="w-[1200px] max-w-full">
-      <ul  ref="wrapperRef"
+      <!-- <ul  ref="wrapperRef"
         class="group flex flex-col gap-3 md:h-[640px] md:flex-row md:gap-[1.5%]">
         <li
           v-for="(person, index) in persons"
@@ -34,28 +34,17 @@
             </div>
           </div>
         </li>
-      </ul>
+      </ul> -->
     </div>
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted, watch, onBeforeUnmount } from 'vue';
-import image1 from '~/assets/images/slider_images/olea1.jpeg'; 
-import image2 from '~/assets/images/slider_images/olea2.jpeg'; 
-import image3 from '~/assets/images/slider_images/olea3.jpeg'; 
-import image4 from '~/assets/images/slider_images/olea4.jpeg'; 
-import image5 from '~/assets/images/slider_images/olea5.jpeg'; 
-// Add more imports as needed
-
+ 
 // Local persons data with imported images - no empty spacers
 const persons = [
-  { name: 'John Doe', title: 'Developer', img: image1 },
-  { name: 'Jane Smith', title: 'Designer', img: image2 },
-  { name: 'Alex Johnson', title: 'Manager', img: image3 },
-  { name: 'Sarah Williams', title: 'Architect', img: image4 },
-  { name: 'Michael Brown', title: 'Consultant', img: image5 },
-  // Add more people as needed
+ 
 ];
 
 // State
