@@ -7,6 +7,86 @@ export default {
     settings: 'Settings',
     signout: 'Sign Out',
   },
+  certificates: {
+    trustTitle: "Why Clients Trust Me",
+    trustItems: [
+      "Certified Personal Trainer – YMCA Level 3 (UK)",
+      "10+ Years International Dance & Fitness Experience",
+      "Trusted by Clients in Moldova, Romania, China, and the UK"
+    ],
+    certTitle: "Professional Certifications",
+    certificates: [
+      {
+        alt: "YMCA Level 3 Certificate",
+        overlayTitle: "YMCA Level 3 Diploma",
+        overlaySubtitle: "YMCA Awards, United Kingdom",
+        status: "Issued: August 2019 | Valid: Lifetime",
+        description: "Advanced qualification demonstrating expertise in personal training principles, client assessment, and program design."
+      },
+      {
+        alt: "Nutrition Specialist Certificate",
+        overlayTitle: "Component Completion",
+        overlaySubtitle: "YMCA Diploma Requirements",
+        status: "Issued: August 2019 | Valid: Lifetime",
+        description: "Detailed breakdown of completed components for the YMCA Level 3 Diploma in Personal Training."
+      }
+    ],
+    modalLabels: {
+      issuedBy: "Issued by:",
+      date: "Date:",
+      id: "ID:",
+      qualificationNumber: "Qualification Number:",
+      issuingExecutive: "Issuing Executive:",
+      regulatedBy: "Regulated by:",
+      certificateNumber: "Certificate Number",
+      validationNumber: "Validation Number",
+      learnerNumber: "Learner Number",
+      componentsTitle: "Completed Components {totalCredits} credits total):",
+      tableHeaders: {
+        title: "Title",
+        level: "Level",
+        credits: "Credits",
+        unitCode: "Unit Code"
+      },
+      closeButton: "Close Certificate"
+    },
+    certificatesData: [
+      {
+        title: "YMCA Level 3 Diploma in Personal Training (Gym-Based Exercise)",
+        issuer: "Health and Fitness Education Ltd",
+        date: "August 13, 2019",
+        description: "This qualification demonstrates comprehensive knowledge and expertise in personal training principles, client assessment, and gym-based exercise program design. Awarded by Health and Fitness Education Ltd under Central YMCA, this Ofqual-regulated certification meets rigorous UK standards for personal trainers.",
+        executive: "Rosi Prescott, Group Chief Executive, Central YMCA",
+        qualificationNumber: "601/0195/7",
+        certificateNumber: "425001",
+        validationNumber: "00233175-01-KN3R",
+        learnerNumber: "452240"
+      },
+      {
+        title: "Certificate of Component Completion",
+        issuer: "Health and Fitness Education Ltd",
+        date: "August 13, 2019",
+        description: "This certificate confirms completion of all required components for the YMCA Level 3 Diploma in Personal Training, covering exercise principles, anatomy, physiology, nutrition, and practical training delivery. The comprehensive program includes both Level 2 and Level 3 components totaling 52 credits.",
+        executive: "Rosi Prescott, Group Chief Executive, Central YMCA",
+        certificateNumber: "425001",
+        validationNumber: "00233175-01-KN3R",
+        learnerNumber: "452240",
+        components: [
+          { title: "Principles of Exercise, Fitness and Health" },
+          { title: "Anatomy and Physiology for Exercise" },
+          { title: "Planning Gym-Based Exercise" },
+          { title: "Instructing Gym-Based Exercise" },
+          { title: "Know How To Support Clients Who Take Part in Exercise and Physical Activity" },
+          { title: "Health, Safety and Welfare in a Fitness Environment" },
+          { title: "Anatomy and Physiology for Exercise and Health" },
+          { title: "Programming Personal Training with Clients" },
+          { title: "Applying the Principles of Nutrition to a Physical Activity Programme" },
+          { title: "Delivering Personal Training Sessions" }
+        ],
+        totalCredits: 52
+      }
+    ]
+  },
   login: {
     title: 'Welcome Back',
     subtitle: 'Please sign in to continue to your account.',

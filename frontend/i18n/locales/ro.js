@@ -7,6 +7,87 @@ export default {
     settings: 'Setări',
     signout: 'Deconectare',
   },
+   certificates: {
+    trustTitle: "De ce mă aleg clienții",
+    trustItems: [
+      "Antrenor Personal Certificat – YMCA Level 3 (UK)",
+      "Peste 10 ani experiență internațională în dans și fitness",
+      "Recomandat de clienți din Moldova, România, China și UK"
+    ],
+    certTitle: "Acreditări profesionale",
+    certificates: [
+      {
+        alt: "Certificat YMCA Level 3",
+        overlayTitle: "Diplomă YMCA Level 3",
+        overlaySubtitle: "YMCA Awards, Marea Britanie",
+        status: "Emis: August 2019 | Valabil: Permanent",
+        description: "Calificare avansată ce demonstrează expertiză în principiile antrenamentului personal, evaluarea clienților și designul programelor."
+      },
+      {
+        alt: "Certificat Specialist Nutriție",
+        overlayTitle: "Componente Finalizate",
+        overlaySubtitle: "Cerințe Diplomă YMCA",
+        status: "Emis: August 2019 | Valabil: Permanent",
+        description: "Detalii despre componentele finalizate pentru Diploma YMCA Level 3 în Antrenament Personal."
+      }
+    ],
+    modalLabels: {
+      issuedBy: "Emitent:",
+      date: "Data:",
+      id: "ID:",
+      qualificationNumber: "Număr calificare:",
+      issuingExecutive: "Reprezentant emitent:",
+      regulatedBy: "Reglementat de:",
+      certificateNumber: "Număr certificat",
+      validationNumber: "Număr validare",
+      learnerNumber: "Număr cursant",
+      componentsTitle: "Componente finalizate (total {totalCredits} credite):",
+      tableHeaders: {
+        title: "Titlu",
+        level: "Nivel",
+        credits: "Credite",
+        unitCode: "Cod unitate"
+      },
+      closeButton: "Închide certificat"
+    },
+    certificatesData: [
+      {
+        title: "Diplomă YMCA Level 3 în Antrenament Personal (Exerciții în Sală)",
+        issuer: "Health and Fitness Education Ltd",
+        date: "13 August 2019",
+        description: "Această calificare demonstrează cunoștințe și expertiză cuprinzătoare în principiile antrenamentului personal, evaluarea clienților și designul programelor de exerciții în sală. Acordată de Health and Fitness Education Ltd sub Central YMCA, această certificare reglementată de Ofqual respectă standardele riguroase britanice pentru antrenorii personali.",
+        executive: "Rosi Prescott, Director General, Central YMCA",
+        qualificationNumber: "601/0195/7",
+        certificateNumber: "425001",
+        validationNumber: "00233175-01-KN3R",
+        learnerNumber: "452240"
+      },
+      {
+        title: "Certificat de Finalizare Componente",
+        issuer: "Health and Fitness Education Ltd",
+        date: "13 August 2019",
+        description: "Acest certificat confirmă finalizarea tuturor componentelor necesare pentru Diploma YMCA Level 3 în Antrenament Personal, acoperind principii de exerciții, anatomie, fiziologie, nutriție și predare practică. Programul cuprinzător include componente de nivel 2 și 3 totalizând 52 de credite.",
+        executive: "Rosi Prescott, Director General, Central YMCA",
+        certificateNumber: "425001",
+        validationNumber: "00233175-01-KN3R",
+        learnerNumber: "452240",
+        components: [
+          { title: "Principii de Exercițiu, Fitness și Sănătate" },
+          { title: "Anatomie și Fiziologie pentru Exercițiu" },
+          { title: "Planificarea Exercițiilor în Sală" },
+          { title: "Instruirea Exercițiilor în Sală" },
+          { title: "Cum să Sprijinim Clienții Care Practică Exercițiu Fizic" },
+          { title: "Sănătate, Siguranță și Bunăstare în Medii de Fitness" },
+          { title: "Anatomie și Fiziologie pentru Exercițiu și Sănătate" },
+          { title: "Programarea Antrenamentului Personal cu Clienți" },
+          { title: "Aplicarea Principiilor Nutriției în Programele de Activitate Fizică" },
+          { title: "Conducerea Seshiunilor de Antrenament Personal" }
+        ],
+        totalCredits: 52
+      }
+    ]
+  },
+  
   login: {
     title: 'Bine ai revenit',
     subtitle: 'Te rugăm să te autentifici pentru a-ți accesa contul.',
