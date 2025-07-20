@@ -1,7 +1,7 @@
 <template>
   <div class="flex h-full w-full items-center justify-center">
     <div class="w-[1200px] max-w-full">
-      <!-- <ul  ref="wrapperRef"
+      <ul  ref="wrapperRef"
         class="group flex flex-col gap-3 md:h-[640px] md:flex-row md:gap-[1.5%]">
         <li
           v-for="(person, index) in persons"
@@ -34,7 +34,7 @@
             </div>
           </div>
         </li>
-      </ul> -->
+      </ul>
     </div>
   </div>
 </template>
