@@ -21,7 +21,7 @@
 
       <!-- Certificates Section -->
       <div class="mt-16">
-        <h3 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-10">Professional Certifications</h3>
+        <h3 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-10"> {{ $t('certificates.certTitle') }}</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <!-- Certificate 1 -->
           <div 
@@ -236,7 +236,9 @@
 
 <script setup>
 import { ref } from 'vue';
-import TitleSection from './TitleSection.vue';
+ import diploma1 from '@/assets/images/diplomas/diploma1.jpg';
+ import diploma2 from '@/assets/images/diplomas/diploma2.jpg';
+
 // Certificate data using local images and accurate details
 const certificates = [
   {
@@ -248,7 +250,7 @@ const certificates = [
     validationNumber: "00233175-01-KN3R",
     certificateNumber: "425001",
     learnerNumber: "452240",
-    image: "/assets/images/diplomas/diploma1.jpg",
+    image: diploma1,
     description: "This qualification demonstrates comprehensive knowledge and expertise in personal training principles, client assessment, and gym-based exercise program design. Awarded by Health and Fitness Education Ltd under Central YMCA, this Ofqual-regulated certification meets rigorous UK standards for personal trainers.",
     regulator: {
       name: "Ofqual",
@@ -277,7 +279,7 @@ const certificates = [
     validationNumber: "00233175-01-KN3R",
     certificateNumber: "425001",
     learnerNumber: "452240",
-    image: "/assets/images/diplomas/diploma2.jpg",
+    image: diploma2,
     description: "This certificate confirms completion of all required components for the YMCA Level 3 Diploma in Personal Training, covering exercise principles, anatomy, physiology, nutrition, and practical training delivery. The comprehensive program includes both Level 2 and Level 3 components totaling 52 credits.",
     executive: "Rosi Prescott, Group Chief Executive, Central YMCA"
   }
