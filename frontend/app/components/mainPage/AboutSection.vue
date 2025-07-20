@@ -52,35 +52,42 @@ import { ref } from 'vue';
 import Carousel from '@/components/Carousel.vue';
 
 // Import all images explicitly
+
+import Oleaporvupirvupirvu from '@/assets/images/slider_images/Oleaporvupirvupirvu.jpg'
 import audionehand from '@/assets/images/slider_images/audionehand.jpg';
-import bigstageDance from '@/assets/images/slider_images/bigstageDance.jpg';
-import budwiserChinatour from '@/assets/images/slider_images/budwiserChinatour.JPG';
-import carshownoarms from '@/assets/images/slider_images/carshownoarms.jpg';
-import olea1 from '@/assets/images/slider_images/olea1.jpeg';
 import olea2 from '@/assets/images/slider_images/olea2.jpg';
+import olea1 from '@/assets/images/slider_images/olea1.jpeg';
 import OLEA3 from '@/assets/images/slider_images/OLEA3.jpg';
 import olea4 from '@/assets/images/slider_images/olea4.jpg';
 import olea5 from '@/assets/images/slider_images/olea5.jpeg';
+import bigstageDance from '@/assets/images/slider_images/bigstageDance.jpg';
+import budwiserChinatour from '@/assets/images/slider_images/budwiserChinatour.JPG';
+import carshownoarms from '@/assets/images/slider_images/carshownoarms.jpg';
+import Olea_brighton_UK from '@/assets/images/slider_images/Olea_brighton_UK.jpg';
 import oleafashion from '@/assets/images/slider_images/oleafashion.jpg';
 import oleaFashion from '@/assets/images/slider_images/oleaFashion.jpg';
 import OleaLopata from '@/assets/images/slider_images/OleaLopata.jpg';
 import tvshowdindu from '@/assets/images/slider_images/tvshowdindu.jpg';
 import girlsSchooter from '@/assets/images/slider_images/girlsSchooter.jpg';
+import alex_wang from '@/assets/images/slider_images/alex_wang.jpg'
 // Create reactive image list in desired order
 const images = ref([
+  Oleaporvupirvupirvu,
   audionehand,
-  bigstageDance,
-  budwiserChinatour,
-  carshownoarms,
-  olea1,
   olea2,
   OLEA3,
   olea4,
   olea5,
+  bigstageDance,
+  budwiserChinatour,
+  carshownoarms,
+  Olea_brighton_UK,
   oleafashion,
   oleaFashion,
   OleaLopata,
   tvshowdindu,
-  girlsSchooter
+  olea1,
+  girlsSchooter,
+  alex_wang
 ]);
 </script>
