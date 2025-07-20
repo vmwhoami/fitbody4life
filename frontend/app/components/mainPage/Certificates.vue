@@ -1,25 +1,23 @@
 <template>
   <section class="bg-white py-10 md:py-16">
-    <div class="max-w-6xl mx-auto px-4 md:px-8">
-      <!-- Title Section -->
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Why Clients Trust Me</h2>
-        <div class="flex flex-col md:flex-row items-center justify-center gap-6 text-left max-w-4xl mx-auto">
-          <!-- Badge Items -->
-          <div class="flex items-start space-x-3">
-            <span class="text-green-500 text-xl">✔</span>
-            <p class="text-gray-700 font-medium">Certified Personal Trainer – YMCA Level 3 (UK)</p>
-          </div>
-          <div class="flex items-start space-x-3">
-            <span class="text-green-500 text-xl">✔</span>
-            <p class="text-gray-700 font-medium">10+ Years International Dance & Fitness Experience</p>
-          </div>
-          <div class="flex items-start space-x-3">
-            <span class="text-green-500 text-xl">✔</span>
-            <p class="text-gray-700 font-medium">Trusted by Clients in Moldova, Romania, China, and the UK</p>
-          </div>
-        </div>
+   <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+      {{ $t('whyClientsTrust.trustTitle') }}
+    </h2>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-6 text-left max-w-4xl mx-auto">
+      <!-- Badge Items Loop -->
+      <div 
+        v-for="index in 3" 
+        :key="index - 1"
+        class="flex items-start space-x-3"
+      >
+        <span class="text-green-500 text-xl">✔</span>
+        <p class="text-gray-700 font-medium">
+          {{ $t(`whyClientsTrust.trustItems[${index - 1}]`) }}
+        </p>
       </div>
+    </div>
+   
 
       <!-- Certificates Section -->
       <div class="mt-16">
@@ -27,7 +25,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <!-- Certificate 1 -->
           <div 
-            class="certificate-card bg-gradient-to-br from-white to-gray-50 rounded-xl overflow-hidden shadow-lg border border-gray-100 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer"
+            class="certificate-card bg-gradient-to-br from-white to-gray-50 overflow-hidden shadow-lg border border-gray-100 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer"
             @click="openModal(0)"
           >
             <div class="relative h-64 overflow-hidden">
@@ -60,7 +58,7 @@
 
           <!-- Certificate 2 -->
           <div 
-            class="certificate-card bg-gradient-to-br from-white to-gray-50 rounded-xl overflow-hidden shadow-lg border border-gray-100 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer"
+            class="certificate-card bg-gradient-to-br from-white to-gray-50 overflow-hidden shadow-lg border border-gray-100 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer"
             @click="openModal(1)"
           >
             <div class="relative h-64 overflow-hidden">
@@ -102,7 +100,7 @@
       @click.self="closeModal"
     >
       <div 
-        class="bg-white rounded-xl overflow-hidden max-w-4xl w-full max-h-[90vh] flex flex-col transition-all duration-300"
+        class="bg-white overflow-hidden max-w-4xl w-full max-h-[90vh] flex flex-col transition-all duration-300"
         :class="{'scale-100': showModal, 'scale-95': !showModal}"
       >
         <div class="flex justify-between items-center p-4 border-b">
@@ -238,7 +236,7 @@
 
 <script setup>
 import { ref } from 'vue';
-
+import TitleSection from './TitleSection.vue';
 // Certificate data using local images and accurate details
 const certificates = [
   {

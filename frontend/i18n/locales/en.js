@@ -7,13 +7,16 @@ export default {
     settings: 'Settings',
     signout: 'Sign Out',
   },
-  certificates: {
-    trustTitle: "Why Clients Trust Me",
+
+  whyClientsTrust: {
+   trustTitle: "Why Clients Trust Me",
     trustItems: [
       "Certified Personal Trainer – YMCA Level 3 (UK)",
       "10+ Years International Dance & Fitness Experience",
       "Trusted by Clients in Moldova, Romania, China, and the UK"
     ],
+  },
+  certificates: {
     certTitle: "Professional Certifications",
     certificates: [
       {
