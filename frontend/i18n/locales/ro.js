@@ -71,11 +71,14 @@ export default {
       'Mutarea în Shanghai mi-a deschis uși spre oportunități freelance, inclusiv spectacole la expoziții auto și colaborări cu cântăreți chinezi. În cele din urmă, drumul m-a dus la Brighton and Hove în Anglia, unde mi-am aprofundat expertiza devenind antrenoare de fitness certificată.',
     journey3:
       'Întoarsă acum în Moldova, sunt o mamă mândră a unui băiat plin de viață de 7 ani și o soție dedicată. Îmbin viața de familie cu pasiunea mea pentru fitness și predau ca instructor de fitness la Arena Chișinău.',
+    specialize:
+      'Mă *specializez în antrenarea femeilor*, creând sesiuni sigure și motivante, adaptate nevoilor tale unice — de la tonifiere postnatală la redescoperirea încrederii în tine.',
     whyTrainTitle: 'De ce să te antrenezi cu mine?',
     personalized: {
-      title: 'Ședințe personalizate:',
-      desc: 'Antrenamente adaptate obiectivelor și stilului tău de viață.',
+      title: 'Ședințe Personalizate:',
+      desc: 'Antrenamente special create pentru corpul, obiectivele și stilul de viață al femeii.',
     },
+
     holistic: {
       title: 'Abordare holistică:',
       desc: 'Combin dans, antrenamente de forță și exerciții de flexibilitate pentru o formă fizică completă.',
