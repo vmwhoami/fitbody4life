@@ -2,7 +2,7 @@
 <template>
   <section class="container mx-auto px-6 py-6">
     <div class="flex flex-col md:flex-row gap-8">
-      <!-- CAROUSEL -->  
+      <!-- CAROUSEL -->
       <div class="w-full md:w-1/2">
         <Carousel :items="images" :height="600">
           <template #default="{ item }">
@@ -12,7 +12,7 @@
           </template>
         </Carousel>
       </div>
-   
+
       <!-- About Content -->
       <div class="w-full md:w-1/2">
         <h2 class="text-2xl md:text-3xl font-bold mb-4">{{ $t('about.title') }}</h2>
@@ -21,7 +21,12 @@
         <p class="text-gray-800 mb-2">
           <strong>{{ $t('about.intro') }} <span class="text-blue-600">Olya Melnic</span></strong>
         </p>
-        <p class="text-gray-600 mb-6">{{ $t('about.roles') }}</p>
+        <p class="text-gray-600 mb-4">{{ $t('about.roles') }}</p>
+
+        <!-- Specialization -->
+        <p class="text-gray-600 mb-6 italic">
+          {{ $t('about.specialize') }}
+        </p>
 
         <!-- Journey -->
         <p class="text-gray-600 mb-4">{{ $t('about.journey1') }}</p>
@@ -39,7 +44,10 @@
         <!-- Call to Action -->
         <h3 class="text-xl font-semibold mb-2">{{ $t('about.connectTitle') }}</h3>
         <p class="text-gray-600 mb-4">{{ $t('about.connectDesc') }}</p>
-        <a href="https://calendly.com/olenikamv" class="bg-[#DAB16B] hover:bg-opacity-90 text-white font-semibold text-lg py-4 px-8 shadow-lg transitiontext-white font-semibold px-6 py-3 rounded shadow hover:bg-blue-600 transition">
+        <a
+          href="https://calendly.com/olenikamv"
+          class="bg-[#DAB16B] hover:bg-opacity-90 text-white font-semibold text-lg py-4 px-8 shadow-lg transition"
+        >
           {{ $t('about.bookButton') }}
         </a>
       </div>
