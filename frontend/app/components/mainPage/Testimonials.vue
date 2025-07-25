@@ -3,9 +3,6 @@
     <h2 class="text-2xl md:text-3xl font-bold text-center mb-2">
       {{ $t('WhatourHappyClientsSay.header') }}
     </h2>
-    <p class="text-center text-gray-600 mb-8">
-      Things that make it the best place to start training
-    </p>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <TestimonialCard
