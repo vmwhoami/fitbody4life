@@ -92,4 +92,7 @@ export default {
       'Prima ta sesiune este gratuită—o oportunitate să ne cunoaștem, să discutăm obiectivele tale și să vedem dacă suntem potrivirea perfectă.',
     bookButton: 'Programează prima sesiune gratuită',
   },
+  WhatourHappyClientsSay: {
+    header: "Ce spun clienții mei"
+  }
 }

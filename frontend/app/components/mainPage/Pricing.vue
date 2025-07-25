@@ -27,7 +27,7 @@
             :key="index"
             class="flex items-start"
           >
-            <CheckCircleIcon class="h-6 w-6 text-green-500 flex-shrink-0 mt-0.5 mr-2" />
+          
             <span class="text-gray-700">{{ feature }}</span>
           </li>
         </ul>
@@ -35,7 +35,6 @@
 
       <div class="mt-6 p-4 bg-amber-50 rounded-lg border border-amber-100">
         <p class="text-amber-700 italic">
-          <InformationCircleIcon class="h-5 w-5 inline-block mr-1 -mt-1" />
           Payment plans available for packages over $500
         </p>
       </div>
@@ -49,8 +48,6 @@
 import { ref } from 'vue';
 import PricingCard from '@/components/PricingCard.vue';
 import FaqAccordion from '@/components/FaqAccordion.vue';
-// never mind the heroicons import per your request
-// import { CheckCircleIcon, InformationCircleIcon } from '@heroicons/vue/24/outline';
 
 const pricingPlans = ref([
   {
