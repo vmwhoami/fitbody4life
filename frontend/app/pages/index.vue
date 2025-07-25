@@ -3,9 +3,9 @@
     <TemplateNavbar />
     <IntroMain />
     <Certificates />
-    <AboutSection />
     <TrainerPostSection />
     <Testimonials />
+    <AboutSection />
     <Pricing />
     <Footer />
     <!-- <TrainingPrograms /> -->
@@ -24,9 +24,9 @@ import TrainerPostSection from "@/components/mainPage/TrainerPostSection.vue";
 import Testimonials from "@/components/mainPage/Testimonials.vue";
 import Pricing from "@/components/mainPage/Pricing.vue";
 import Footer from "@/components/Footer.vue";
-import TrainingPrograms from "@/components/mainPage/TrainingPrograms";
-import ImageCarousel from "@/components/mainPage/ImageCarousel.vue";
-import GroupClass from "@/components/mainPage/GroupClass.vue";
-import PersonalShop from "@/components/mainPage/PersonalShop.vue";
-import PersonalApp from "@/components/mainPage/PersonalApp.vue";
+// import TrainingPrograms from "@/components/mainPage/TrainingPrograms";
+// import ImageCarousel from "@/components/mainPage/ImageCarousel.vue";
+// import GroupClass from "@/components/mainPage/GroupClass.vue";
+// import PersonalShop from "@/components/mainPage/PersonalShop.vue";
+// import PersonalApp from "@/components/mainPage/PersonalApp.vue";
 </script>

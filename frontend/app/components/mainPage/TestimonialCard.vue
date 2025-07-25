@@ -6,11 +6,7 @@
       </div>
     </div>
     <h3 class="font-semibold text-lg mb-2">{{ name }}</h3>
-    <div class="flex justify-center mb-2">
-      <span v-for="i in 5" :key="i" :class="i <= rating ? 'text-yellow-400' : 'text-gray-300'">
-        ★
-      </span>
-    </div>
+ 
     <p class="text-gray-600 text-sm">{{ text }}</p>
   </div>
 </template>

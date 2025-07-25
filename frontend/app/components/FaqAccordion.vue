@@ -3,8 +3,7 @@
     <div
       v-for="(item, idx) in faqs"
       :key="idx"
-      class="border border-gray-200 rounded-lg mb-2 overflow-hidden"
-    >
+      class="border border-gray-200 rounded-lg mb-2 overflow-hidden">
       <h2>
         <button
           :id="`faq-heading-${idx}`"

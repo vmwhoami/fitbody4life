@@ -91,4 +91,7 @@ export default {
       "Your first session is on me—an opportunity for us to get acquainted, discuss your goals, and ensure we're the perfect fit.",
     bookButton: 'Book Your Free Session',
   },
+  WhatourHappyClientsSay: {
+    header: "What my clients say"
+  }
 }
