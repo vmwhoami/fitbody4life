@@ -7,6 +7,13 @@ export default {
     settings: 'Setări',
     signout: 'Deconectare',
   },
+  heroSection: {
+    mainTitle: {
+      line1: 'ANTRENAMENT DE FORȚĂ',
+      line2: 'SIMPLIFICAT',
+    },
+    subtitle: 'SERVICII PREMIUM DE ANTRENAMENT PERSONAL',
+  },
   whyClientsTrust: {
     trustTitle: 'De ce mă aleg clienții',
     trustItems: [
@@ -93,6 +100,6 @@ export default {
     bookButton: 'Programează prima sesiune gratuită',
   },
   WhatourHappyClientsSay: {
-    header: "Ce spun clienții mei"
-  }
+    header: 'Ce spun clienții mei',
+  },
 }

@@ -7,6 +7,13 @@ export default {
     settings: 'Настройки',
     signout: 'Выход',
   },
+  heroSection: {
+    mainTitle: {
+      line1: 'СИЛОВАЯ ТРЕНИРОВКА',
+      line2: 'УПРОЩЕННАЯ',
+    },
+    subtitle: 'ПРЕМИУМ УСЛУГИ ПЕРСОНАЛЬНОГО ТРЕНАЖА',
+  },
   whyClientsTrust: {
     trustTitle: 'Почему клиенты доверяют мне',
     trustItems: [
@@ -92,7 +99,7 @@ export default {
       'Первая тренировка — бесплатно: возможность познакомиться, обсудить ваши цели и понять, подходим ли мы друг другу.',
     bookButton: 'Запишитесь на бесплатную тренировку',
   },
-    WhatourHappyClientsSay: {
-    header: "Что говорят мои клиенты"
-  }
+  WhatourHappyClientsSay: {
+    header: 'Что говорят мои клиенты',
+  },
 }
