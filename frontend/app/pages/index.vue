@@ -6,7 +6,7 @@
     <Certificates />
     <Testimonials />
     <AboutSection />
-    <TrainerPostSection />
+    <!-- <TrainerPostSection /> -->
     <Pricing />
     <Footer />
     <!-- <TrainingPrograms /> -->
@@ -23,7 +23,7 @@ import IntroMain from "@/components/mainPage/IntroMain";
 import Certificates from "@/components/mainPage/Certificates";
 import AboutSection from "@/components/mainPage/AboutSection.vue";
 import Testimonials from "@/components/mainPage/Testimonials.vue";
-import TrainerPostSection from "@/components/mainPage/TrainerPostSection.vue";
+// import TrainerPostSection from "@/components/mainPage/TrainerPostSection.vue";
 import Pricing from "@/components/mainPage/Pricing.vue";
 import Footer from "@/components/Footer.vue";
 // import TrainingPrograms from "@/components/mainPage/TrainingPrograms";

@@ -1,6 +1,6 @@
 <!-- About.vue -->
 <template>
-  <section class="container mx-auto px-6 py-6">
+  <section class="container mx-auto px-12 py-12">
     <div class="flex flex-col md:flex-row gap-8">
       <!-- CAROUSEL -->
       <div class="w-full md:w-1/2">
@@ -44,12 +44,12 @@
         <!-- Call to Action -->
         <h3 class="text-xl font-semibold mb-2">{{ $t('about.connectTitle') }}</h3>
         <p class="text-gray-600 mb-4">{{ $t('about.connectDesc') }}</p>
-        <a
-          href="https://calendly.com/olenikamv"
-          class="bg-[#DAB16B] hover:bg-opacity-90 text-white font-semibold text-lg py-4 px-8 shadow-lg transition"
-        >
+        <NuxtLink href="https://calendly.com/olenikamv"
+                  class="bg-[#DAB16B] hover:bg-opacity-90 
+                        text-white font-semibold text-lg py-4 
+                        px-8 shadow-lg transition">
           {{ $t('about.bookButton') }}
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </section>
@@ -78,6 +78,7 @@ import OleaLopata from '@/assets/images/slider_images/OleaLopata.jpg';
 import tvshowdindu from '@/assets/images/slider_images/tvshowdindu.jpg';
 import girlsSchooter from '@/assets/images/slider_images/girlsSchooter.jpg';
 import alex_wang from '@/assets/images/slider_images/alex_wang.jpg'
+import { NuxtLink } from '#components';
 // Create reactive image list in desired order
 const images = ref([
   Oleaporvupirvupirvu,
