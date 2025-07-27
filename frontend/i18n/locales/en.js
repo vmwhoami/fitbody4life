@@ -8,6 +8,13 @@ export default {
     signout: 'Sign Out',
   },
 
+  heroSection: {
+    mainTitle: {
+      line1: 'STRENGTH TRAINING',
+      line2: 'SIMPLIFIED',
+    },
+    subtitle: 'PREMIUM PERSONAL TRAINING SERVICES',
+  },
   whyClientsTrust: {
     trustTitle: 'Why Clients Trust Me',
     trustItems: [
@@ -72,7 +79,8 @@ export default {
       'Relocating to Shanghai opened doors to freelance opportunities, including performances at car shows and collaborations with Chinese singers. Eventually, my path led me to Brighton and Hove in England, where I deepened my expertise by becoming a certified fitness trainer.',
     journey3:
       "Now back in Moldova, I'm a proud mother to a spirited 7-year-old boy and a dedicated wife. Balancing family life with my passion for fitness, I currently serve as a fitness instructor at Arena Chișinău.",
-  specialize: 'I *specialize in coaching women*, creating safe, empowering sessions tailored to your unique needs—from postpartum strength to rediscovering confidence.',
+    specialize:
+      'I *specialize in coaching women*, creating safe, empowering sessions tailored to your unique needs—from postpartum strength to rediscovering confidence.',
     whyTrainTitle: 'Why Train With Me?',
     personalized: {
       title: 'Personalized Sessions:',
@@ -92,6 +100,6 @@ export default {
     bookButton: 'Book Your Free Session',
   },
   WhatourHappyClientsSay: {
-    header: "What my clients say"
-  }
+    header: 'What my clients say',
+  },
 }

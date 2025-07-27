@@ -1,6 +1,7 @@
 <template>
   <section>
     <TemplateNavbar />
+    <HeroSection />
     <IntroMain />
     <Certificates />
     <Testimonials />
@@ -17,6 +18,7 @@
 </template>
 <script setup>
 import TemplateNavbar from "@/components/TemplateNavbar.vue";
+import HeroSection from "@/components/mainPage/HeroSection.vue";
 import IntroMain from "@/components/mainPage/IntroMain";
 import Certificates from "@/components/mainPage/Certificates";
 import AboutSection from "@/components/mainPage/AboutSection.vue";

@@ -12,7 +12,7 @@
   "dependencies": {
     "@nuxt/image": "^1.10.0",
     "@nuxt/kit": "4.0.0",
-    "@nuxtjs/i18n": "^9.5.3",
+    "@nuxtjs/i18n": "10.0.3",
     "@nuxtjs/tailwindcss": "^6.13.2",
     "@pinia/nuxt": "^0.11.0",
     "@tailwindcss/vite": "^4.1.4",
