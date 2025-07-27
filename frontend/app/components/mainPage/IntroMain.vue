@@ -1,5 +1,5 @@
 <template>
-  <section class="container mt-20 mx-auto px-6 py-12">
+  <section class="container object-contain mt-20 mx-auto px-6 py-12">
     <div data-depth="0.1" class="flex flex-col-reverse md:flex-row items-center">
       <!-- Text Column -->
       <div class="md:w-1/2 mt-8 md:mt-0">
@@ -39,7 +39,7 @@
       <div id="scene"
            ref="sceneRef"
            data-relative-input="true"
-           class="relative w-full md:w-1/2 
+           class="relative overflow-hidden w-full md:w-1/2
                   lg:w-2/5 h-[300px] sm:h-[400px]
                   md:h-[500px] mx-auto">
         <!-- Layer 1: small floating dots -->
@@ -50,22 +50,20 @@
         </div>
 
         <!-- Layer 2: big translucent circle -->
-        <div data-depth="0.2" class="absolute inset-0 pointer-events-none z-0">
+        <div data-depth="0.2" class="absolute overflow-hidden inset-0 pointer-events-none z-0">
           <div class="absolute top-1/2 left-1/2 w-[300px]
                       sm:w-[400px] h-[300px] sm:h-[400px]
                       -translate-x-1/2 -translate-y-1/2 rounded-full 
                       bg-gray-200 opacity-50"
-                      v-motion="{ initial: { opacity: 100, y: 0 }, enter: { opacity: 1, y: 0 } }"
-                      >
+                      v-motion="{ initial: { opacity: 100, y: 0 }, enter: { opacity: 1, y: 0 } }">
           </div>
         </div>
 
         <!-- Layer 3: red bars -->
-        <div data-depth="0.9" class="absolute inset-0 pointer-events-none z-0">
+        <div data-depth="0.9" class="absolute overflow-hidden inset-0 pointer-events-none z-0">
           <div class="absolute bottom-9 translate-x-[300px]
                       box-border size-32 mask-y-from-70%
-                      mask-y-to-90% -translate-y-1/4 flex gap-1"
-                      v-motion="{ initial: { opacity: 20, y: 100 }, enter: { opacity: 1, y: 0 } }">
+                      mask-y-to-90% sm:translate-x-80 translate-x-90  flex gap-1" >
             <div class="w-1.5 h-12 bg-red-500 rounded-sm"></div>
             <div class="w-1.5 h-10 bg-red-500 rounded-sm"></div>
             <div class="w-1.5 h-14 bg-red-500 rounded-sm"></div>
@@ -79,11 +77,11 @@
              data-pointer-events="true"
              class="relative w-full md:w-1/2 
                     lg:w-2/5 h-[300px] sm:h-[400px] md:h-[500px]
-                    translate-x-35 mx-auto overflow-hidden"
+                    sm:translate-x-35 translate-x-40  mx-auto overflow-hidden"
                      v-motion="{ initial: { opacity: 0, y: 100 }, enter: { opacity: 1, y: 0 } }">
           <img src="@/assets/images/oleafitess1920.png"
                :alt="t('hero.altText')"
-               class="max-h-full max-w-full custom-fade object-contain"/>
+               class="max-h-full max-w-full custom-fade overflow-hidden"/>
         </div>
       </div>
     </div>
