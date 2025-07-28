@@ -31,12 +31,6 @@
         </ul>
       </div>
 
-      <div class="mt-6 p-6 bg-amber-50 rounded-lg border border-amber-100">
-        <p class="text-amber-700 italic">
-          Payment plans available for packages over $500
-        </p>
-      </div>
-
       <FaqAccordion :faqs="faqs" class="mt-10" />
     </div>
   </section>
@@ -80,6 +74,6 @@ const faqs = ref([
 
 function handlePlanSelect(plan) {
 
-
+console.log(`Selected plan: ${plan}`);
 }
 </script>
