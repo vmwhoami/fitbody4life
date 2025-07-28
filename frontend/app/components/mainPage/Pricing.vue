@@ -73,7 +73,7 @@ const faqs = ref([
 ]);
 
 function handlePlanSelect(plan) {
-
+  window.open("https://calendly.com/olenikamv", "_blank");
 console.log(`Selected plan: ${plan}`);
 }
 </script>

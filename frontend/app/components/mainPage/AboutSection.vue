@@ -45,6 +45,7 @@
         <h3 class="text-xl font-semibold mb-2">{{ $t('about.connectTitle') }}</h3>
         <p class="text-gray-600 mb-4">{{ $t('about.connectDesc') }}</p>
         <NuxtLink href="https://calendly.com/olenikamv"
+                  target="_blank"
                   class="bg-[#DAB16B] hover:bg-opacity-90 
                         text-white font-semibold text-lg py-4 
                         px-8 shadow-lg transition">
