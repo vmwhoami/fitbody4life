@@ -102,7 +102,11 @@ export default {
   WhatourHappyClientsSay: {
     header: 'What my clients say',
   },
-
+  prePricing: {
+    heading: 'Certified Coaching Designed for Real Change',
+    subheading:
+      'One-on-one, expert‑led sessions crafted around your goals—with support every step of the way.',
+  },
   pricing: {
     cards: {
       vip: {

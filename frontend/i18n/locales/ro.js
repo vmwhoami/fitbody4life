@@ -102,29 +102,34 @@ export default {
   WhatourHappyClientsSay: {
     header: 'Ce spun clienții mei',
   },
-  pricing: {
-  cards: {
-    vip: {
-      title: 'Transformare VIP',
-      description: '10 ședințe personalizate + suport prioritar & coaching holistic',
-      price: '950 USD',
-      cta: 'Programează o consultație gratuită',
-    },
-    standard: {
-      title: 'Pachet Standard',
-      description: '5 ședințe cu acces complet & feedback detaliat',
-      price: '475 USD',
-      cta: 'Programează o consultație gratuită',
-    },
-    single: {
-      title: 'Ședință unică',
-      description: 'O ședință individuală de 60 de minute',
-      price: '100 USD',
-      cta: 'Rezervă o ședință',
-    },
+  prePricing: {
+    heading: 'Coaching certificat creat pentru schimbări reale',
+    subheading:
+      'Ședințe individuale conduse de experți, adaptate obiectivelor tale — cu suport la fiecare pas.',
   },
-  featuresHeading: 'Ce includ toate planurile:',
-  paymentNotice: 'Disponibilă opțiunea de plată în rate pentru pachete peste 500 USD',
-}
 
+  pricing: {
+    cards: {
+      vip: {
+        title: 'Transformare VIP',
+        description: '10 ședințe personalizate + suport prioritar & coaching holistic',
+        price: '950 USD',
+        cta: 'Programează o consultație gratuită',
+      },
+      standard: {
+        title: 'Pachet Standard',
+        description: '5 ședințe cu acces complet & feedback detaliat',
+        price: '475 USD',
+        cta: 'Programează o consultație gratuită',
+      },
+      single: {
+        title: 'Ședință unică',
+        description: 'O ședință individuală de 60 de minute',
+        price: '100 USD',
+        cta: 'Rezervă o ședință',
+      },
+    },
+    featuresHeading: 'Ce includ toate planurile:',
+    paymentNotice: 'Disponibilă opțiunea de plată în rate pentru pachete peste 500 USD',
+  },
 }
