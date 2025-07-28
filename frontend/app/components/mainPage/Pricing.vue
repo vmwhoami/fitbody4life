@@ -1,9 +1,11 @@
 <template>
   <section class="py-12 bg-gray-100">
-    <div class="max-w-3xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-gray-800 mb-4">Investment in Transformation</h2>
-      <p class="text-gray-700 mb-8 max-w-2xl">
-        Personalized, expert-led coaching tailored to you. Every session designed for real change.
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+        {{ $t('prePricing.heading') }}
+      </h2>
+      <p class="text-gray-700 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+         {{ $t('prePricing.subheading') }}
       </p>
 
       <div class="grid md:grid-cols-3 gap-8">
