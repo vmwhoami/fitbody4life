@@ -7,14 +7,15 @@
       </p>
 
       <div class="grid md:grid-cols-3 gap-8">
-        <PricingCard v-for="(plan, index) in pricingPlans"
-                            :key="index"
-                            :title="plan.title"
-                            :description="plan.description"
-                            :price="plan.price"
-                            :cta="plan.cta"
-                            :highlight="plan.highlight"
-                            @click="handlePlanSelect(plan)"/>
+      <PricingCard v-for="plan in pricingPlans"
+                  :key="plan.key"
+                  :title="$t(`pricing.cards.${plan.key}.title`)"
+                  :description="$t(`pricing.cards.${plan.key}.description`)"
+                  :price="$t(`pricing.cards.${plan.key}.price`)"
+                  :cta="$t(`pricing.cards.${plan.key}.cta`)"
+                  :highlight="plan.highlight"
+                  @click="handlePlanSelect(plan.key)"/>
+
       </div>
 
       <div class="mt-10 bg-white p-6 rounded-lg shadow-sm border border-gray-100">
@@ -43,30 +44,14 @@
 import { ref } from 'vue';
 import PricingCard from '@/components/PricingCard.vue';
 import FaqAccordion from '@/components/FaqAccordion.vue';
+ 
 
 const pricingPlans = ref([
-  {
-    title: "VIP Transformation",
-    description: "10 sessions, priority support & holistic coaching",
-    price: 950,
-    cta: "Book Free Consultation",
-    highlight: true
-  },
-  {
-    title: "Standard Package",
-    description: "5 sessions with full access & feedback",
-    price: 475,
-    cta: "Book Free Consultation",
-    highlight: false
-  },
-  {
-    title: "Single Session",
-    description: "One 60‑minute one-on-one session",
-    price: 100,
-    cta: "Book Session",
-    highlight: false
-  }
+  { key: 'vip', highlight: true },
+  { key: 'standard', highlight: false },
+  { key: 'single', highlight: false }
 ]);
+
 
 const features = ref([
   "One‑on‑One coaching tailored to YOUR life & goals",
@@ -94,9 +79,5 @@ const faqs = ref([
 function handlePlanSelect(plan) {
 
 
-
-
-  console.log(`Selected plan: ${plan.title}`);
-  // TODO: implement your booking logic (e.g. open modal, navigate, etc.)
 }
 </script>

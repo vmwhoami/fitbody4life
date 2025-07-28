@@ -102,4 +102,29 @@ export default {
   WhatourHappyClientsSay: {
     header: 'What my clients say',
   },
+
+  pricing: {
+    cards: {
+      vip: {
+        title: 'VIP Transformation',
+        description: '10 sessions… holistic coaching',
+        price: '950',
+        cta: 'Book Free Consultation',
+      },
+      standard: {
+        title: 'Standard Package',
+        description: '5 sessions… full access & feedback',
+        price: '475',
+        cta: 'Book Free Consultation',
+      },
+      single: {
+        title: 'Single Session',
+        description: 'One 60‑minute… session',
+        price: '100',
+        cta: 'Book Session',
+      },
+    },
+    featuresHeading: 'All plans include:',
+    paymentNotice: 'Payment plans available for packages over $500',
+  },
 }
