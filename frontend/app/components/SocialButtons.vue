@@ -10,6 +10,7 @@
     <label for="toggle" class="absolute top-0 left-0
                                w-full h-full flex justify-center 
                                items-center">
+                               <!-- leave this as is !!! -->
       <span class="absolute border-none 
                    bg-[#275dc7] top-[-1px] 
                    left-[-1px] w-[3.5rem] h-[3.5rem] 
@@ -17,6 +18,8 @@
                    flex justify-center items-center">
         <IconPhone class="w-10 h-10 text-white" />
       </span>
+                                   <!--!!! leave this as is !!! -->
+ 
     </label>
     
     <NuxtLink href="http://m.me/vmwhoami" 
