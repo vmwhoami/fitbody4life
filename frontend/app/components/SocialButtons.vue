@@ -22,43 +22,43 @@
  
     </label>
     
-    <NuxtLink href="http://m.me/vmwhoami" 
+    <NuxtLink href="http://m.me/olenikapt" 
        target="_blank" 
        class="messenger-link absolute 
               flex justify-center items-center bg-white
               w-[3.25rem] h-[3.25rem] rounded-full 
               cursor-pointer transition-transform 
               duration-200 ease-custom">
-      <IconMessengerSvg class="w-8 h-8" />
+      <IconMessengerSvg class="w-8 h-8" :my-fill="'#168AFF'" />
     </NuxtLink>
     
-    <NuxtLink href="tel:+373691361 77" 
+    <NuxtLink href="https://t.me/olenikapt"
        target="_blank" 
        class="phone-link absolute flex justify-center 
               items-center bg-white w-[3.25rem] h-[3.25rem]
               rounded-full cursor-pointer 
               transition-transform duration-200 ease-custom">
-      <IconTelegram class="w-8 h-8 text-[#004d73]" />
+      <IconTelegram class="w-8 h-8" :my-fill="'#24A1DE'" />
     </NuxtLink>
     
-    <NuxtLink href="http://wa.me/+37369136177" 
+    <NuxtLink href="http://wa.me/+37369442480" 
        target="_blank" 
        class="whatsapp-link absolute flex 
               justify-center items-center 
               bg-white w-[3.25rem] h-[3.25rem] 
               rounded-full cursor-pointer 
               transition-transform duration-200 ease-custom">
-      <IconWhatAppSvg class="w-50 h-50" :my-fill="'#1fb141'" />
+      <IconWhatAppSvg class="w-8 h-8" :my-fill="'#1fb141'" />
     </NuxtLink>
     
-    <NuxtLink href="viber://chat?number=+37369136177" 
+    <NuxtLink href="viber://chat?number=+37369442480" 
        target="_blank" 
        class="viber-link absolute flex 
               justify-center items-center 
               bg-white w-[3.25rem] h-[3.25rem] 
               rounded-full cursor-pointer 
               transition-transform duration-200 ease-custom">
-      <IconViberSvg class="w-8 h-8" />
+      <IconViberSvg class="w-8 h-8" :my-fill="'#7360f2'" />
     </NuxtLink>
   </div>
 </template>
