@@ -32,13 +32,13 @@
       <IconMessengerSvg class="w-8 h-8" />
     </NuxtLink>
     
-    <NuxtLink href="tel:+37369136177" 
+    <NuxtLink href="tel:+373691361 77" 
        target="_blank" 
        class="phone-link absolute flex justify-center 
               items-center bg-white w-[3.25rem] h-[3.25rem]
               rounded-full cursor-pointer 
               transition-transform duration-200 ease-custom">
-      <IconPhoneSvg class="w-8 h-8 text-[#004d73]" />
+      <IconTelegram class="w-8 h-8 text-[#004d73]" />
     </NuxtLink>
     
     <NuxtLink href="http://wa.me/+37369136177" 
@@ -64,6 +64,7 @@
 </template>
 
 <script setup>
+import IconTelegram from '@/assets/icons/IconTelegram.vue';
 import IconPhone from '@/assets/icons/IconPhone.vue';
 import IconMessengerSvg from '@/assets/icons/IconMessengerSvg.vue';
 import IconWhatAppSvg from '@/assets/icons/IconWhatsApp.vue';
