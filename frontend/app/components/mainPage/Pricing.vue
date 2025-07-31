@@ -20,18 +20,6 @@
 
       </div>
 
-      <div class="mt-10 bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-        <h3 class="text-xl font-semibold text-gray-800 mb-4">All plans include:</h3>
-        <ul class="space-y-3">
-          <li v-for="(feature, index) in features"
-              :key="index"
-              class="flex items-start">
-            <span class="text-gray-700">{{ feature }}</span>
-          </li>
-        </ul>
-      </div>
-
-      <FaqAccordion :faqs="faqs" class="mt-10" />
     </div>
   </section>
 </template>
@@ -39,15 +27,13 @@
 <script setup>
 import { ref } from 'vue';
 import PricingCard from '@/components/PricingCard.vue';
-import FaqAccordion from '@/components/FaqAccordion.vue';
- 
+
 
 const pricingPlans = ref([
   { key: 'vip', highlight: true },
   { key: 'standard', highlight: false },
   { key: 'single', highlight: false }
 ]);
-
 
 const features = ref([
   "One‑on‑One coaching tailored to YOUR life & goals",
