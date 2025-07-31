@@ -1,46 +1,39 @@
 <template>
-  <div id="faq-accordion">
-    <div
-      v-for="(item, idx) in faqs"
-      :key="idx"
-      class="border border-gray-200 rounded-lg mb-2 overflow-hidden">
-      <h2>
-        <button :id="`faq-heading-${idx}`"
-                class="flex items-center 
-                       justify-between w-full 
-                       p-5 font-medium text-left 
-                       text-gray-900 bg-gray-100 
-                       hover:bg-gray-200 rounded-t"
-                :aria-expanded="activeIndex === idx"
-                :aria-controls="`faq-body-${idx}`"
-                @click="toggle(idx)">
-                {{ item.question }}
-           <IconArrow  :class="{ 'rotate-180': activeIndex === idx }"/>
-        </button>
-      </h2>
-      <div :id="`faq-body-${idx}`"
-           class="p-5 border-t border-gray-200"
-           v-show="activeIndex === idx"
-           :aria-labelledby="`faq-heading-${idx}`">
-        <p class="text-gray-500">{{ item.answer }}</p>
+  <div class="bg-[#1a1a1a] rounded shadow-md divide-y divide-gray-700">
+    <div v-for="(item, idx) in faqs" :key="idx" class="text-white">
+      <button
+        class="w-full text-left px-6 py-5 flex justify-between items-center hover:bg-[#262626] transition-all"
+        @click="toggle(idx)"
+      >
+        <span
+          :class="{ 'text-[#e11d48] font-semibold': idx === faqs.length - 1 }"
+          class="text-lg font-bold"
+        >
+          {{ item.question }}
+        </span>
+        <span
+          class="text-[#e11d48] text-xl transform transition-transform duration-300"
+          :class="{ 'rotate-45': activeIndex === idx }"
+          >+</span
+        >
+      </button>
+      <div v-show="activeIndex === idx" class="px-6 pb-5 text-sm text-gray-300">
+        {{ item.answer }}
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import IconArrow from '~/assets/icons/IconArrow.vue';
-const props = defineProps({
-  faqs: {
-    type: Array,
-    required: true,
-  },
-});
+  import { ref } from 'vue'
 
-const activeIndex = ref(0);
+  const props = defineProps({
+    faqs: Array,
+  })
 
-function toggle(idx) {
-  activeIndex.value = activeIndex.value === idx ? -1 : idx;
-}
+  const activeIndex = ref(-1)
+
+  function toggle(idx) {
+    activeIndex.value = activeIndex.value === idx ? -1 : idx
+  }
 </script>

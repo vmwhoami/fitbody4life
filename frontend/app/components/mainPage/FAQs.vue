@@ -1,42 +1,22 @@
 <template>
-  <section class="py-12 bg-gray-100">
-    <div class="mt-10 bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-      <h3 class="text-xl font-semibold text-gray-800 mb-4">All plans include:</h3>
-      <ul class="space-y-3">
-        <li v-for="(feature, index) in features" :key="index" class="flex items-start">
-          <span class="text-gray-700">{{ feature }}</span>
-        </li>
-      </ul>
+  <section class="py-16 bg-[#0d0d0d] text-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-4xl font-extrabold mb-10 text-center">Online Personal Training FAQs</h2>
+      <FaqAccordion :faqs="faqs" />
     </div>
-    <FaqAccordion :faqs="faqs" class="mt-10" />
   </section>
 </template>
 
 <script setup>
-  import { ref } from 'vue'
+import { ref } from 'vue'
+import FaqAccordion from '@/components/FaqAccordion.vue'
 
-  import FaqAccordion from '@/components/FaqAccordion.vue'
-
-  const features = ref([
-    'One‑on‑One coaching tailored to YOUR life & goals',
-    'Proven transformation formula with dance‑based training',
-    'Certified trainer (YMCA Level 3, UK regulated)',
-    'Direct support via chat, email & session feedback',
-    'Flexible scheduling & global availability',
-  ])
-
-  const faqs = ref([
-    {
-      question: 'Why is one session $100?',
-      answer: 'This reflects premium expertise, certification, and personalized care.',
-    },
-    {
-      question: 'Can I train remotely?',
-      answer: 'Absolutely—online sessions, travel-inclusive options, or hybrid coaching available.',
-    },
-    {
-      question: 'Are discounts available?',
-      answer: 'I occasionally run bundles and referral offers—best to discuss on a free consult.',
-    },
-  ])
+const faqs = ref([
+  { question: 'What is online personal training?', answer: 'It’s remote fitness coaching via video or app.' },
+  { question: 'Is online personal training cheaper than in person?', answer: 'Usually yes, since there’s no travel or gym fee.' },
+  { question: 'Is online personal training effective?', answer: 'Absolutely—if you stick to the plan.' },
+  { question: 'How often would I train with online personal training?', answer: 'Typically 3–5 times per week.' },
+  { question: 'Is an online personal trainer worth it?', answer: 'If you’re self-motivated but want expert guidance—yes.' },
+  { question: 'How long is an online personal training course?', answer: 'Depends on your goals—can range from 4 to 12+ weeks.' }
+])
 </script>
