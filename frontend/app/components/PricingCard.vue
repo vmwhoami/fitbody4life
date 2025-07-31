@@ -1,10 +1,11 @@
 <template>
   <article class="bg-white  border
                   border-gray-200 shadow-sm 
-                  hover:shadow-md transition-all 
-                  duration-300 h-full flex flex-col"
+                  transition-all duration-300 hover:shadow-xl
+                  hover:-translate-y-1 
+                  h-full flex flex-col"
                   :class="{
-                    'ring-2 ring-amber-300 border-amber-200': highlight,
+                    'ring-2 ring-amber-300 duration-300 border-amber-200': highlight,
                     'transform hover:-translate-y-1': !highlight
                   }">
     <div class="p-6 flex-1 flex flex-col">
