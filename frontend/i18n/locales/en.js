@@ -108,6 +108,7 @@ export default {
       'One-on-one, expert‑led sessions crafted around your goals—with support every step of the way.',
   },
   pricing: {
+    popular: 'Most popular',
     cards: {
       vip: {
         title: 'VIP Transformation',
