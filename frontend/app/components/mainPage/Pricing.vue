@@ -35,30 +35,7 @@ const pricingPlans = ref([
   { key: 'single', highlight: false }
 ]);
 
-const features = ref([
-  "One‑on‑One coaching tailored to YOUR life & goals",
-  "Proven transformation formula with dance‑based training",
-  "Certified trainer (YMCA Level 3, UK regulated)",
-  "Direct support via chat, email & session feedback",
-  "Flexible scheduling & global availability"
-]);
-
-const faqs = ref([
-  { 
-    question: 'Why is one session $100?', 
-    answer: 'This reflects premium expertise, certification, and personalized care.' 
-  },
-  { 
-    question: 'Can I train remotely?', 
-    answer: 'Absolutely—online sessions, travel-inclusive options, or hybrid coaching available.' 
-  },
-  { 
-    question: 'Are discounts available?', 
-    answer: 'I occasionally run bundles and referral offers—best to discuss on a free consult.' 
-  }
-]);
-
-function handlePlanSelect(plan) {
+ function handlePlanSelect(plan) {
   window.open("https://calendly.com/olenikamv", "_blank");
 console.log(`Selected plan: ${plan}`);
 }
