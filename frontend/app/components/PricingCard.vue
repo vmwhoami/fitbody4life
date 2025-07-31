@@ -11,7 +11,8 @@
       <div v-if="highlight" class="mb-2">
         <span class="inline-block px-3 py-1 text-xs 
                     font-semibold text-amber-800 bg-amber-100">
-          MOST POPULAR
+          {{ t("pricing.popular") }}
+
         </span>
       </div>
       
@@ -46,7 +47,8 @@ defineProps({
   cta: { type: String, default: "Get Started" },
   highlight: { type: Boolean, default: false }
 });
-
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 defineEmits(['click']);
 </script>
 

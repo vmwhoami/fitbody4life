@@ -109,6 +109,7 @@ export default {
   },
 
   pricing: {
+    popular: 'Cel mai popular',
     cards: {
       vip: {
         title: 'Transformare VIP',
