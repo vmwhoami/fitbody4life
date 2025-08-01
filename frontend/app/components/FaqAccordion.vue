@@ -1,3 +1,4 @@
+// FaqAccordion.vue
 <template>
   <div class="bg-[#1a1a1a] rounded shadow-md divide-y divide-gray-700">
     <div v-for="(item, idx) in faqs" :key="idx" class="text-white">
