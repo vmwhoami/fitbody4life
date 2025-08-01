@@ -17,30 +17,42 @@
   const { t } = useI18n()
 
   // Fallback data with all FAQ items
-  const faqItems = ref([
-    {
-      question: t('faq.items[0].question'),
-      answer: t('faq.items[0].answer'),
-    },
-    {
-      question: t('faq.items[1].question'),
-      answer: t('faq.items[1].answer'),
-    },
-    {
-      question: t('faq.items[2].question'),
-      answer: t('faq.items[2].answer'),
-    },
-    {
-      question: t('faq.items[3].question'),
-      answer: t('faq.items[3].answer'),
-    },
-    {
-      question: t('faq.items[4].question'),
-      answer: t('faq.items[4].answer'),
-    },
-    {
-      question: t('faq.items[5].question'),
-      answer: t('faq.items[5].answer'),
-    },
-  ])
+const faqItems = ref([
+  {
+    question: t('faq.items[0].question'),
+    answer: t('faq.items[0].answer'),
+  },
+  {
+    question: t('faq.items[1].question'),
+    answer: t('faq.items[1].answer'),
+  },
+  {
+    question: t('faq.items[2].question'),
+    answer: t('faq.items[2].answer'),
+  },
+  {
+    question: t('faq.items[3].question'),
+    answer: t('faq.items[3].answer'),
+  },
+  {
+    question: t('faq.items[4].question'),
+    answer: t('faq.items[4].answer'),
+  },
+  {
+    question: t('faq.items[5].question'),
+    answer: t('faq.items[5].answer'),
+  },
+  {
+    question: t('faq.items[6].question'),
+    answer: t('faq.items[6].answer'),
+  },
+  {
+    question: t('faq.items[7].question'),
+    answer: t('faq.items[7].answer'),
+  },
+  {
+    question: t('faq.items[8].question'),
+    answer: t('faq.items[8].answer'),
+  },
+])
 </script>
