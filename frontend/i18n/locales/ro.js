@@ -133,4 +133,33 @@ export default {
     featuresHeading: 'Ce includ toate planurile:',
     paymentNotice: 'Disponibilă opțiunea de plată în rate pentru pachete peste 500 USD',
   },
+  faq: {
+    heading: 'Întrebări Frecvente',
+    items: [
+      {
+        question: 'Ce este antrenamentul personal online?',
+        answer: 'Este coaching de fitness la distanță prin video sau aplicație.',
+      },
+      {
+        question: 'Este antrenamentul personal online mai ieftin decât cel în persoană?',
+        answer: 'De obicei da, pentru că nu există taxe de călătorie sau sală.',
+      },
+      {
+        question: 'Este eficient antrenamentul personal online?',
+        answer: 'Absolut—dacă te ții de plan.',
+      },
+      {
+        question: 'Cât de des aș antrena cu antrenamentul personal online?',
+        answer: 'De obicei 3-5 ori pe săptămână.',
+      },
+      {
+        question: 'Merită un antrenor personal online?',
+        answer: 'Dacă ești auto-motivat dar vrei îndrumarea unui expert—da.',
+      },
+      {
+        question: 'Cât durează un curs de antrenament personal online?',
+        answer: 'Depinde de obiectivele tale—poate varia de la 4 la 12+ săptămâni.',
+      },
+    ],
+  },
 }

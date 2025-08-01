@@ -132,4 +132,33 @@ export default {
     featuresHeading: 'All plans include:',
     paymentNotice: 'Payment plans available for packages over $500',
   },
+  faq: {
+    heading: 'Frequently Asked Questions',
+    items: [
+      {
+        question: 'What is online personal training?',
+        answer: 'It’s remote fitness coaching via video or an app.',
+      },
+      {
+        question: 'Is online personal training cheaper than in-person?',
+        answer: 'Usually yes, because there are no travel or gym fees.',
+      },
+      {
+        question: 'Is online personal training effective?',
+        answer: 'Absolutely—if you stick to the plan.',
+      },
+      {
+        question: 'How often would I train with online personal training?',
+        answer: 'Usually 3–5 times per week.',
+      },
+      {
+        question: 'Is an online personal trainer worth it?',
+        answer: 'If you’re self-motivated but want expert guidance—yes.',
+      },
+      {
+        question: 'How long does an online personal training program last?',
+        answer: 'Depends on your goals—can range from 4 to 12+ weeks.',
+      },
+    ],
+  },
 }
