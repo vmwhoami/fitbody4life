@@ -137,27 +137,48 @@ export default {
     items: [
       {
         question: 'What is online personal training?',
-        answer: 'It’s remote fitness coaching via video or an app.',
+        answer:
+          'Fitness coaching delivered remotely via live or recorded video sessions, regular check‑ins, and empowerment-focused support—no app required.',
       },
       {
-        question: 'Is online personal training cheaper than in-person?',
-        answer: 'Usually yes, because there are no travel or gym fees.',
+        question: 'Who does Olya train?',
+        answer:
+          'She specializes in coaching women—providing a safe, judgment-free space tailored to your body, stage of life, and fitness goals. Women regularly feel this makes all the difference.',
       },
       {
-        question: 'Is online personal training effective?',
-        answer: 'Absolutely—if you stick to the plan.',
+        question: 'What makes online training effective?',
+        answer:
+          'With personalized workouts, form review (via video), progress tracking, and consistent support, many clients find they achieve results faster than with impersonal or crowded gym sessions.',
       },
       {
-        question: 'How often would I train with online personal training?',
-        answer: 'Usually 3–5 times per week.',
+        question: 'How many training sessions per week?',
+        answer:
+          'Typically 3–5, depending on your goals. Training frequency is chosen together after your free consultation.',
       },
       {
-        question: 'Is an online personal trainer worth it?',
-        answer: 'If you’re self-motivated but want expert guidance—yes.',
+        question: 'Do I need equipment or a gym?',
+        answer:
+          'Not necessarily. Workouts can be adapted for home, gym or minimal equipment. Olya ensures your setup works for your lifestyle.',
       },
       {
-        question: 'How long does an online personal training program last?',
-        answer: 'Depends on your goals—can range from 4 to 12+ weeks.',
+        question: 'How is my progress tracked?',
+        answer:
+          'Through weekly feedback emails or video check‑ins, optional progress photos or measurements, and open support via text or chat.',
+      },
+      {
+        question: 'Do I get nutrition advice?',
+        answer:
+          'Yes—general, habit-based nutrition guidance is included. For detailed meal planning, Olya can refer you to a certified nutrition professional.',
+      },
+      {
+        question: 'What is Olya’s cancellation policy?',
+        answer:
+          'Rescheduling is free if done at least 24 hours before a session. If you’re delayed, alternate check‑ins are arranged via video or email.',
+      },
+      {
+        question: 'What if I’m new to fitness or worried I’ll get injured?',
+        answer:
+          'Safety first—Olya begins with movement assessments and modifies exercises to your level to reduce injury risk and build confidence.',
       },
     ],
   },

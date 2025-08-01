@@ -137,28 +137,49 @@ export default {
     heading: 'Întrebări Frecvente',
     items: [
       {
-        question: 'Ce este antrenamentul personal online?',
-        answer: 'Este coaching de fitness la distanță prin video sau aplicație.',
+        question: 'Ce este antrenamentul online?',
+        answer:
+          'Antrenament de fitness oferit de la distanță prin sesiuni video live sau înregistrate, check‑in-uri periodice și suport motivațional — fără aplicație necesară.',
       },
       {
-        question: 'Este antrenamentul personal online mai ieftin decât cel în persoană?',
-        answer: 'De obicei da, pentru că nu există taxe de călătorie sau sală.',
+        question: 'Pe cine antrenează Olya?',
+        answer:
+          'Ea se **specializează în antrenarea femeilor**, oferind un mediu sigur și motivant, adaptat corpului, etapelor vieții și obiectivelor fiecărei femei.',
       },
       {
-        question: 'Este eficient antrenamentul personal online?',
-        answer: 'Absolut—dacă te ții de plan.',
+        question: 'De ce este eficient antrenamentul online?',
+        answer:
+          'Cu planuri personalizate, corectare de tehnică prin video, urmărirea progresului și sprijin constant, multe cliente obțin rezultate mai rapide decât în săli aglomerate.',
       },
       {
-        question: 'Cât de des aș antrena cu antrenamentul personal online?',
-        answer: 'De obicei 3-5 ori pe săptămână.',
+        question: 'Câte sesiuni pe săptămână?',
+        answer:
+          'De obicei 3–5, în funcție de obiectivele tale. Frecvența se stabilește după prima consultație gratuită.',
       },
       {
-        question: 'Merită un antrenor personal online?',
-        answer: 'Dacă ești auto-motivat dar vrei îndrumarea unui expert—da.',
+        question: 'Este necesară echiparea sau sala?',
+        answer:
+          'Nu neapărat. Antrenamentele pot fi adaptate acasă, la sală sau cu echipament minim — totul adaptat stilului tău de viață.',
       },
       {
-        question: 'Cât durează un curs de antrenament personal online?',
-        answer: 'Depinde de obiectivele tale—poate varia de la 4 la 12+ săptămâni.',
+        question: 'Cum se urmăresc rezultatele?',
+        answer:
+          'Prin recenzii săptămânale video sau prin email, opțional măsurători sau poze de progres, și comunicare deschisă prin chat sau mesaj.',
+      },
+      {
+        question: 'Includeți recomandări nutriționale?',
+        answer:
+          'Da — oferi îndrumare generală bazată pe obiceiuri alimentare. Pentru planuri detaliate, colaborez cu un nutriționist acreditat.',
+      },
+      {
+        question: 'Care este politica de anulare?',
+        answer:
+          'Reprogramarea este gratuită dacă anunți cu cel puțin 24 de ore înainte. În caz de întârziere, sesiunea poate fi înlocuită cu un check‑in video sau prin email.',
+      },
+      {
+        question: 'Sunt începătoare sau mi-e frică de accidentări?',
+        answer:
+          'Prioritizez siguranța — încep cu evaluări de mobilitate și adaptez exercițiile la nivelul tău pentru a evita accidentările și a crea încredere în corpul tău.',
       },
     ],
   },
