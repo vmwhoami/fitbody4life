@@ -33,7 +33,7 @@
     </button>
 
     <!-- Play Button Overlay (if autoplay fails) -->
-    <div v-if="showPlayOverlay" class="absolute inset-0 z-10 
+    <!-- <div v-if="showPlayOverlay" class="absolute inset-0 z-10 
                                        flex items-center justify-center bg-black/50">
       <button @click="startVideo"
               class="p-6 rounded-full bg-black/50 backdrop-blur-sm hover:bg-black/70 transition-all"
@@ -43,7 +43,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       </button>
-    </div>
+    </div> -->
     
     <!-- Content -->
     <div class="relative z-10 flex items-center justify-center h-full px-4">
