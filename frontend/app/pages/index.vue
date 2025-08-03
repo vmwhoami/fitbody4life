@@ -5,8 +5,10 @@
     <SocialButtons/>
     <IntroMain />
     <Certificates />
-    <Testimonials />
+    <!-- <Testimonials /> -->
     <AboutSection />
+    <OnlineTrainingBenefits />
+    <OnlineTrainingChallengesFlip/>
     <!-- <TrainerPostSection /> -->
     <Pricing />
     <FAQs/>
@@ -25,7 +27,9 @@ import HeroSection from "@/components/mainPage/HeroSection.vue";
 import IntroMain from "@/components/mainPage/IntroMain";
 import Certificates from "@/components/mainPage/Certificates";
 import AboutSection from "@/components/mainPage/AboutSection.vue";
-import Testimonials from "@/components/mainPage/Testimonials.vue";
+import OnlineTrainingBenefits from '@/components/mainPage/OnlineTrainingBenefits.vue'
+import OnlineTrainingChallengesFlip  from '@/components/mainPage/OnlineTrainingChallengesFlip.vue'
+// import Testimonials from "@/components/mainPage/Testimonials.vue";
 // import TrainerPostSection from "@/components/mainPage/TrainerPostSection.vue";
 import Pricing from "@/components/mainPage/Pricing.vue";
 import FAQs from "@/components/mainPage/FAQs.vue";
