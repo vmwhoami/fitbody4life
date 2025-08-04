@@ -2,17 +2,17 @@
   <section class="bg-white text-gray-800 py-20 px-4 sm:px-6 lg:px-12">
     <div class="max-w-7xl mx-auto">
       <h2 class="text-4xl sm:text-5xl font-extrabold mb-12 text-center">
-        Why Train Online?
+        {{ t('whyTrainOnline.question') }}
       </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div
-          v-for="(benefit, index) in benefits"
-          :key="index"
-          class="bg-gray-50 p-6 shadow hover:shadow-md transition"
-        >
+        <div v-for="(benefit, index) in benefits"
+             :key="index"
+             class="bg-gray-50 p-6 shadow hover:shadow-md transition">
           <h3 class="text-xl font-semibold mb-2">{{ benefit.title }}</h3>
           <ul class="list-disc list-inside text-gray-600 space-y-1">
-            <li v-for="(point, idx) in benefit.points" :key="idx">{{ point }}</li>
+            <li v-for="(point, idx) in benefit.points" :key="idx">
+              {{ point }}
+            </li>
           </ul>
         </div>
       </div>
@@ -21,102 +21,107 @@
 </template>
 
 <script setup>
-const benefits = [
+import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+const benefits = ref([
   {
-    title: 'Unmatched Convenience & Flexibility',
+    title: t('whyTrainOnline.benefits[0].title'),
     points: [
-      'Train anytime, anywhere – no commute',
-      '24/7 access for travelers & parents',
-      'Save 3–5 hours weekly on travel',
+      t('whyTrainOnline.benefits[0].points[0]'),
+      t('whyTrainOnline.benefits[0].points[1]'),
+      t('whyTrainOnline.benefits[0].points[2]'),
     ],
   },
   {
-    title: 'Personalized Experience',
+    title: t('whyTrainOnline.benefits[1].title'),
     points: [
-      'Custom programs for your goals & gear',
-      'Live feedback and form corrections',
-      'Adaptive training as you progress',
+      t('whyTrainOnline.benefits[1].points[0]'),
+      t('whyTrainOnline.benefits[1].points[1]'),
+      t('whyTrainOnline.benefits[1].points[2]'),
     ],
   },
   {
-    title: 'Cost-Effectiveness',
+    title: t('whyTrainOnline.benefits[2].title'),
     points: [
-      'No gym fees – save $40–$200/month',
-      'Cheaper than in-person sessions',
-      'Use everyday items as workout gear',
+      t('whyTrainOnline.benefits[2].points[0]'),
+      t('whyTrainOnline.benefits[2].points[1]'),
+      t('whyTrainOnline.benefits[2].points[2]'),
     ],
   },
   {
-    title: 'Enhanced Privacy & Comfort',
+    title: t('whyTrainOnline.benefits[3].title'),
     points: [
-      'Train where you feel safest',
-      'No gym intimidation or judgment',
-      'Wear whatever makes you confident',
+      t('whyTrainOnline.benefits[3].points[0]'),
+      t('whyTrainOnline.benefits[3].points[1]'),
+      t('whyTrainOnline.benefits[3].points[2]'),
     ],
   },
   {
-    title: 'Technology-Enhanced Training',
+    title: t('whyTrainOnline.benefits[4].title'),
     points: [
-      'Screen sharing & demos',
-      'Session recordings for review',
-      'Track with Fitbit or Apple Watch',
+      t('whyTrainOnline.benefits[4].points[0]'),
+      t('whyTrainOnline.benefits[4].points[1]'),
+      t('whyTrainOnline.benefits[4].points[2]'),
     ],
   },
   {
-    title: 'Broader Specialist Access',
+    title: t('whyTrainOnline.benefits[5].title'),
     points: [
-      'Connect with niche experts globally',
-      'Switch trainers anytime',
-      'Access yoga, HIIT, rehab & more',
+      t('whyTrainOnline.benefits[5].points[0]'),
+      t('whyTrainOnline.benefits[5].points[1]'),
+      t('whyTrainOnline.benefits[5].points[2]'),
     ],
   },
   {
-    title: 'Accountability & Consistency',
+    title: t('whyTrainOnline.benefits[6].title'),
     points: [
-      'Set sessions in your calendar',
-      'Message-based check-ins',
-      'Track progress digitally',
+      t('whyTrainOnline.benefits[6].points[0]'),
+      t('whyTrainOnline.benefits[6].points[1]'),
+      t('whyTrainOnline.benefits[6].points[2]'),
     ],
   },
   {
-    title: 'Home Advantage',
+    title: t('whyTrainOnline.benefits[7].title'),
     points: [
-      'Train with family or pets around',
-      'No gym showers or waiting',
-      'Use your own space comfortably',
+      t('whyTrainOnline.benefits[7].points[0]'),
+      t('whyTrainOnline.benefits[7].points[1]'),
+      t('whyTrainOnline.benefits[7].points[2]'),
     ],
   },
   {
-    title: 'Safety & Health Benefits',
+    title: t('whyTrainOnline.benefits[8].title'),
     points: [
-      'Pandemic-proof workouts',
-      'Lower risk of injuries at home',
-      'Great for immunocompromised users',
+      t('whyTrainOnline.benefits[8].points[0]'),
+      t('whyTrainOnline.benefits[8].points[1]'),
+      t('whyTrainOnline.benefits[8].points[2]'),
     ],
   },
   {
-    title: 'Environmental Impact',
+    title: t('whyTrainOnline.benefits[9].title'),
     points: [
-      'No commute = lower carbon footprint',
-      'No gym power usage',
-      'Sustainable fitness solution',
+      t('whyTrainOnline.benefits[9].points[0]'),
+      t('whyTrainOnline.benefits[9].points[1]'),
+      t('whyTrainOnline.benefits[9].points[2]'),
     ],
   },
   {
-    title: 'Holistic Wellness Integration',
+    title: t('whyTrainOnline.benefits[10].title'),
     points: [
-      'Nutrition coaching via apps',
-      'Meditation & yoga options',
-      'Sleep/stress tracking tools',
+      t('whyTrainOnline.benefits[10].points[0]'),
+      t('whyTrainOnline.benefits[10].points[1]'),
+      t('whyTrainOnline.benefits[10].points[2]'),
     ],
   },
   {
-    title: 'Community & Social Features',
+    title: t('whyTrainOnline.benefits[11].title'),
     points: [
-      'Join virtual group classes',
-      'Access support communities',
-      'Workout with friends remotely',
+      t('whyTrainOnline.benefits[11].points[0]'),
+      t('whyTrainOnline.benefits[11].points[1]'),
+      t('whyTrainOnline.benefits[11].points[2]'),
     ],
   },
-];
+])
 </script>
