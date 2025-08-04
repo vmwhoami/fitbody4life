@@ -19,7 +19,7 @@
     <!-- Sound Toggle Button -->
     <button  @click="toggleSound" class="absolute z-20 bottom-6 
                                          left-6 p-3 rounded-full 
-                                         bg-black/30 backdrop-blur-sm 
+                                         bg-black/30 backdrop-blur-sm
                                          hover:bg-black/50 transition-all"
                                          aria-label="Toggle sound">
       <svg v-if="isMuted" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">

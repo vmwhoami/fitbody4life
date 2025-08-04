@@ -234,7 +234,76 @@ export default {
       },
     ],
   },
-
+  onlineTrainingChallenges: {
+    heading: 'The Honest Truth About Online Training',
+    solutionLabel: '✅ Solution',
+    hoverHint: '(hover or tap to flip)',
+    challenges: [
+      {
+        title: '📶 Tech Issues & Platform Friction',
+        problem: 'Unstable Wi‑Fi or tricky platforms can derail your session.',
+        solutions: [
+          'Run pre–session tech checks + use Zoom or Trainerize.',
+          'On‑demand library for missed live workouts.',
+          "Dedicated troubleshooting support so you're never stuck.",
+        ],
+      },
+      {
+        title: '👥 Reduced Real‑Time Feedback',
+        problem: 'No physical trainer means missed form cues and more injury risk.',
+        solutions: [
+          'Dual‑angle camera setup to catch alignment issues.',
+          'Pause‑and‑correct functionality live in video calls.',
+          'Post‑workout clip reviews with personal tips.',
+        ],
+      },
+      {
+        title: '⏳ Accountability & Motivation Gaps',
+        problem: '30–50 % of remote learners lose steam and consistency.',
+        solutions: [
+          'Gamified dashboards to celebrate progress.',
+          'Automated check‑ins via message/email + reward badges.',
+          'Small group pods for peer support and competition.',
+        ],
+      },
+      {
+        title: '🌐 Community & Social Limitations',
+        problem: 'Isolation kills motivation—networking matters.',
+        solutions: [
+          'Member‑only forums and live Q&A sessions.',
+          'Global community challenges (step contests, etc.).',
+          'Occasional hybrid events mixing online + local meetups.',
+        ],
+      },
+      {
+        title: '🧩 Standardization vs Personalization',
+        problem: 'One‑size plans ignore injuries, crazy weeks, or limitations.',
+        solutions: [
+          'AI‑driven tweaks during high‑stress weeks.',
+          'Flexible scheduling + real‑time trainer check‑ins.',
+          'Wearable‑based program adjustments on the fly.',
+        ],
+      },
+      {
+        title: '⚖️ Self‑Discipline Required',
+        problem: 'Freedom can lead to procrastination if not structured.',
+        solutions: [
+          'Deadline‑driven goals with reminder nudges.',
+          '“Focus‑mode” app blocks to reduce distractions.',
+          'Trainer‑led scheduling aligned with your energy patterns.',
+        ],
+      },
+      {
+        title: '🌉 Access & Equity Gaps',
+        problem: 'Not everyone has space, equipment, or tech know‑how.',
+        solutions: [
+          'Low‑bandwidth or audio‑only workout options.',
+          'Equipment‑free routines using household items.',
+          'Sliding‑scale pricing or scholarships to serve more people.',
+        ],
+      },
+    ],
+  },
   faq: {
     heading: 'Frequently Asked Questions',
     items: [
