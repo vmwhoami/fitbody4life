@@ -2,32 +2,41 @@
   <section class="bg-gray py-20 px-4 sm:px-6 lg:px-12">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl sm:text-5xl font-extrabold text-center mb-8">
-        The Honest Truth About Online Training
+        {{ t('onlineTrainingChallenges.heading') }}
       </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div v-for="(item, i) in challenges"
+        <div 
+          v-for="(item, i) in challenges"
           :key="i"
-          class="group perspective">
-        <div class="relative w-full preserve-3d 
-                    group-hover:rotate-y-180
-                    transition-transform duration-700 
-                    min-h-[300px] sm:min-h-[350px]">
-          
+          class="group perspective"
+        >
+          <div class="relative w-full preserve-3d 
+                      group-hover:rotate-y-180
+                      transition-transform duration-700 
+                      min-h-[300px] sm:min-h-[350px]">
+            
             <!-- front -->
-            <div  class="absolute inset-0 bg-white
+            <div class="absolute inset-0 bg-white
                          shadow p-6 flex
                          flex-col justify-center">
               <h3 class="text-2xl font-semibold mb-2">{{ item.title }}</h3>
               <p class="text-red-600 font-medium">{{ item.problem }}</p>
-              <span class="mt-auto text-gray-400 text-sm">(hover or tap to flip)</span>
+              <span class="mt-auto text-gray-400 text-sm">
+                {{ t('onlineTrainingChallenges.hoverHint') }}
+              </span>
             </div>
+            
             <!-- back -->
             <div class="absolute inset-0 bg-white
                         shadow p-6 
                         rotate-y-180 backface-hidden">
-              <h3 class="text-2xl font-semibold mb-2">✅ Solution</h3>
+              <h3 class="text-2xl font-semibold mb-2">
+                {{ t('onlineTrainingChallenges.solutionLabel') }}
+              </h3>
               <ul class="list-disc list-inside text-gray-700 space-y-1">
-                <li v-for="(sol, idx) in item.solutions" :key="idx">{{ sol }}</li>
+                <li v-for="(sol, idx) in item.solutions" :key="idx">
+                  {{ sol }}
+                </li>
               </ul>
             </div>
           </div>
@@ -38,71 +47,76 @@
 </template>
 
 <script setup>
-const challenges = [
+import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+const challenges = ref([
   {
-    title: '📶 Tech Issues & Platform Friction',
-    problem: 'Unstable Wi‑Fi or tricky platforms can derail your session.',
+    title: t('onlineTrainingChallenges.challenges[0].title'),
+    problem: t('onlineTrainingChallenges.challenges[0].problem'),
     solutions: [
-      'Run pre–session tech checks + use Zoom or Trainerize.',
-      'On‑demand library for missed live workouts.',
-      'Dedicated troubleshooting support so you’re never stuck.',
+      t('onlineTrainingChallenges.challenges[0].solutions[0]'),
+      t('onlineTrainingChallenges.challenges[0].solutions[1]'),
+      t('onlineTrainingChallenges.challenges[0].solutions[2]'),
     ],
   },
   {
-    title: '👥 Reduced Real‑Time Feedback',
-    problem: 'No physical trainer means missed form cues and more injury risk.',
+    title: t('onlineTrainingChallenges.challenges[1].title'),
+    problem: t('onlineTrainingChallenges.challenges[1].problem'),
     solutions: [
-      'Dual‑angle camera setup to catch alignment issues.',
-      'Pause‑and‑correct functionality live in video calls.',
-      'Post‑workout clip reviews with personal tips.',
+      t('onlineTrainingChallenges.challenges[1].solutions[0]'),
+      t('onlineTrainingChallenges.challenges[1].solutions[1]'),
+      t('onlineTrainingChallenges.challenges[1].solutions[2]'),
     ],
   },
   {
-    title: '⏳ Accountability & Motivation Gaps',
-    problem: '30–50 % of remote learners lose steam and consistency.',
+    title: t('onlineTrainingChallenges.challenges[2].title'),
+    problem: t('onlineTrainingChallenges.challenges[2].problem'),
     solutions: [
-      'Gamified dashboards to celebrate progress.',
-      'Automated check‑ins via message/email + reward badges.',
-      'Small group pods for peer support and competition.',
+      t('onlineTrainingChallenges.challenges[2].solutions[0]'),
+      t('onlineTrainingChallenges.challenges[2].solutions[1]'),
+      t('onlineTrainingChallenges.challenges[2].solutions[2]'),
     ],
   },
   {
-    title: '🌐 Community & Social Limitations',
-    problem: 'Isolation kills motivation—networking matters.',
+    title: t('onlineTrainingChallenges.challenges[3].title'),
+    problem: t('onlineTrainingChallenges.challenges[3].problem'),
     solutions: [
-      'Member‑only forums and live Q&A sessions.',
-      'Global community challenges (step contests, etc.).',
-      'Occasional hybrid events mixing online + local meetups.',
+      t('onlineTrainingChallenges.challenges[3].solutions[0]'),
+      t('onlineTrainingChallenges.challenges[3].solutions[1]'),
+      t('onlineTrainingChallenges.challenges[3].solutions[2]'),
     ],
   },
   {
-    title: '🧩 Standardization vs Personalization',
-    problem: 'One‑size plans ignore injuries, crazy weeks, or limitations.',
+    title: t('onlineTrainingChallenges.challenges[4].title'),
+    problem: t('onlineTrainingChallenges.challenges[4].problem'),
     solutions: [
-      'AI‑driven tweaks during high‑stress weeks.',
-      'Flexible scheduling + real‑time trainer check‑ins.',
-      'Wearable‑based program adjustments on the fly.',
+      t('onlineTrainingChallenges.challenges[4].solutions[0]'),
+      t('onlineTrainingChallenges.challenges[4].solutions[1]'),
+      t('onlineTrainingChallenges.challenges[4].solutions[2]'),
     ],
   },
   {
-    title: '⚖️ Self‑Discipline Required',
-    problem: 'Freedom can lead to procrastination if not structured.',
+    title: t('onlineTrainingChallenges.challenges[5].title'),
+    problem: t('onlineTrainingChallenges.challenges[5].problem'),
     solutions: [
-      'Deadline‑driven goals with reminder nudges.',
-      '“Focus‑mode” app blocks to reduce distractions.',
-      'Trainer‑led scheduling aligned with your energy patterns.',
+      t('onlineTrainingChallenges.challenges[5].solutions[0]'),
+      t('onlineTrainingChallenges.challenges[5].solutions[1]'),
+      t('onlineTrainingChallenges.challenges[5].solutions[2]'),
     ],
   },
   {
-    title: '🌉 Access & Equity Gaps',
-    problem: 'Not everyone has space, equipment, or tech know‑how.',
+    title: t('onlineTrainingChallenges.challenges[6].title'),
+    problem: t('onlineTrainingChallenges.challenges[6].problem'),
     solutions: [
-      'Low‑bandwidth or audio‑only workout options.',
-      'Equipment‑free routines using household items.',
-      'Sliding‑scale pricing or scholarships to serve more people.',
+      t('onlineTrainingChallenges.challenges[6].solutions[0]'),
+      t('onlineTrainingChallenges.challenges[6].solutions[1]'),
+      t('onlineTrainingChallenges.challenges[6].solutions[2]'),
     ],
   },
-];
+])
 </script>
 
 <style>
@@ -111,4 +125,3 @@ const challenges = [
 .rotate-y-180 { transform: rotateY(180deg); }
 .backface-hidden { backface-visibility: hidden; }
 </style>
-

@@ -234,6 +234,76 @@ export default {
       },
     ],
   },
+  onlineTrainingChallenges: {
+    heading: 'Adevărul Despre Antrenamentele Online',
+    solutionLabel: '✅ Soluție',
+    hoverHint: '(treceți mouse-ul sau atingeți pentru a întoarce)',
+    challenges: [
+      {
+        title: '📶 Probleme Tehnice și cu Platformele',
+        problem: 'Wi-Fi instabil sau platforme complicată pot strica antrenamentul.',
+        solutions: [
+          'Verificări tehnice pre-antrenament + folosire Zoom sau Trainerize.',
+          'Bibliotecă de antrenamente la cerere pentru sesiunile ratate.',
+          'Suport dedicat pentru probleme tehnice ca să nu rămâi blocat.',
+        ],
+      },
+      {
+        title: '👥 Feedback Redus în Timp Real',
+        problem: 'Fără antrenor fizic, risci să ratezi corecții de formă și să te accidentezi.',
+        solutions: [
+          'Cameră dublă pentru a identifica probleme de aliniere.',
+          'Funcție de pauză și corecție în timp real în apeluri video.',
+          'Recenzii după antrenament cu clipuri video și sfaturi personalizate.',
+        ],
+      },
+      {
+        title: '⏳ Lipsă de Responsabilitate și Motivare',
+        problem: '30–50% din cei care învață la distanță își pierd avântul și consecvența.',
+        solutions: [
+          'Panouri de bord gamificate pentru progresul tău.',
+          'Verificări automate prin mesaje/email + insigne de recompensă.',
+          'Grupuri mici pentru sprijin reciproc și competiție.',
+        ],
+      },
+      {
+        title: '🌐 Limitări Comunitare și Sociale',
+        problem: 'Izolarea ucide motivația - networkingul contează.',
+        solutions: [
+          'Forumuri exclusive pentru membri și sesiuni live de întrebări.',
+          'Provocări comunitare globale (concursuri de pași, etc.).',
+          'Evenimente hibride care combină online și întâlniri locale.',
+        ],
+      },
+      {
+        title: '🧩 Standardizare vs Personalizare',
+        problem: 'Planurile standard ignoră accidentările, săptămânile aglomerate sau limitările.',
+        solutions: [
+          'Ajustări bazate pe AI în săptămânile stresante.',
+          'Programare flexibilă + verificări în timp real cu antrenorul.',
+          'Ajustări de program bazate pe date de la dispozitive wearable.',
+        ],
+      },
+      {
+        title: '⚖️ Autodisciplină Necesară',
+        problem: 'Libertatea poate duce la amânare dacă nu e structurată.',
+        solutions: [
+          'Obiective cu termene limită și mici reamintiri.',
+          'Blocarea aplicațiilor în "mod concentrare" pentru mai puține distrageri.',
+          'Programare ghidată de antrenor în funcție de ritmurile tale energetice.',
+        ],
+      },
+      {
+        title: '🌉 Probleme de Acces și Egalitate',
+        problem: 'Nu toată lumea are spațiu, echipament sau cunoștințe tehnice.',
+        solutions: [
+          'Opțiuni de antrenament cu bandă largă redusă sau doar audio.',
+          'Rutine fără echipament folosind obiecte casnice.',
+          'Prețuri progresive sau burse pentru a ajuta mai mulți oameni.',
+        ],
+      },
+    ],
+  },
   faq: {
     heading: 'Întrebări Frecvente',
     items: [
