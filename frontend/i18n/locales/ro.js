@@ -133,6 +133,107 @@ export default {
     featuresHeading: 'Ce includ toate planurile:',
     paymentNotice: 'Disponibilă opțiunea de plată în rate pentru pachete peste 500 USD',
   },
+  whyTrainOnline: {
+    question: 'De ce să te antrenezi online?',
+    benefits: [
+      {
+        title: 'Confort și flexibilitate fără egal',
+        points: [
+          'Antrenament oriunde, oricând - fără deplasări',
+          'Acces non-stop pentru călători și părinți',
+          'Economisești 3-5 ore pe săptămână pe drumuri',
+        ],
+      },
+      {
+        title: 'Experiență personalizată',
+        points: [
+          'Programe adaptate obiectivelor și echipamentului tău',
+          'Feedback live și corecții de execuție',
+          'Antrenament adaptativ pe măsură ce progresezi',
+        ],
+      },
+      {
+        title: 'Rentabilitate',
+        points: [
+          'Fără taxe de sală - economisești 40-200$/lună',
+          'Mai ieftin decât antrenamentele fizice',
+          'Folosești obiecte casnice ca echipament',
+        ],
+      },
+      {
+        title: 'Confidențialitate și confort sporite',
+        points: [
+          'Te antrenezi unde te simți în siguranță',
+          'Fără intimidare sau judecăți de sală',
+          'Porți ce te face să te simți încrezător',
+        ],
+      },
+      {
+        title: 'Antrenament îmbunătățit tehnologic',
+        points: [
+          'Partajare de ecran și demonstrații',
+          'Înregistrări de sesiuni pentru recenzie',
+          'Urmărire cu Fitbit sau Apple Watch',
+        ],
+      },
+      {
+        title: 'Acces la specialiști globali',
+        points: [
+          'Conectare cu experți de nișă global',
+          'Schimbă antrenori oricând',
+          'Acces la yoga, HIIT, recuperare și multe altele',
+        ],
+      },
+      {
+        title: 'Responsabilitate și consecvență',
+        points: [
+          'Programează sesiuni în calendar',
+          'Verificări prin mesaje',
+          'Urmărește progresul digital',
+        ],
+      },
+      {
+        title: 'Avantajul casei',
+        points: [
+          'Te antrenezi cu familia sau animalele în jur',
+          'Fără dușuri sau așteptare la sală',
+          'Folosești propriul spațiu confortabil',
+        ],
+      },
+      {
+        title: 'Siguranță și beneficii pentru sănătate',
+        points: [
+          'Antrenamente rezistente la pandemii',
+          'Risc mai mic de accidentări acasă',
+          'Excelent pentru utilizatorii imunocompromiși',
+        ],
+      },
+      {
+        title: 'Impact ambiental',
+        points: [
+          'Fără deplasări = amprentă de carbon mai mică',
+          'Fără consum de energie la sală',
+          'Soluție de fitness sustenabilă',
+        ],
+      },
+      {
+        title: 'Integrare holistică a bunăstării',
+        points: [
+          'Consiliere nutrițională prin aplicații',
+          'Opțiuni de meditație și yoga',
+          'Instrumente de monitorizare a somnului/stresului',
+        ],
+      },
+      {
+        title: 'Comunitate și funcții sociale',
+        points: [
+          'Participă la cursuri de grup virtuale',
+          'Accesează comunități de sprijin',
+          'Antrenează-te cu prietenii de la distanță',
+        ],
+      },
+    ],
+  },
   faq: {
     heading: 'Întrebări Frecvente',
     items: [

@@ -132,6 +132,109 @@ export default {
     featuresHeading: 'All plans include:',
     paymentNotice: 'Payment plans available for packages over $500',
   },
+
+  whyTrainOnline: {
+    question: 'Why Train Online?',
+    benefits: [
+      {
+        title: 'Unmatched Convenience & Flexibility',
+        points: [
+          'Train anytime, anywhere – no commute',
+          '24/7 access for travelers & parents',
+          'Save 3–5 hours weekly on travel',
+        ],
+      },
+      {
+        title: 'Personalized Experience',
+        points: [
+          'Custom programs for your goals & gear',
+          'Live feedback and form corrections',
+          'Adaptive training as you progress',
+        ],
+      },
+      {
+        title: 'Cost-Effectiveness',
+        points: [
+          'No gym fees – save $40–$200/month',
+          'Cheaper than in-person sessions',
+          'Use everyday items as workout gear',
+        ],
+      },
+      {
+        title: 'Enhanced Privacy & Comfort',
+        points: [
+          'Train where you feel safest',
+          'No gym intimidation or judgment',
+          'Wear whatever makes you confident',
+        ],
+      },
+      {
+        title: 'Technology-Enhanced Training',
+        points: [
+          'Screen sharing & demos',
+          'Session recordings for review',
+          'Track with Fitbit or Apple Watch',
+        ],
+      },
+      {
+        title: 'Broader Specialist Access',
+        points: [
+          'Connect with niche experts globally',
+          'Switch trainers anytime',
+          'Access yoga, HIIT, rehab & more',
+        ],
+      },
+      {
+        title: 'Accountability & Consistency',
+        points: [
+          'Set sessions in your calendar',
+          'Message-based check-ins',
+          'Track progress digitally',
+        ],
+      },
+      {
+        title: 'Home Advantage',
+        points: [
+          'Train with family or pets around',
+          'No gym showers or waiting',
+          'Use your own space comfortably',
+        ],
+      },
+      {
+        title: 'Safety & Health Benefits',
+        points: [
+          'Pandemic-proof workouts',
+          'Lower risk of injuries at home',
+          'Great for immunocompromised users',
+        ],
+      },
+      {
+        title: 'Environmental Impact',
+        points: [
+          'No commute = lower carbon footprint',
+          'No gym power usage',
+          'Sustainable fitness solution',
+        ],
+      },
+      {
+        title: 'Holistic Wellness Integration',
+        points: [
+          'Nutrition coaching via apps',
+          'Meditation & yoga options',
+          'Sleep/stress tracking tools',
+        ],
+      },
+      {
+        title: 'Community & Social Features',
+        points: [
+          'Join virtual group classes',
+          'Access support communities',
+          'Workout with friends remotely',
+        ],
+      },
+    ],
+  },
+
   faq: {
     heading: 'Frequently Asked Questions',
     items: [
