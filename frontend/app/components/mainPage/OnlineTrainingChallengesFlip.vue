@@ -8,8 +8,7 @@
         <div 
           v-for="(item, i) in challenges"
           :key="i"
-          class="group perspective"
-        >
+          class="group perspective">
           <div class="relative w-full preserve-3d 
                       group-hover:rotate-y-180
                       transition-transform duration-700 
