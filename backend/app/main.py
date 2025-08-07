@@ -8,12 +8,24 @@ from .logging import configure_logging, LogLevels
 from .rag import RAGAssistant  # 👈 Add this
 from pydantic import BaseModel
 from dotenv import load_dotenv
+
+from fastapi.middleware.cors import CORSMiddleware
+
+
 import os
 
 load_dotenv()
 
 configure_logging(LogLevels.info)
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # You can restrict this later
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 """ Only uncomment below to create new tables,
 otherwise the tests will fail if not connected
