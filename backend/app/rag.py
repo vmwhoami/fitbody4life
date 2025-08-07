@@ -25,7 +25,7 @@ class RAGAssistant:
         self.qa = RetrievalQA.from_chain_type(
             llm=Ollama(
                 model="tinyllama:latest",
-                base_url=os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+                base_url=os.getenv("OLLAMA_BASE_URL", "http://ollama:11434")
             ),
             retriever=self.db.as_retriever()
         )
