@@ -10,3 +10,12 @@ passlib
 bcrypt==4.0.1
 python-multipart
 email-validator
+langchain
+langchain-community
+sentence-transformers
+chromadb
+
+langchain-huggingface 
+langchain-ollama
+PyMuPDF  # for PDFs
+markdown  # for markdown files
