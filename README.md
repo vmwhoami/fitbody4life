@@ -13,8 +13,8 @@ fastapi run app/main.py
 pip freeze > requirements.txt
 ```
 Todos:
-
-
+try this model
+tinyllama:latest
 
 
 # Fitness Trainer Website Project - fitbody4life
