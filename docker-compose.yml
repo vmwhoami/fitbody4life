@@ -7,22 +7,31 @@ services:
       - "8000:8000"
     environment:
       - DATABASE_URL=${DATABASE_URL}
+      - OLLAMA_HOST=http://ollama:11434
     depends_on:
       - db
+      - ollama
     volumes:
       - ./backend/app:/app/app
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 
-  # frontend:
-  #     build:
-  #       context: ./frontend
-  #       dockerfile: Dockerfile
-  #     ports:
-  #       - "3000:3000"
-  #     depends_on:
-  #       - api
-  #     environment:
-  #       - HOST=0.0.0.0
+  ollama:
+    build:
+      context: ./ollama
+      dockerfile: Dockerfile
+    image: custom-ollama:latest
+    container_name: ollama
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "11434:11434"
+    environment:
+      - OLLAMA_KEEP_ALIVE=-1
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:11434/api/tags || exit 1"]
+      interval: 5s
+      timeout: 2s
+      retries: 5
 
   db:
     image: postgres:17
@@ -40,3 +49,4 @@ services:
 
 volumes:
   postgres_data:
+  ollama_data:
