@@ -1,6 +1,6 @@
 <template>
-  <div class="fixed bottom-2 right-2 z-50">
-    <!-- Chat Toggle Button -->
+  <div class="fixed bottom-[5%] right-[3%] z-50">
+    <!-- Chat Toggle Button  fixed bottom-[15%] right-[3%] -->
     <button v-if="!isOpen"
       @click="toggleChat"
       class="bg-blue-600 hover:bg-blue-700 
@@ -13,11 +13,12 @@
 
     <!-- Chat Window -->
     <div v-if="isOpen"
-      class="bg-white rounded-lg shadow-2xl border overflow-hidden transition-all duration-300"
-      :style="{ width: chatWidth + 'px', height: chatHeight + 'px' }"
-      @mousedown="startDrag">
+              class="bg-white rounded-lg shadow-2xl border overflow-hidden transition-all duration-300"
+              :style="{ width: chatWidth + 'px', height: chatHeight + 'px' }"
+              @mousedown="startDrag">
       <!-- Chat Header -->
-      <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-4 flex items-center justify-between cursor-move">
+      <div class="bg-gradient-to-r bg-[#DAB16B] to-blue-500 text-white  
+                  p-4 flex items-center justify-between cursor-move">
         <div class="flex items-center space-x-2">
           <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
           <h3 class="font-semibold">AI Assistant</h3>
@@ -25,14 +26,14 @@
         <div class="flex items-center space-x-2">
           <!-- Minimize Button -->
           <button @click="minimizeChat"
-            class="hover:bg-white hover:bg-opacity-20 rounded p-1 transition-colors">
+            class="hover:bg-red-600 hover:bg-opacity-20 rounded p-1 transition-colors">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
             </svg>
           </button>
           <!-- Close Button -->
           <button @click="toggleChat"
-            class="hover:bg-white hover:bg-opacity-20 
+            class="hover:bg-red-600 hover:bg-opacity-20 
                    rounded p-1 transition-colors">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -49,7 +50,9 @@
         <div v-if="messages.length === 0" class="text-center text-gray-500 mt-8">
           <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
             <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-3.582 8-8 8a8.954 8.954 0 01-3.316-.62l-3.681.845.847-3.681A8.954 8.954 0 016 12c0-4.418 3.582-8 8-8s8 3.582 8 8z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-3.582 8-8 8a8.954 8.954 0 
+              01-3.316-.62l-3.681.845.847-3.681A8.954 8.954 0 016 12c0-4.418 3.582-8 8-8s8 3.582 8 8z"></path>
             </svg>
           </div>
           <p class="text-sm">Hi! I'm your AI assistant. Ask me anything!</p>
@@ -98,14 +101,14 @@
             @keypress.enter="ask"
             type="text"
             placeholder="Type your message..."
-            class="flex-1 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            :disabled="loading"
-          />
-          <button
-            @click="ask"
-            :disabled="loading || !question.trim()"
-            class="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white px-4 py-2 rounded-lg transition-colors"
-          >
+            class="flex-1 p-2 border border-gray-300 rounded-lg focus:outline-none 
+                  focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            :disabled="loading"/>
+          <button @click="ask"
+                  :disabled="loading || !question.trim()"
+                  class="bg-blue-600 hover:bg-blue-700 
+                         disabled:bg-gray-400 text-white 
+                         px-4 py-2 rounded-lg transition-colors" >
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
             </svg>
@@ -120,9 +123,6 @@
       <!-- Resize Handle -->
       <div class="absolute bottom-0 right-0 w-4 h-4 cursor-se-resize"
            @mousedown="startResize">
-        <svg class="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M22 22H2v-2h18V2h2v20zM19 19H5V5h2v12h12v2z"/>
-        </svg>
       </div>
     </div>
   </div>

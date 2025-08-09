@@ -14,7 +14,8 @@ pip freeze > requirements.txt
 ```
 Todos:
 try this model
-tinyllama:latest
+ 
+qwen2:1.5b
 
 
 # Fitness Trainer Website Project - fitbody4life

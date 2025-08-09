@@ -1,2 +1,54 @@
 /backend/venv/
 .env
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# FastAPI
+.env
+.env.local
+.env.production
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# AI/ML specific
+vector_store/          # Your Chroma vector database
+*.pkl                  # Pickle files
+*.pt                   # PyTorch model files
+*.pth                  # PyTorch model files
+models/                # Downloaded models
+embeddings/            # Embedding cache
+
+# Logs
+*.log
+logs/
+chat_log.json         # Your chat history logs
+
+# Docker
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (if you have frontend)
+node_modules/
+dist/
+build/

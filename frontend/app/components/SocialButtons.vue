@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed bottom-[10%] right-[3%] w-[3.25rem]
+  <div class="fixed bottom-[20%] right-[3%] w-[3.25rem]
               h-[3.25rem] flex justify-center
               items-center rounded-full bg-white 
               cursor-pointer z-50 

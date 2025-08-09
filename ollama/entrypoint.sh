@@ -12,7 +12,7 @@ while ! curl -s http://localhost:11434/api/tags > /dev/null; do
 done
 
 # 3️⃣ Pull model if not already present
-MODEL="tinyllama:latest"
+MODEL="gemma:2b"
 if ollama list | grep -q "${MODEL}"; then
   echo "✅ Model ${MODEL} already present."
 else
