@@ -72,3 +72,41 @@ Response (be natural, friendly, and conversational):"""
         """Optional: Get relevant documents for debugging"""
         docs = self.db.similarity_search(question, k=3)
         return [doc.page_content for doc in docs]
+
+
+
+
+
+
+
+# ????bodylevelup.com????
+# Optional: Add conversation memory for context
+class ConversationalRAGAssistant(RAGAssistant):
+    def __init__(self, filepath="app/data/business_info.txt"):
+        super().__init__(filepath)
+        self.conversation_history = []
+    
+    def ask(self, question: str) -> str:
+        # Add conversation context if there's history
+        if self.conversation_history:
+            # Include last 2 exchanges for context
+            recent_context = "\n".join(self.conversation_history[-4:])
+            contextualized_question = f"Previous conversation:\n{recent_context}\n\nCurrent question: {question}"
+        else:
+            contextualized_question = question
+        
+        try:
+            result = self.qa.invoke({"query": contextualized_question})
+            response = result["result"]
+            
+            # Store conversation history
+            self.conversation_history.append(f"User: {question}")
+            self.conversation_history.append(f"Assistant: {response}")
+            
+            # Keep only last 10 exchanges
+            if len(self.conversation_history) > 20:
+                self.conversation_history = self.conversation_history[-20:]
+            
+            return response
+        except Exception as e:
+            return f"Sorry, I encountered an error: {str(e)}"
