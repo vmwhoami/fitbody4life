@@ -1,4 +1,5 @@
 /backend/venv/
+/backend/venv/vector_store/
 .env
 # Python
 __pycache__/
